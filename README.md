@@ -14,18 +14,18 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ## How to start
 
-You can download the theme manually by going to [https://gitlab.com/panr/hugo-theme-hello-friend](https://gitlab.com/panr/hugo-theme-hello-friend) and pasting it to `themes/hello-friend` in your root directory.
+You can download the theme manually by going to [https://github.com/panr/hugo-theme-hello-friend.git](https://github.com/panr/hugo-theme-hello-friend.git) and pasting it to `themes/hello-friend` in your root directory.
 
 You can also clone it directly to your Hugo folder:
 
 ```
-$ git clone https://gitlab.com/panr/hugo-theme-hello-friend themes/hello-friend
+$ git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
 ```
-$ git submodule add https://gitlab.com/panr/hugo-theme-hello-friend themes/hello-friend
+$ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
 ## How to configure
@@ -60,13 +60,13 @@ $ yarn
 
 ## How to contribute
 
-If you spot any bugs, please use [Issue Tracker](https://gitlab.com/panr/hugo-theme-hello-friend/issues) or if you want to add a new feature directly please create a new [Pull/Merge Request](https://gitlab.com/panr/hugo-theme-hello-friend/merge_requests).
+If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-theme-hello-friend/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/panr/hugo-theme-hello-friend/pulls).
 
 ## Licence
 
 Copyright © 2018 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
-The theme is released under the MIT License. Check the [original theme license](https://gitlab.com/panr/hugo-theme-hello-friend/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-hello-friend.git/blob/master/LICENSE.md) for additional licensing information.
 
 
 
