@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <div class="posts">
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ range $paginator.Pages }}
+    <div class="post on-list">
+      <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+      <div class="post-meta">
+        <span class="post-date">
+          {{ .Date.Day }}/{{ sub .Date.Month 0 }}/{{ .Date.Year }}
+        </span>
+        <span class="post-author">Written by {{ .Params.Author }}</span>
+      </div>
+
+      {{ if .Params.tags }}
+        <span class="post-tags">
+          {{ range .Params.tags }}
+            #<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+          {{ end }}
+        </span>
+      {{ end }}
+
+      {{ with .Params.Cover }}
+        <img src="/img/{{ . }}" class="post-cover" />
+      {{ end }}
+
+      <div class="post-content">
+        {{ with .Description }}
+          {{ . | markdownify }}
+        {{ else }}
+          {{ if .Truncated }}
+            {{ .Summary | markdownify }}
+          {{ end }}
+        {{ end }}
+      </div>
+      <div><a class="read-more button" href="{{.RelPermalink}}">Read more →</a></div>
+    </div>
+    {{ end }}
+    {{ partial "pagination.html" . }}
+  </div>
+{{ end }}

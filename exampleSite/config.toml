@@ -1,0 +1,19 @@
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Hello Friend"
+theme = "hello-friend"
+copyright = ""
+paginate = 5
+
+[params]
+  subtitle = "A simple theme for Hugo"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+  [[menu.main]]
+    identifier = "showcase"
+    name = "Showcase"
+    url = "/showcase"

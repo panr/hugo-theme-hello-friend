@@ -1,0 +1,15 @@
+<footer class="footer">
+  <div class="footer__inner">
+    {{ if .Site.Copyright }}
+      <div class="copyright copyright--user">{{ .Site.Copyright| safeHTML }}</div>
+    {{else}}
+      {{ partial "logo.html" . }}
+      <div class="copyright">
+        <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+        <span>Created by <a href="https://twitter.com/panr">panr</a> 2018</span>
+      </div>
+    {{end}}
+  </div>
+</footer>
+
+{{ partial "inject.script.html" . }}

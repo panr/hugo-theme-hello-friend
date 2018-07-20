@@ -1,0 +1,42 @@
+{
+  "name": "hello-friend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "panr & mobily",
+  "license": "private",
+  "scripts": {
+    "start": "hugo server --buildDrafts",
+    "dev": "node node_modules/.bin/webpack"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/preset-stage-2": "^7.0.0-beta.54",
+    "babel-loader": "^8.0.0-beta.0",
+    "browserslist": "^4.0.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^1.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss": "^7.0.0",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.0.5",
+    "postcss-nested": "^3.0.0",
+    "postcss-preset-env": "^5.2.2",
+    "postcss-reporter": "^5.0.0",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "postcss-url": "^7.3.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "ramda": "^0.25.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

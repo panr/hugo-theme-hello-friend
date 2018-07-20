@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <div class="post">
+    <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    <div class="post-meta">
+      <span class="post-date">
+        {{ .Date.Day }}/{{ sub .Date.Month 0 }}/{{ .Date.Year }}
+      </span>
+      <span class="post-author">Written by {{ .Params.Author }}</span>
+    </div>
+
+    {{ if .Params.tags }}
+      <span class="post-tags">
+        {{ range .Params.tags }}
+          #<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+        {{ end }}
+      </span>
+    {{ end }}
+
+    {{ with .Params.Cover }}
+      <img src="/img/{{ . }}" class="post-cover" />
+    {{ end }}
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    {{ if or .NextInSection .PrevInSection }}
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          {{ if .NextInSection }}
+            <a class="btn next" href="{{ .NextInSection.Permalink }}">← {{ .NextInSection.Title }}</a>
+          {{ end }}
+          {{ if .PrevInSection }}
+            <a class="btn previous" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }} →</a>
+          {{ end }} 
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

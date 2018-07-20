@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'inter-ui';
+@import 'buttons';
+
+@import 'header';
+@import 'logo';
+@import 'menu';
+@import 'main';
+@import 'list';
+@import 'pagination';
+@import 'footer';
+
+@import 'prism';

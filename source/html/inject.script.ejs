@@ -1,0 +1,3 @@
+<% htmlWebpackPlugin.files.js.filter(function(js){ return !/\.css$/.test(js) }).forEach(function(js){ %>
+  <script src="/assets/<%= js %>"></script>
+<% }) %>

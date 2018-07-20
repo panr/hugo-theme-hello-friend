@@ -1,0 +1,46 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="{{ if or (.IsHome) (.IsPage) }}{{ .Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}"/>
+<meta name="keywords" content="{{ .Site.Params.keywords }}"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="/assets/style.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+{{ partial "inject.stylesheet.html" . }}
+
+<!-- Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="img/favicon.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ else }}{{ .Title }} :: {{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ end }}" />
+<meta name="twitter:description" content="{{ if or (.IsHome) }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
+<meta name="twitter:site" content="{{ $.Site.Params.twitter }}" />
+<meta name="twitter:creator" content="{{ $.Site.Params.twitter }}" />
+<meta name="twitter:image" content="{{ with .Params.Cover }}{{ $.Site.BaseURL }}img/post/{{ . }}{{ else }}{{ $.Site.BaseURL }}img/default.jpg{{ end }}">
+
+<!-- OG data -->
+<meta property="og:locale" content="{{ $.Site.Language.Lang }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:title" content="{{ if .IsHome }}{{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ else }}{{ .Title }} :: {{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ end }}">
+<meta property="og:description" content="{{ if or (.IsHome) (.IsPage) }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Title }}" />
+<meta property="og:image" content="{{ with .Params.Cover }}{{ $.Site.BaseURL }}img/post/{{ . }}{{ else }}{{ $.Site.BaseURL }}img/default.jpg{{ end }}">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+{{ range .Params.categories }}<meta property="article:section" content="{{ . }}" />{{ end }}
+{{ if isset .Params "date" }}<meta property="article:published_time" content="{{ time .Date }}" />{{ end }}
+
+<!-- RSS -->
+{{ if .RSSLink }}
+<link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
+
+<!-- JSON Feed -->
+{{ if .OutputFormats.Get "json" }}
+<link href="{{ if .OutputFormats.Get "json" }}{{ .Site.BaseURL }}feed.json{{ end }}" rel="alternate" type="application/json" title="{{ .Site.Title }}" />
+{{ end }}

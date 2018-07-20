@@ -1,0 +1,193 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.54;
+  background-color: var(--light-background);
+  color: var(--light-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+
+  @media (--phone) {
+    font-size: 1rem;
+  }
+
+  &.dark-theme {
+    background-color: var(--dark-background);
+    color: var(--dark-color);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.625rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+@media (--phone) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+code {
+  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  background: var(--light-background-secondary);
+  padding: 1px 6px;
+  margin: 0 2px;
+  border-radius: 5px;
+  font-size: .95rem;
+
+  .dark-theme & {
+    background: var(--dark-background-secondary);
+  }
+}
+
+pre {
+  background: #1a1a1d;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  overflow: auto;
+
+  @media (--phone) {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  code {
+    background: none !important;
+    color: #ccc;
+    padding: 0;
+    font-size: inherit;
+  }
+}
+
+blockquote {
+  border-left: 2px solid;
+  margin: 40px;
+  padding: 10px 20px;
+
+  @media (--phone) {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  &:before {
+    content: '”';
+    font-family: Georgia, serif;
+    font-size: 3.875rem;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+  }
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+ul, ol {
+  margin-left: 40px;
+  padding: 0;
+
+  @media (--phone) {
+    margin-left: 20px;
+  }
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+
+  @media (--phone) {
+    margin-top: 0;
+  }
+}
+
+hr {
+  width: 100%;
+  border: none;
+  background: var(--light-border-color);
+  height: 1px;
+
+  .dark-theme & {
+    background: var(--dark-border-color);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
