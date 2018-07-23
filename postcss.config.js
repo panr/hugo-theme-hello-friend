@@ -12,7 +12,6 @@ module.exports = () => ({
     nested,
     postCSSPresetEnv({
       stage: 1,
-      browsers: "last 2 versions",
     }),
     cssnano({
       preset: "default",

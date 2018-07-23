@@ -8,6 +8,12 @@
     "start": "hugo server --buildDrafts",
     "dev": "node node_modules/.bin/webpack"
   },
+  "browserslist": [
+    "last 2 versions",
+    ">1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.54",
     "@babel/core": "^7.0.0-beta.54",
