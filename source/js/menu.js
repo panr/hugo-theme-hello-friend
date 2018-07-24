@@ -11,6 +11,6 @@ const isMobileMenu = () => {
 
 isMobileMenu();
 
-menuTrigger.addEventListener("click", () => menu && menu.classList.toggle("hidden"));
+menuTrigger && menuTrigger.addEventListener("click", () => menu && menu.classList.toggle("hidden"));
 
 window.addEventListener("resize", isMobileMenu);
