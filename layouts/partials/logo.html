@@ -1,7 +1,11 @@
 <a href="{{ .Site.BaseURL }}" style="text-decoration: none;">
   <div class="logo">
-    <span class="logo__mark">></span>
-    <span class="logo__text">hello friend</span>
-    <span class="logo__cursor"></span>
+    {{ if .Site.Params.Logo }}
+      <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
+    {{ else }}
+      <span class="logo__mark">></span>
+      <span class="logo__text">hello friend</span>
+      <span class="logo__cursor"></span>
+    {{ end }}
   </div>
 </a>

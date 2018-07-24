@@ -3,6 +3,10 @@
   align-items: center;
   text-decoration: none;
 
+  img {
+    height: 44px;
+  }
+
   &__mark {
     margin-right: 5px;
   }
