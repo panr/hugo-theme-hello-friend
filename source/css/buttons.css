@@ -4,6 +4,7 @@
   margin-right: auto;
 }
 
+button,
 .button,
 a.button {
   position: relative;
@@ -24,15 +25,21 @@ a.button {
 
   .dark-theme & {
     background: var(--dark-background-secondary);
+    color: inherit;
   }
 
   /* variants */
 
   &.outline {
     background: transparent;
-    border-color: rgba(0, 0, 0, .2);
+    border-color: var(--light-background-secondary);
     box-shadow: none;
     padding: 8px 18px;
+
+    .dark-theme & {
+      border-color: var(--dark-background-secondary);
+      color: inherit;
+    }
 
     :hover {
       transform: none;

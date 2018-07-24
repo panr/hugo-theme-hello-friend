@@ -34,7 +34,7 @@
 
   &-title {
     font-size: 2.625rem;
-    margin: 0;
+    margin: 0 0 20px;
 
     @media (--phone) {
       font-size: 2rem;
