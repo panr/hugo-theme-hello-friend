@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "panr & mobily",
-  "license": "private",
+  "license": "MIT",
   "scripts": {
-    "start": "hugo server --buildDrafts",
-    "dev": "node node_modules/.bin/webpack"
+    "dev": "webpack --mode=development --watch",
+    "build": "webpack --mode=production"
   },
   "browserslist": [
     "last 2 versions",

@@ -6,8 +6,6 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const path = require("path");
 
-const isProduction = process.env.NODE_ENV === "production";
-
 const join = (...paths) => path.join(__dirname, ...paths);
 
 module.exports = {
@@ -15,7 +13,6 @@ module.exports = {
     extensions: [".js", ".css"],
     modules: ["source", "node_modules"],
   },
-  watch: !isProduction,
   entry: {
     "main.js": [
       join("source", "js", "index.js"),
@@ -107,12 +104,5 @@ module.exports = {
       inject: false,
     }),
     new ExtractTextPlugin("[name]"),
-    new Webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: true,
-    }),
-    new Webpack.DefinePlugin({
-      "process.env.NODE_ENV": JSON.stringify("development"),
-    }),
   ],
 };
