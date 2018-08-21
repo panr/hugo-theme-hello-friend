@@ -109,6 +109,7 @@ pre {
   code {
     background: none !important;
     color: #ccc;
+    margin: 0;
     padding: 0;
     font-size: inherit;
   }
@@ -189,6 +190,3 @@ hr {
 .hidden {
   display: none;
 }
-
-
-
