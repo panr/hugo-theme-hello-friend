@@ -32,7 +32,35 @@ $ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/h
 
 ## How to configure
 
-The theme doesn't require any advanced configuration. Just copy `config.toml` file from `exampleSite` directory to your Hugo root directory and change params fields.
+The theme doesn't require any advanced configuration. Just copy:
+
+```
+baseUrl = "https://example.com/"
+languageCode = "en-us"
+title = "Your site title"
+theme = "hello-friend"
+copyright = ""
+paginate = 5
+
+[params]
+  subtitle = "Your site subtitle"
+
+# [params.logo]
+#   path = "/img/your-example-logo.svg"
+#   alt = "Your example logo alt text"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact"
+```
+
+to `config.toml` file in your Hugo root directory and change params fields.
 
 ## How to run your site
 
@@ -69,7 +97,3 @@ If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-th
 Copyright © 2018 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-hello-friend.git/blob/master/LICENSE.md) for additional licensing information.
-
-
-
-

@@ -1,16 +1,12 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Hello Friend"
-theme = "hello-friend"
+theme = "hugo-theme-hello-friend"
 copyright = ""
 paginate = 5
 
 [params]
   subtitle = "A simple theme for Hugo"
-
-# [params.logo]
-#   path = "/img/your-example-logo.svg"
-#   alt = "your_example_logo"
 
 [menu]
   [[menu.main]]
