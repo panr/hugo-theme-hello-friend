@@ -51,6 +51,7 @@
     height: 24px;
     fill: currentColor;
     margin-left: 10px;
+    cursor: pointer;
   }
 
   a {

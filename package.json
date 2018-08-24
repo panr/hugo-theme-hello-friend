@@ -25,7 +25,9 @@
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^1.0.0",
     "cssnano": "^4.0.3",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
@@ -45,8 +47,5 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0"
-  },
-  "dependencies": {
-    "yarn": "^1.9.4"
   }
 }
