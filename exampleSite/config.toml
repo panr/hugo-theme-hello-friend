@@ -8,6 +8,13 @@ paginate = 5
 [params]
   subtitle = "A simple theme for Hugo"
 
+[params.logo]
+  logoText = ""
+#   or
+#
+#   path = "/img/your-example-logo.svg"
+#   alt = "Your example logo alt text"
+
 [menu]
   [[menu.main]]
     identifier = "about"

@@ -45,7 +45,10 @@ paginate = 5
 [params]
   subtitle = "Your site subtitle"
 
-# [params.logo]
+[params.logo]
+  logoText = ""
+#   or
+#
 #   path = "/img/your-example-logo.svg"
 #   alt = "Your example logo alt text"
 
@@ -58,6 +61,7 @@ paginate = 5
     identifier = "contact"
     name = "Contact"
     url = "/contact"
+
 ```
 
 to `config.toml` file in your Hugo root directory and change params fields.
