@@ -8,11 +8,23 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ## Features
 
-- **light/dark mode**, depending on your preferences
+- **dark/light mode**, depending on your preferences (dark is default)
 - great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - an easy way to modify the theme (**Webpack, NodeJS, PostCSS** — initial setup created by [Marcin Dziewulski](http://www.mobily.pl))
 - fully responsive
+
+#### Code highlighting
+
+By default the theme is using PrismJS to color your code syntax. All you need to do is to wrap you code like this:
+
+<pre>
+```html
+  // your code here
+```
+</pre>
+
+**Supported languages**: css, clike, javascript, c, csharp, cpp, coffeescript, ruby, css-extras, diff, docker, elixir, elm, markup-templating, erlang, fsharp, flow, git, go, graphql, less, handlebars, java, json, kotlin, latex, markdown, makefile, objectivec, ocaml, perl, php, php-extras, sql, scss, python, jsx, typescript, reason, rust, sass, pug, swift, yaml, haml, tsx
 
 ## How to start
 
