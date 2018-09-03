@@ -1,10 +1,10 @@
 <a href="{{ .Site.BaseURL }}" style="text-decoration: none;">
   <div class="logo">
-    {{ if .Site.Params.Logo }}
+    {{ if .Site.Params.Logo.path }}
       <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
     {{ else }}
       <span class="logo__mark">></span>
-      <span class="logo__text">hello friend</span>
+      <span class="logo__text">{{ with .Site.Params.Logo.logoText }}{{ . }}{{ else }}hello friend{{ end }}</span>
       <span class="logo__cursor"></span>
     {{ end }}
   </div>

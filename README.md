@@ -58,7 +58,7 @@ paginate = 5
   subtitle = "Your site subtitle"
 
 [params.logo]
-  logoText = ""
+  logoText = "hello friend"
 #   or
 #
 #   path = "/img/your-example-logo.svg"

@@ -47,3 +47,7 @@
     max-width: 100%;
   }
 }
+
+.theme-toggle {
+  cursor: pointer;
+}

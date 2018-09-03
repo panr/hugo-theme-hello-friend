@@ -9,7 +9,7 @@ paginate = 5
   subtitle = "A simple theme for Hugo"
 
 [params.logo]
-  logoText = ""
+  logoText = "hello friend"
 #   or
 #
 #   path = "/img/your-example-logo.svg"
