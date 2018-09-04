@@ -83,6 +83,7 @@ img {
 
 code {
   font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  font-feature-settings: normal;
   background: var(--light-background-secondary);
   padding: 1px 6px;
   margin: 0 2px;
