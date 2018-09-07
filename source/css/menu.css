@@ -27,10 +27,10 @@
     list-style: none;
 
     li {
-      margin: 0 20px;
+      margin: 0 10px;
 
       &:last-of-type {
-        margin: 0;
+        margin-right: 0;
       }
     }
 
