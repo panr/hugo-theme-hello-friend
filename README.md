@@ -14,6 +14,13 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - an easy way to modify the theme (**Webpack, NodeJS, PostCSS** — initial setup created by [Marcin Dziewulski](http://www.mobily.pl))
 - fully responsive
 
+#### Built-in shortcodes
+
+- **`image`** (prop required: **`src`**; props optional: **`alt`**, **`position`** (**left** is default | center | right), **`style`**)
+  - eg: `{{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}`
+- **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**
+  - eg: `{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}`
+
 #### Code highlighting
 
 By default the theme is using PrismJS to color your code syntax. All you need to do is to wrap you code like this:
