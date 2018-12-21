@@ -6,7 +6,7 @@
   {{ end }}
   {{ partial "head.html" . }}
 </head>
-<body class="dark-theme">
+<body class="{{ if ne $.Site.Params.defaultTheme "light" -}} dark-theme {{- end -}}">
 <div class="container">
   {{ partial "header.html" . }}
 
