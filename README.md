@@ -54,22 +54,24 @@ $ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/h
 The theme doesn't require any advanced configuration. Just copy:
 
 ```
-baseUrl = "https://example.com/"
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Your site title"
-theme = "hello-friend"
+title = "Hello Friend"
+theme = "hugo-theme-hello-friend"
 copyright = ""
 paginate = 5
 
 [params]
-  subtitle = "Your site subtitle"
+  subtitle = "A simple theme for Hugo"
+  # "light" or "dark"
+  defaultTheme = "dark"
 
 [params.logo]
   logoText = "hello friend"
-#   or
-#
-#   path = "/img/your-example-logo.svg"
-#   alt = "Your example logo alt text"
+  # or
+  #
+# path = "/img/your-example-logo.svg"
+# alt = "Your example logo alt text"
 
 [menu]
   [[menu.main]]
@@ -77,10 +79,9 @@ paginate = 5
     name = "About"
     url = "/about"
   [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact"
-
+    identifier = "showcase"
+    name = "Showcase"
+    url = "/showcase"
 ```
 
 to `config.toml` file in your Hugo root directory and change params fields.
