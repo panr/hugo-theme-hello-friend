@@ -1,7 +1,7 @@
 .menu {
   background: #fafafa;
   border-right: 1px solid;
-  margin-right: 10px;
+  margin-right: 18px;
 
   .dark-theme & {
     background: #252627;
@@ -27,11 +27,7 @@
     list-style: none;
 
     li {
-      margin: 0 10px;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
+      margin: 0 12px;
     }
 
     @media (--phone) {

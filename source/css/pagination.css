@@ -1,6 +1,6 @@
 .pagination {
   margin-top: 50px;
-  
+
   &__title {
     display: flex;
     text-align: center;
@@ -37,11 +37,60 @@
 
   &__buttons {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 1024px;
+    max-width: 100%;
 
     a {
       text-decoration: none;
       font-weight: bold;
     }
+  }
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-background-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  max-width: 40%;
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+
+  .dark-theme & {
+    background: var(--dark-background-secondary);
+  }
+
+  + .button {
+    margin-left: 10px;
+  }
+
+  a {
+    display: flex;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &.next .button__icon {
+    margin-left: 8px;
+  }
+
+  &.previous .button__icon {
+    margin-right: 8px;
   }
 }

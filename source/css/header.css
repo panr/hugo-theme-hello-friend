@@ -10,24 +10,6 @@
     background: #252627;
   }
 
-  .bulb {
-    &-on {
-      display: none;
-
-      .dark-theme & {
-        display: block;
-      }
-    }
-
-    &-off {
-      display: block;
-
-      .dark-theme & {
-        display: none;
-      }
-    }
-  }
-
   &__right {
     display: flex;
     flex-direction: row;
@@ -49,5 +31,13 @@
 }
 
 .theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
   cursor: pointer;
+}
+
+.theme-toggler {
+  fill: currentColor;
 }
