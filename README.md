@@ -8,10 +8,10 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ## Features
 
-- **dark/light mode**, depending on your preferences (dark is default)
+- **dark/light mode**, depending on your preferences (dark is default, but you can change it)
 - great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- an easy way to modify the theme (**Webpack, NodeJS, PostCSS** — initial setup created by [Marcin Dziewulski](http://www.mobily.pl))
+- an easy way to modify the theme (**Webpack, NodeJS, PostCSS etc.**)
 - fully responsive
 
 #### Built-in shortcodes
@@ -57,7 +57,7 @@ The theme doesn't require any advanced configuration. Just copy:
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Hello Friend"
-theme = "hugo-theme-hello-friend"
+theme = "hello-friend"
 copyright = ""
 paginate = 5
 

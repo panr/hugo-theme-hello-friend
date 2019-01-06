@@ -2,7 +2,7 @@
   "name": "hello-friend",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "panr & mobily",
+  "author": "Radosław Kozieł <@panr> <radoslaw.koziel@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "webpack --mode=development --watch",
