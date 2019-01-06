@@ -6,6 +6,8 @@ This theme was made to help you present your ideas easier. We all know how hard 
 
 This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
 
+### DEMO - https://hugo-hello-friend.now.sh/
+
 ## Features
 
 - **dark/light mode**, depending on your preferences (dark is default, but you can change it)
