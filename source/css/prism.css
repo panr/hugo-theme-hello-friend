@@ -8,7 +8,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #a9a9b3;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
@@ -39,6 +38,7 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: #212020 !important;
+	color: inherit !important;
 	border-radius: 8px;
 }
 
@@ -54,7 +54,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: var(--light-color-secondary);
+	color: rgba(255, 255, 255, .4);
 }
 
 .token.punctuation {
