@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "/"
 languageCode = "en-us"
 title = "Hello Friend"
 theme = "hugo-theme-hello-friend"
@@ -26,3 +26,9 @@ paginate = 5
     identifier = "showcase"
     name = "Showcase"
     url = "/showcase"
+
+[languages]
+  [languages.en]
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"

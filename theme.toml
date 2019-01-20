@@ -7,6 +7,6 @@ features = ["blog", "shortcode"]
 min_version = 0.30
 
 [author]
-    name = "panr"
-    homepage = "https://radoslawkoziel.pl"
-    twitter = "https://twitter.com/panr"
+  name = "panr"
+  homepage = "https://radoslawkoziel.pl"
+  twitter = "https://twitter.com/panr"
