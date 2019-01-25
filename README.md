@@ -65,6 +65,8 @@ paginate = 5
 
 [params]
   subtitle = "A simple theme for Hugo"
+  # dir name for your list content
+  contentTypeName = "posts"
   # "light" or "dark"
   defaultTheme = "dark"
 
