@@ -58,40 +58,41 @@ The theme doesn't require any advanced configuration. Just copy:
 ```
 baseurl = "/"
 languageCode = "en-us"
-title = "Hello Friend"
 theme = "hello-friend"
-copyright = ""
 paginate = 5
 
 [params]
-  subtitle = "A simple theme for Hugo"
-  # dir name for your list content
+  # dir name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
   # "light" or "dark"
   defaultTheme = "dark"
 
-[params.logo]
-  logoText = "hello friend"
-  # or
-  #
-# path = "/img/your-example-logo.svg"
-# alt = "Your example logo alt text"
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-  [[menu.main]]
-    identifier = "showcase"
-    name = "Showcase"
-    url = "/showcase"
-
 [languages]
   [languages.en]
+    title = "Hello Friend"
+    subtitle = "A simple theme for Hugo"
+    copyright = ""
     writtenBy = "Written by"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "hello friend"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
 ```
 
 to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/8f9b363e358aaa33f6d353c77feee959).
