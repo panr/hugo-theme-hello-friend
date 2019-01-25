@@ -1,6 +1,6 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="{{ if or (.IsHome) (.IsPage) }}{{ .Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}"/>
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.Subtitle }}{{ else }}{{ .Summary | plainify }}{{ end }}"/>
 <meta name="keywords" content="{{ .Site.Params.keywords }}"/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="{{ .Permalink }}" />
@@ -17,16 +17,16 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="{{ if .IsHome }}{{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ else }}{{ .Title }} :: {{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ end }}" />
-<meta name="twitter:description" content="{{ if or (.IsHome) }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
-<meta name="twitter:site" content="{{ $.Site.Params.twitter }}" />
-<meta name="twitter:creator" content="{{ $.Site.Params.twitter }}" />
+<meta name="twitter:description" content="{{ if .IsHome }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
+<meta name="twitter:site" content="{{ .Site.BaseURL }}" />
+<meta name="twitter:creator" content="{{ .Params.Author }}" />
 <meta name="twitter:image" content="{{ with .Params.Cover }}{{ $.Site.BaseURL }}img/post/{{ . }}{{ else }}{{ $.Site.BaseURL }}img/default.jpg{{ end }}">
 
 <!-- OG data -->
 <meta property="og:locale" content="{{ $.Site.Language.Lang }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:title" content="{{ if .IsHome }}{{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ else }}{{ .Title }} :: {{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ end }}">
-<meta property="og:description" content="{{ if or (.IsHome) (.IsPage) }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
+<meta property="og:description" content="{{ if .IsHome }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:site_name" content="{{ .Title }}" />
 <meta property="og:image" content="{{ with .Params.Cover }}{{ $.Site.BaseURL }}img/post/{{ . }}{{ else }}{{ $.Site.BaseURL }}img/default.jpg{{ end }}">

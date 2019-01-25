@@ -71,6 +71,7 @@ paginate = 5
   [languages.en]
     title = "Hello Friend"
     subtitle = "A simple theme for Hugo"
+    keywords = ""
     copyright = ""
     writtenBy = "Written by"
     readMore = "Read more"
