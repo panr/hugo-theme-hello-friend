@@ -1,43 +1,26 @@
 {{ define "main" }}
-  <div class="posts">
-    {{ $isntDefault := not (or (eq (trim .Site.Params.contentTypeName " ") "posts") (eq (trim .Site.Params.contentTypeName " ") "")) }}
-    {{ $contentTypeName := cond $isntDefault (string .Site.Params.contentTypeName) "posts" }}
-    {{ $paginator := .Paginate (where .Data.Pages "Type" $contentTypeName) }}
+    <main class="posts">
+        <h1>{{ .Title }}</h1>
 
-    {{ range $paginator.Pages }}
-    <div class="post on-list">
-      <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
-      <div class="post-meta">
-        <span class="post-date">
-          {{ .Date.Format "2006-01-02" }}
-        </span>
-        <span class="post-author">{{ .Site.Params.WrittenBy }} {{ .Params.Author }}</span>
-      </div>
+        {{- if .Content }}
+            <div class="content">{{ .Content }}</div>
+        {{- end }}
 
-      {{ if .Params.tags }}
-        <span class="post-tags">
-          {{ range .Params.tags }}
-            #<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
-          {{ end }}
-        </span>
-      {{ end }}
+        {{- range .Data.Pages.GroupByDate "2006" }}
+            <div class="posts-group">
+                <div class="post-year">{{ .Key }}</div>
 
-      {{ with .Params.Cover }}
-        <img src="/img/{{ . }}" class="post-cover" />
-      {{ end }}
-
-      <div class="post-content">
-        {{ with .Description }}
-          {{ . | markdownify }}
-        {{ else }}
-          {{ if .Truncated }}
-            {{ .Summary | markdownify }}
-          {{ end }}
-        {{ end }}
-      </div>
-      <div><a class="read-more button" href="{{.RelPermalink}}">{{ .Site.Params.ReadMore }} →</a></div>
-    </div>
-    {{ end }}
-    {{ partial "pagination.html" . }}
-  </div>
+                <ul class="posts-list">
+                    {{- range .Pages }}
+                        <li class="post-item">
+                            <a href="{{.Permalink}}">
+                                <span class="post-title">{{.Title}}</span>
+                                <span class="post-day">{{ .Date.Format .Site.Params.dateformShort }}</span>
+                            </a>
+                        </li>
+                    {{- end }}
+                </ul>
+            </div>
+        {{- end }}
+    </main>
 {{ end }}

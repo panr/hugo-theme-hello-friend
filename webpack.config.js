@@ -1,34 +1,32 @@
-const Webpack = require("webpack");
+const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const autoprefixer = require('autoprefixer');
 
 const path = require("path");
-
 const join = (...paths) => path.join(__dirname, ...paths);
+const isDevelopment = process.env.NODE_ENV !== "production";
+
 
 module.exports = {
   resolve: {
-    extensions: [".js", ".css"],
+    extensions: [".js", ".scss"],
     modules: ["source", "node_modules"],
   },
   entry: {
     "main.js": [
-      join("source", "js", "index.js"),
+      join("source", "js", "app.js"),
       join("source", "js", "menu.js"),
       join("source", "js", "theme.js"),
     ],
-    "prism.js": join("source", "js", "prism.js"),
-    "style.css": join("source", "css", "style.css"),
+    "style.css": join("source", "scss", "style.scss")
   },
   output: {
     filename: "[name]",
     path: join("static/assets"),
     publicPath: "",
-  },
-  performance: {
-    hints: false,
   },
   module: {
     rules: [
@@ -54,28 +52,34 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
           use: [
             {
               loader: "css-loader",
               options: {
                 minimize: true,
-                modules: true,
-                importLoaders: 1,
-                localIdentName: "[local]",
+                sourceMap: isDevelopment
               },
             },
             {
               loader: "postcss-loader",
               options: {
-                config: {
-                  path: "postcss.config.js",
+                autoprefixer: {
+                  browsers: ["last 2 versions"]
                 },
-              },
+                plugins: () => [
+                  autoprefixer
+                ]
+              }
             },
-          ],
+            {
+              loader: "sass-loader",
+              options: {
+                sourceMap: isDevelopment
+              }
+            }
+          ]
         }),
       },
     ],
@@ -93,16 +97,6 @@ module.exports = {
   },
   plugins: [
     new CleanPlugin(join("static/assets")),
-    new HtmlWebpackPlugin({
-      template: join("source", "html", "inject.script.ejs"),
-      filename: join("layouts", "partials", "inject.script.html"),
-      inject: false,
-    }),
-    new HtmlWebpackPlugin({
-      template: join("source", "html", "inject.stylesheet.ejs"),
-      filename: join("layouts", "partials", "inject.stylesheet.html"),
-      inject: false,
-    }),
     new ExtractTextPlugin("[name]"),
   ],
 };

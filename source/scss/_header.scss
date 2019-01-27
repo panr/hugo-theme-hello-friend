@@ -15,7 +15,7 @@
     flex-direction: row;
     align-items: center;
 
-    @media (--phone) {
+    @media #{$media-size-phone} {
       flex-direction: row-reverse;
     }
   }

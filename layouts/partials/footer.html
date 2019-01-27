@@ -1,15 +1,38 @@
 <footer class="footer">
-  <div class="footer__inner">
-    {{ if .Site.Copyright }}
-      <div class="copyright copyright--user">{{ .Site.Copyright| safeHTML }}</div>
-    {{else}}
-      {{ partial "logo.html" . }}
-      <div class="copyright">
-        <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>
-        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
-      </div>
-    {{end}}
-  </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; {{ now.Format "2006" }}</span>
+            <span><a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a></span>
+            <span>{{ .Site.Copyright| safeHTML }}</span>
+            {{ range .Site.Menus.footer }}
+                <span><a href="{{ .URL }}">{{ .Name }}</a></span>
+            {{ end }}
+            <span>{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} <a href="{{ "posts/index.xml" | absURL }}" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>{{ end }}</span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
 </footer>
 
-{{ partial "inject.script.html" . }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script src="/assets/main.js"></script>
+
+{{- if .Site.GoogleAnalytics }}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{.Site.GoogleAnalytics}}', 'auto');
+        ga('send', 'pageview');
+    </script>
+{{- end}}

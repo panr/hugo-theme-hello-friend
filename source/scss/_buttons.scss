@@ -13,7 +13,7 @@ a.button {
   justify-content: center;
   padding: 8px 18px;
   margin-bottom: 5px;
-  background: var(--light-background-secondary);
+  background: $light-background-secondary;
   text-decoration: none;
   text-align: center;
   font-weight: 500;
@@ -24,7 +24,7 @@ a.button {
   outline: none;
 
   .dark-theme & {
-    background: var(--dark-background-secondary);
+    background: $dark-background-secondary;
     color: inherit;
   }
 
@@ -32,12 +32,12 @@ a.button {
 
   &.outline {
     background: transparent;
-    border-color: var(--light-background-secondary);
+    border-color: $light-background-secondary;
     box-shadow: none;
     padding: 8px 18px;
 
     .dark-theme & {
-      border-color: var(--dark-background-secondary);
+      border-color: $dark-background-secondary;
       color: inherit;
     }
 
@@ -60,9 +60,6 @@ a.button {
     font-size: 1rem;
   }
 
-
-  /* sizes */
-
   &.small {
     font-size: .8rem;
   }
@@ -70,21 +67,6 @@ a.button {
   &.wide {
     min-width: 200px;
     padding: 14px 24px;
-  }
-}
-
-a.read-more,
-a.read-more:hover,
-a.read-more:active {
-  display: inline-flex;
-  background: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 20px 0;
-  font-weight: bold;
-
-  .dark-theme & {
-    background: none;
   }
 }
 
@@ -98,7 +80,7 @@ a.read-more:active {
     justify-content: center;
     padding: 3px 8px;
     margin-bottom: 5px;
-    background: var(--light-background-secondary);
+    background: $light-background-secondary;
     text-decoration: none;
     text-align: center;
     font-size: 13px;
@@ -110,7 +92,7 @@ a.read-more:active {
     outline: none;
 
     .dark-theme & {
-      background: var(--dark-background-secondary);
+      background: $dark-background-secondary;
       color: inherit;
     }
   }

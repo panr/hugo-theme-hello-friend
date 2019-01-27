@@ -1,11 +1,11 @@
 <a href="{{ if .Site.Params.Logo.LogoHomeLink }}{{ .Site.Params.Logo.LogoHomeLink }}{{else}}{{ .Site.BaseURL }}{{ end }}" style="text-decoration: none;">
-  <div class="logo">
-    {{ if .Site.Params.Logo.path }}
-      <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
-    {{ else }}
-      <span class="logo__mark">></span>
-      <span class="logo__text">{{ with .Site.Params.Logo.logoText }}{{ . }}{{ else }}hello friend{{ end }}</span>
-      <span class="logo__cursor"></span>
-    {{ end }}
-  </div>
+    <div class="logo">
+        {{ if .Site.Params.Logo.path }}
+            <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
+        {{ else }}
+            <span class="logo__mark">></span>
+            <span class="logo__text">{{ with .Site.Params.Logo.logoText }}{{ . }}{{ else }}hello{{ end }}</span>
+            <span class="logo__cursor"></span>
+        {{ end }}
+    </div>
 </a>

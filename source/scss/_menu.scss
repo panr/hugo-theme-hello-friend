@@ -7,7 +7,7 @@
     background: #252627;
   }
 
-  @media (--phone) {
+  @media #{$media-size-phone} {
     position: absolute;
     top: 50px;
     right: 0;
@@ -30,7 +30,7 @@
       margin: 0 12px;
     }
 
-    @media (--phone) {
+    @media #{$media-size-phone} {
       flex-direction: column;
       align-items: flex-start;
       padding: 0;
