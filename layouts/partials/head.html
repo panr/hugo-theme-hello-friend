@@ -6,14 +6,14 @@
 <link rel="canonical" href="{{ .Permalink }}" />
 
 <!-- Theme CSS -->
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/assets/style.css">
 
 <!-- Custom CSS to override theme properties (/static/style.css) -->
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/style.css">
 
 <!-- Icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/img/favicon.png">
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}/img/favicon.png">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
