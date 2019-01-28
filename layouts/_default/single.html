@@ -72,8 +72,10 @@
             </div>
         {{ end }}
 
-        <div id="comments" class="thin">
-    		    {{- partial "comments.html" . -}}
-    		</div>
+        {{ if .Params.comments }}
+          <div id="comments" class="thin">
+      		    {{- partial "comments.html" . -}}
+      		</div>
+        {{ end }}
     </main>
 {{ end }}
