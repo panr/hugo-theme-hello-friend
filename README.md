@@ -1,19 +1,27 @@
-# Hello Friend
+# Hello Friend NG
 
-![Hello Friend NG](https://github.com/rhazdon/hugo-theme-hello-friend-ng/)
+![Hello Friend NG](https://dsh.re/d27822)
+
+
+
+## General informations
+
+This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit).
 
 This theme was made to help you present your ideas easier. We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
 
 This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
 
 
+
 ## Features
 
-- **dark/light mode**, depending on your preferences (dark is default, but you can change it)
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
-- nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- an easy way to modify the theme (**Webpack, NodeJS, PostCSS etc.**)
-- fully responsive
+- Theming: **dark/light mode**, depending on your preferences (dark is default, but you can change it)
+- Great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
+- Nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
+- An easy way to modify the theme (**Webpack, NodeJS, PostCSS etc.**)
+- Fully responsive
+- Support for social
 
 #### Built-in shortcodes
 
@@ -58,12 +66,21 @@ The theme doesn't require any advanced configuration. Just copy:
 baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
-paginate = 5
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Djordje Atlialp"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
-  # "light" or "dark"
+  # Default theme "light" or "dark"
   defaultTheme = "dark"
 
 [languages]
@@ -82,6 +99,7 @@ paginate = 5
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
+	# You can create a language based menu
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
@@ -91,6 +109,27 @@ paginate = 5
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
+
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+
+  # Also, there is a option to create extra menu points for the footer
+  [[menu.footer]]
+    identifier = "imprint"
+    name       = "Imprint"
+    url        = "/imprint"
+  [[menu.footer]]
+    identifier = "privacy"
+    name       = "Data Privacy"
+    url        = "/privacy"
 ```
 
 
@@ -103,6 +142,7 @@ $ hugo server -t hello-friend-ng
 ```
 
 and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
+
 
 ## How to edit the theme
 
@@ -118,12 +158,14 @@ and then run:
 $ npm install
 ```
 
+
 ## How to contribute
 
-If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/panr/hugo-theme-hello-friend/pulls).
+If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/rhazdon/hugo-theme-hello-friend-ng/pulls).
+
 
 ## Licence
 
-Copyright © 2019 Radosław Kozieł ([@panr](https://twitter.com/panr))
+Copyright © 2019 Djordje Atlialp
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-hello-friend/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
