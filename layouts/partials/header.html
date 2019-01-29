@@ -2,7 +2,7 @@
   <span class="header__inner">
     {{ partial "logo.html" . }}
     <span class="header__right">
-      {{ if len .Site.Menus }}
+      {{ if len $.Site.Menus }}
         {{ partial "menu.html" . }}
         <span class="menu-trigger">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

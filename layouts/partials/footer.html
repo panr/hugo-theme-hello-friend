@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer__inner">
-    {{ if .Site.Copyright }}
-      <div class="copyright copyright--user">{{ .Site.Copyright| safeHTML }}</div>
+    {{ if $.Site.Copyright }}
+      <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
     {{else}}
       {{ partial "logo.html" . }}
       <div class="copyright">
@@ -12,5 +12,5 @@
   </div>
 </footer>
 
-<script src="/assets/main.js"></script>
-<script src="/assets/prism.js"></script>
+<script src="{{ "assets/main.js" | absURL }}"></script>
+<script src="{{ "assets/prism.js" | absURL }}"></script>

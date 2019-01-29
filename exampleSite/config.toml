@@ -5,7 +5,7 @@ paginate = 5
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
+  contentTypeName = "post"
   # "light" or "dark"
   defaultTheme = "dark"
 
