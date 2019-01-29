@@ -26,12 +26,6 @@
     }
   }
 
-  &-date {
-    &:after {
-      content: '—';
-    }
-  }
-
   &-title {
     font-size: 2.625rem;
     margin: 0 0 20px;

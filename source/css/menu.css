@@ -19,7 +19,8 @@
   &__inner {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
