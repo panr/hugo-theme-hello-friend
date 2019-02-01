@@ -87,12 +87,9 @@ module.exports = {
     },
     minimizer: [
       new UglifyJsPlugin({
-        sourceMap: false,
+        sourceMap: true,
       }),
     ],
   },
-  plugins: [
-    new CleanPlugin(join("static/assets")),
-    new ExtractTextPlugin("[name]"),
-  ],
+  plugins: [new CleanPlugin(join("static/assets")), new ExtractTextPlugin("[name]")],
 };
