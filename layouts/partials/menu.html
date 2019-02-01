@@ -8,7 +8,7 @@
       {{ end }}
       <ul class="menu__sub-inner">
         {{ if gt (len $.Site.Menus.main) $.Site.Params.showMenuItems }}
-          <li class="menu__sub-inner-more-trigger">{{ $.Site.Params.MenuMore }} ▾</li>
+          <li class="menu__sub-inner-more-trigger">{{ $.Site.Params.MenuMore }} <span class="menu__sub-inner-more-trigger-icon">></span></li>
 
           <ul class="menu__sub-inner-more hidden">
             {{ range last (sub (len $.Site.Menus.main) $.Site.Params.showMenuItems) $.Site.Menus.main }}

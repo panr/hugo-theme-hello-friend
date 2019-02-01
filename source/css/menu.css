@@ -3,28 +3,30 @@
   background: #fafafa;
   box-shadow: var(--shadow);
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   list-style: none;
   border-radius: 5px;
   z-index: 99;
 
   .dark-theme & {
-    background: #252627;
+    background: var(--dark-background-secondary);
   }
 }
 
 .menu {
-  --shadow-color: rgba(0, 0, 0, .2);
+  --shadow-color: rgba(0, 0, 0, .12);
   --shadow: 0 8px 20px var(--shadow-color);
 
   border-right: 1px solid;
   margin-right: 18px;
   padding-right: 24px;
+  font-weight: 600;
 
   @media (--phone) {
     @mixin menu;
+    border: none;
     top: 50px;
-    right: 0;
+    right: 10px;
   }
 
   a {
@@ -70,7 +72,7 @@
 
       li {
         margin-left: 0 !important;
-        padding: 5px;
+        padding: 10px;
       }
     }
   }
@@ -91,16 +93,31 @@
       left: 0;
 
       &-trigger {
-        color: var(--accent);
         user-select: none;
         cursor: pointer;
+
+        &-icon {
+          display: inline-block;
+          transform: rotate(90deg);
+          line-height: 1;
+        }
       }
 
       li {
         .menu__inner & {
           margin-left: 0;
-          padding: 5px;
+          padding: 10px;
           white-space: nowrap;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 3px;
+            cursor: pointer;
+
+            .dark-theme & {
+              background: rgba(0, 0, 0, 0.15);
+            }
+          }
         }
       }
     }
