@@ -1,19 +1,34 @@
-.menu {
+@define-mixin menu {
+  position: absolute;
   background: #fafafa;
-  border-right: 1px solid;
-  margin-right: 18px;
+  box-shadow: var(--shadow);
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-radius: 5px;
+  z-index: 99;
 
   .dark-theme & {
     background: #252627;
   }
+}
+
+.menu {
+  --shadow-color: rgba(0, 0, 0, .2);
+  --shadow: 0 8px 20px var(--shadow-color);
+
+  border-right: 1px solid;
+  margin-right: 18px;
+  padding-right: 24px;
 
   @media (--phone) {
-    position: absolute;
+    @mixin menu;
     top: 50px;
     right: 0;
-    border: none;
-    margin: 0;
-    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   &__inner {
@@ -21,14 +36,31 @@
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    font-size: 1rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &--desktop {
+      @media (--phone) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @media (--phone) {
+        display: block;
+      }
+    }
 
     li {
-      margin: 0 12px;
+      text-align: left;
+      flex: 0 0 auto;
+
+      &:not(:first-of-type) {
+        margin-left: 20px;
+      }
     }
 
     @media (--phone) {
@@ -37,8 +69,39 @@
       padding: 0;
 
       li {
-        margin: 0;
+        margin-left: 0 !important;
         padding: 5px;
+      }
+    }
+  }
+
+  &__sub-inner {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &:not(:only-child) {
+      margin-left: 20px;
+    }
+
+    &-more {
+      @mixin menu;
+      top: 35px;
+      left: 0;
+
+      &-trigger {
+        color: var(--accent);
+        user-select: none;
+        cursor: pointer;
+      }
+
+      li {
+        .menu__inner & {
+          margin-left: 0;
+          padding: 5px;
+          white-space: nowrap;
+        }
       }
     }
   }
@@ -49,19 +112,5 @@
     fill: currentColor;
     margin-left: 10px;
     cursor: pointer;
-  }
-
-  a {
-    display: inline-block;
-    margin-right: 15px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 }

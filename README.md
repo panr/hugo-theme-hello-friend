@@ -65,6 +65,8 @@ paginate = 5
   contentTypeName = "posts"
   # "light" or "dark"
   defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
 
 [languages]
   [languages.en]
@@ -72,6 +74,7 @@ paginate = 5
     subtitle = "A simple theme for Hugo"
     keywords = ""
     copyright = ""
+    menuMore = "Show more"
     writtenBy = "Written by"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
@@ -96,6 +99,8 @@ paginate = 5
 ```
 
 to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/8f9b363e358aaa33f6d353c77feee959).
+
+**NOTE:** Please keep in mind that currently main menu doesn't support nesting.
 
 ## How to run your site
 
