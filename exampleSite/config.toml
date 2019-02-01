@@ -8,6 +8,7 @@ paginate = 5
   contentTypeName = "post"
   # "light" or "dark"
   defaultTheme = "dark"
+  showMenuItems = 2
 
 [languages]
   [languages.en]
@@ -15,6 +16,7 @@ paginate = 5
     subtitle = "A simple theme for Hugo"
     keywords = ""
     copyright = ""
+    menuMore = "Show more"
     writtenBy = "Written by"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
