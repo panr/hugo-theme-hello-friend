@@ -198,6 +198,27 @@ blockquote {
   }
 }
 
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 5px;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+th {
+  background: var(--light-background-secondary);
+
+  .dark-theme & {
+    background: var(--dark-background-secondary);
+  }
+}
+
 ul, ol {
   margin-left: 40px;
   padding: 0;
