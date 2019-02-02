@@ -900,6 +900,9 @@ hr {
       vertical-align: -.125em;
       width: 1em;
       height: 1em; }
+  .post .flag {
+    border-radius: 50%;
+    margin: 0 5px; }
 
 .pagination {
   margin-top: 20px; }
