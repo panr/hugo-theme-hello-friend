@@ -164,6 +164,13 @@ $ npm install
 If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/rhazdon/hugo-theme-hello-friend-ng/pulls).
 
 
+## Third Party
+
+  - [normalize.css](https://github.com/necolas/normalize.css)
+  - [Feather Open Source Icons](https://github.com/feathericons/feather)
+  - [Flag Icon](https://github.com/lipis/flag-icon-css)
+
+
 ## Licence
 
 Copyright © 2019 Djordje Atlialp
