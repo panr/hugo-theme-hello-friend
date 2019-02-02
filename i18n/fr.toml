@@ -1,36 +1,36 @@
-# Translations for English
+# Translations for France
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # Generic
 #
 [translations]
-other = "Translations"
+other = "Traductions"
 
 [postAvailable]
-other = "Also available in"
+other = "Aussi disponible en"
 
 
 # 404.html
 #
 [archives]
-other = "Archives"
+other = "Les archives"
 
 [home]
-other = "Home"
+other = "Accueil"
 
 [notFound]
-other = "Oops, page not found…"
+other = "Oups, page non trouvée …"
 
 
 # posts/single.html
 #
 [readingTime]
-one   = "One minute"
+one   = "Une minute"
 other = "{{ .Count }} minutes"
 
 [tableOfContents]
-other = "Table of Contents"
+other = "Table des matières"
 
 [wordCount]
-one   = "One Word"
-other = "{{ .Count }} Words"
+one   = "Une Mot"
+other = "{{ .Count }} Mots"
