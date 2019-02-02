@@ -5,7 +5,7 @@
       <span class="post-date">
         {{ .Date.Format "2006-01-02" }}
       </span>
-      {{ with .Params.Author }}<span class="post-author">{{ $.Site.Params.WrittenBy }} {{ . }}</span>{{ end }}
+      {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy }} {{ . }}</span>{{ end }}
     </div>
 
     {{ if .Params.tags }}
