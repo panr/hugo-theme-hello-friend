@@ -1,6 +1,16 @@
 {{ define "main" }}
     <main class="post">
 
+        <div class="post-info">
+            {{ if .IsTranslated }}
+                {{ i18n "postAvailable" }}
+                {{ range .Translations }}
+                    <a href="{{ .Permalink }}"><span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
+                {{ end}}
+            {{ end }}
+            </p>
+        </div>
+
         <article>
             <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
 
