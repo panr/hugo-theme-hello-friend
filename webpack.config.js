@@ -17,6 +17,7 @@ module.exports = {
   },
   entry: {
     "main.js": [
+      join("source", "js", "prism.js"),
       join("source", "js", "app.js"),
       join("source", "js", "menu.js"),
       join("source", "js", "theme.js"),
