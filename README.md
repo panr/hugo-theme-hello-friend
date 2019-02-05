@@ -116,7 +116,9 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 
 ## How to edit the theme
 
-If you really want to edit the theme, you need to install Node dependencies. To do this, go to the theme directory (from your Hugo root directory):
+If you have to override some of the styles, you can do this easily by adding `static/styles.css` in your root directory and point things you want to change.
+
+Otherwise, if you really want to edit the theme, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
 
 ```
 $ cd themes/hello-friend
