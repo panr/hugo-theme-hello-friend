@@ -11,7 +11,7 @@
         <span class="post-date">
           {{ .Date.Format "2006-01-02" }}
         </span>
-        {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy }} {{ . }}</span>{{ end }}
+        {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
       </div>
 
       {{ if .Params.tags }}
@@ -35,7 +35,7 @@
           {{ end }}
         {{ end }}
       </div>
-      <div><a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore }} →</a></div>
+      <div><a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore | default "Read more" }} →</a></div>
     </div>
     {{ end }}
     {{ partial "pagination.html" . }}
