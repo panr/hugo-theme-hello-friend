@@ -10,7 +10,11 @@
   }
 
   &__mark {
+    display: inline-flex;
+    align-items: center;
     margin-right: 5px;
+
+    @mixin greater-icon 8px;
   }
 
   &__text {

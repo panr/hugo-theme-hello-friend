@@ -93,13 +93,19 @@
       left: 0;
 
       &-trigger {
+        display: inline-flex;
+        align-items: center;
         user-select: none;
         cursor: pointer;
 
         &-icon {
-          display: inline-block;
+          display: inline-flex;
+          align-items: center;
+          margin-left: 3px;
           transform: rotate(90deg);
           line-height: 1;
+
+          @mixin greater-icon 5px;
         }
       }
 

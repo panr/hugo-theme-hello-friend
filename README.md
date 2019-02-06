@@ -11,7 +11,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 ## Features
 
 - **dark/light mode**, depending on your preferences (dark is default, but you can change it)
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
+- great reading experience thanks to [**Inter font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - fully responsive
 

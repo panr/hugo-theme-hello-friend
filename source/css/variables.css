@@ -21,6 +21,18 @@
 @custom-media --phone (width < 684px);
 @custom-media --tablet (width < 900px);
 
+@define-mixin greater-icon $stroke-width: 3px, $width: .95rem, $height: 100% {
+  .greater-icon {
+    width: $width;
+    height: $height;
+
+    polyline {
+      stroke: currentColor;
+      stroke-width: $stroke-width;
+    }
+  }
+}
+
 /* HOW TO USE */
 
 /*@media (--phone) {*/
