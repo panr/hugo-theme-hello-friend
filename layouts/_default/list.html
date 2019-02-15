@@ -14,6 +14,8 @@
         {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
       </div>
 
+      <span class="post-read-time">- ⏰  {{ .ReadingTime }} min read</span>
+
       {{ if .Params.tags }}
         <span class="post-tags">
           {{ range .Params.tags }}
