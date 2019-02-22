@@ -4,7 +4,7 @@
             <span>&copy; {{ now.Format "2006" }}</span>
             {{ if .Site.Author.name }}
                 <span><a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a></span>
-            {{ endif }}
+            {{ end }}
             <span>{{ .Site.Copyright| safeHTML }}</span>
             {{ range .Site.Menus.footer }}
                 <span><a href="{{ .URL }}">{{ .Name }}</a></span>
