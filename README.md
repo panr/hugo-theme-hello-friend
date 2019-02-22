@@ -8,18 +8,13 @@
 
 This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit).
 
-This theme was made to help you present your ideas easier. We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
-
-This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
-
-
 
 ## Features
 
 - Theming: **dark/light mode**, depending on your preferences (dark is default, but you can change it)
 - Great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - Nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- An easy way to modify the theme (**Webpack, NodeJS, PostCSS etc.**)
+- An easy way to modify the theme with Hugo tooling
 - Fully responsive
 - Support for social
 
@@ -40,7 +35,7 @@ By default the theme is using PrismJS to color your code syntax. All you need to
 ```
 </pre>
 
-**Supported languages**: bash/shell, css, clike, javascript, apacheconf, actionscript, applescript, c, csharp, cpp, coffeescript, ruby, csp, css-extras, diff, django, docker, elixir, elm, markup-templating, erlang, fsharp, flow, git, go, graphql, less, handlebars, haskell, http, java, json, kotlin, latex, markdown, makefile, objectivec, ocaml, perl, php, php-extras, r, sql, processing, scss, python, jsx, typescript, toml, reason, textile, rust, sass, stylus, scheme, pug, swift, yaml, haml, twig, tsx, vim, visual-basic, wasm.
+**Supported languages**: https://prismjs.com/#languages-list
 
 ## How to start
 
