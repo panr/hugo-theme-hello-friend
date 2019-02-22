@@ -67,6 +67,8 @@ paginate = 5
   defaultTheme = "dark"
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
 
 [languages]
   [languages.en]
@@ -80,6 +82,7 @@ paginate = 5
     readOtherPosts = "Read other posts"
     newerPosts = "Newer posts"
     olderPosts = "Older posts"
+    minuteReadingTime = "min read"
 
     [languages.en.params.logo]
       logoText = "hello friend"
