@@ -20,7 +20,9 @@
 <!-- CSS -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/assets/style.css">
+
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
 
 {{- range .Site.Params.customCSS }}
     <link rel="stylesheet" href="{{ . | absURL }}">
