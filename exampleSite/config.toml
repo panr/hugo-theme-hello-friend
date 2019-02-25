@@ -111,8 +111,3 @@ disableHugoGeneratorInject = false
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
-
-  [[menu.footer]]
-    identifier = "about-in-footer"
-    name       = "About in Footer"
-    url        = "about-in-footer/"

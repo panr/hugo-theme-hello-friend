@@ -115,16 +115,6 @@ theme = "hello-friend-ng"
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
-
-  # Also, there is a option to create extra menu points for the footer
-  [[menu.footer]]
-    identifier = "imprint"
-    name       = "Imprint"
-    url        = "/imprint"
-  [[menu.footer]]
-    identifier = "privacy"
-    name       = "Data Privacy"
-    url        = "/privacy"
 ```
 
 
