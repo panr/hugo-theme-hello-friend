@@ -28,9 +28,11 @@
 {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-{{- range .Site.Params.customCSS }}
-<link rel="stylesheet" href="{{ . | absURL }}">
-{{- end }}
+{{ range $val := $.Site.Params.customCSS }}
+	{{ if gt (len $val) 0 }}
+		<link rel="stylesheet" type="text/css" href="{{ $val }}">
+	{{ end }}
+{{ end }}
 
 <!-- Icons -->
 {{- partial "favicons.html" }}
