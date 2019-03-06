@@ -8,6 +8,20 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ### DEMO - https://hugo-hello-friend.now.sh/
 
+---
+
+- [Features](#features)
+- [Built-in shortcodes](#built-in-shortcodes)
+- [Code highlighting](#code-highlighting)
+- [How to start](#how-to-start)
+- [How to configure](#how-to-configure)
+- [Add-ons](#add-ons)
+- [How to run your site](#how-to-run-your-site)
+- [How to edit the theme](#how-to-edit-the-theme)
+- [How to contribute](#how-to-contribute)
+- [Terminal theme user?](#terminal-theme-user)
+- [Licence](#licence)
+
 ## Features
 
 - **dark/light mode**, depending on your preferences (dark is default, but you can change it)
@@ -107,6 +121,10 @@ to `config.toml` file in your Hugo root directory and change params fields. In c
 
 **NOTE:** Please keep in mind that currently main menu doesn't support nesting.
 
+## Add-ons
+
+- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/panr/hugo-theme-terminal/blob/master/layouts/partials/comments.html.
+
 ## How to run your site
 
 From your Hugo root directory run:
@@ -138,6 +156,10 @@ $ yarn
 ## How to contribute
 
 If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-theme-hello-friend/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/panr/hugo-theme-hello-friend/pulls).
+
+## `Hello friend` theme user?
+
+I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/panr/hugo-theme-hello-friend/blob/master/USERS.md)! 🤗
 
 ## Licence
 
