@@ -20,7 +20,7 @@ menuMore && menuMore.addEventListener("click", e => e.stopPropagation());
 isMobileMenu();
 
 document.body.addEventListener("click", () => {
-  if (!isMobile() && !menuMore.classList.contains("hidden")) {
+  if (!isMobile() && menuMore && !menuMore.classList.contains("hidden")) {
     menuMore.classList.add("hidden");
   } else if (isMobile() && !menu.classList.contains("hidden")) {
     menu.classList.add("hidden");
@@ -44,7 +44,10 @@ desktopMenuTrigger &&
     e.stopPropagation();
     menuMore && menuMore.classList.toggle("hidden");
 
-    if (menuMore.getBoundingClientRect().right > container.getBoundingClientRect().right) {
+    if (
+      menuMore &&
+      menuMore.getBoundingClientRect().right > container.getBoundingClientRect().right
+    ) {
       menuMore.style.left = "auto";
       menuMore.style.right = 0;
     }
