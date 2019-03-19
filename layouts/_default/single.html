@@ -4,12 +4,12 @@
     <div class="post-meta">
       {{ with .Date | default nil }}
         <span class="post-date">
-            {{ .Format "2006-01-02" }}
+            {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
         </span>
       {{ end }}
       {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
       {{ if $.Site.Params.ShowReadingTime }}
-        <span class="post-read-time">— ⏰  {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
+        <span class="post-read-time">— {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
       {{ end }}
     </div>
 

@@ -8,6 +8,20 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ### DEMO - https://hugo-hello-friend.now.sh/
 
+---
+
+- [Features](#features)
+- [Built-in shortcodes](#built-in-shortcodes)
+- [Code highlighting](#code-highlighting)
+- [How to start](#how-to-start)
+- [How to configure](#how-to-configure)
+- [Add-ons](#add-ons)
+- [How to run your site](#how-to-run-your-site)
+- [How to edit the theme](#how-to-edit-the-theme)
+- [How to contribute](#how-to-contribute)
+- [Hello Friend theme user?](#hello-friend-theme-user)
+- [Licence](#licence)
+
 ## Features
 
 - **dark/light mode**, depending on your preferences (dark is default, but you can change it)
@@ -67,7 +81,7 @@ paginate = 5
   defaultTheme = "dark"
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
-  # Enable to show reading time in minutes for posts
+  # Show reading time in minutes for posts
   showReadingTime = false
 
 [languages]
@@ -83,6 +97,8 @@ paginate = 5
     newerPosts = "Newer posts"
     olderPosts = "Older posts"
     minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
 
     [languages.en.params.logo]
       logoText = "hello friend"
@@ -107,6 +123,10 @@ to `config.toml` file in your Hugo root directory and change params fields. In c
 
 **NOTE:** Please keep in mind that currently main menu doesn't support nesting.
 
+## Add-ons
+
+- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/panr/hugo-theme-terminal/blob/master/layouts/partials/comments.html.
+
 ## How to run your site
 
 From your Hugo root directory run:
@@ -119,7 +139,7 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 
 ## How to edit the theme
 
-If you have to override some of the styles, you can do this easily by adding `static/styles.css` in your root directory and point things you want to change.
+If you have to override some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
 
 Otherwise, if you really want to edit the theme, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
 
@@ -138,6 +158,10 @@ $ yarn
 ## How to contribute
 
 If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-theme-hello-friend/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/panr/hugo-theme-hello-friend/pulls).
+
+## `Hello Friend` theme user?
+
+I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/panr/hugo-theme-hello-friend/blob/master/USERS.md)! 🤗
 
 ## Licence
 
