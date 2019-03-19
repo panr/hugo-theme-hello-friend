@@ -130,7 +130,7 @@ Adding a cover image to your post is simple and there are two options when you e
 
 * Use `cover: "/path/to/absolute/img.jpg"` to link an absolute image
   * Resulting in `https://www.yourpage.com/path/to/absolute/img.jpg`
-* Use `relcover: "img.jpg"` to link the image relative to the blog post folder
+* Use `cover: "img.jpg"` and `useRelativeCover: true` to link the image relative to the blog post folder
   * Resulting in `https://www.yourpage.com/posts/blog-entry-xy/img.jpg`
 
 ## Add-ons
