@@ -20,6 +20,11 @@
         {{ end }}
       </span>
     {{ end }}
+    
+    {{ $permalink := .Permalink }}
+    {{ with .Params.RelCover }}
+      <img src="{{ (printf "%s%s" $permalink . ) }}" class="post-cover" />
+    {{ end }}
 
     {{ with .Params.Cover }}
       <img src="{{ . | absURL }}" class="post-cover" />
