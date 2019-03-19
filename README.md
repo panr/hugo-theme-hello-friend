@@ -126,10 +126,12 @@ to `config.toml` file in your Hugo root directory and change params fields. In c
 
 ## How to add a cover image to your posts
 
-Adding a cover image to your post is simple and there are two options:
+Adding a cover image to your post is simple and there are two options when you edit your `index.md` file in `content/posts/blog-entry-xy/index.md`:
 
-* Use `cover: "/path/to/absolute/img.jpg"` in your markdown file meta data to link an absolute image
-* Use `relcover: "img.jpg" to link the image relative to the blog post folder
+* Use `cover: "/path/to/absolute/img.jpg"` to link an absolute image
+  * Resulting in `https://www.yourpage.com/path/to/absolute/img.jpg`
+* Use `relcover: "img.jpg"` to link the image relative to the blog post folder
+  * Resulting in `https://www.yourpage.com/posts/blog-entry-xy/img.jpg`
 
 ## Add-ons
 
