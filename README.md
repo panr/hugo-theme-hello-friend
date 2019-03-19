@@ -15,7 +15,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - [Code highlighting](#code-highlighting)
 - [How to start](#how-to-start)
 - [How to configure](#how-to-configure)
-* [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
+- [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
 - [Add-ons](#add-ons)
 - [How to run your site](#how-to-run-your-site)
 - [How to edit the theme](#how-to-edit-the-theme)
