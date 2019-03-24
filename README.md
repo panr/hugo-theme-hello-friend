@@ -15,6 +15,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - [Code highlighting](#code-highlighting)
 - [How to start](#how-to-start)
 - [How to configure](#how-to-configure)
+- [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
 - [Add-ons](#add-ons)
 - [How to run your site](#how-to-run-your-site)
 - [How to edit the theme](#how-to-edit-the-theme)
@@ -122,6 +123,15 @@ paginate = 5
 to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/8f9b363e358aaa33f6d353c77feee959).
 
 **NOTE:** Please keep in mind that currently main menu doesn't support nesting.
+
+## How to add a cover image to your posts
+
+Adding a cover image to your post is simple and there are two options when you edit your `index.md` file in `content/posts/blog-entry-xy/index.md`:
+
+* Use `cover: "/path/to/absolute/img.jpg"` to link an absolute image
+  * Resulting in `https://www.yourpage.com/path/to/absolute/img.jpg`
+* Use `cover: "img.jpg"` and `useRelativeCover: true` to link the image relative to the blog post folder
+  * Resulting in `https://www.yourpage.com/posts/blog-entry-xy/img.jpg`
 
 ## Add-ons
 

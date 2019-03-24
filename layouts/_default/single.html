@@ -21,8 +21,12 @@
       </span>
     {{ end }}
 
-    {{ with .Params.Cover }}
-      <img src="{{ . | absURL }}" class="post-cover" />
+    {{ if .Params.Cover }}
+      {{ if .Params.UseRelativeCover }}
+        <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="post-cover" />
+      {{ else }}
+        <img src="{{ (urlize .Params.Cover | absURL) }}" class="post-cover" />
+      {{ end }}
     {{ end }}
 
     <div class="post-content">
