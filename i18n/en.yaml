@@ -1,0 +1,29 @@
+# Content
+- id: dateFormat
+  translation: "January 2, 2006"
+- id: shortdateFormat
+  translation: "Jan 2, 2006 15:04:05"
+- id: postedOnDate
+  translation: "Posted on {{ .Count }}"
+- id: lastModified
+  translation: "(Last modified on {{ .Count }})"
+- id: translationsLabel
+  translation: "Translations: "
+- id: translationsSeparator
+  translation: ", "
+- id: readMore
+  translation: "Read More"
+- id: olderPosts
+  translation: "Older Posts"
+- id: newerPosts
+  translation: "Newer Posts"
+- id: previousPost
+  translation: "Previous Post"
+- id: nextPost
+  translation: "Next Post"
+- id: readTime
+  translation: "minutes"
+- id: words
+  translation: "words"
+- id: writtenBy
+  translation: "Written by"

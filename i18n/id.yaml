@@ -1,0 +1,29 @@
+# Content
+- id: dateFormat
+  translation: "2 Januari 2006"
+- id: shortdateFormat
+  translation: "2 Januari 2006 15:04:05"
+- id: postedOnDate
+  translation: "Diposting pada {{ .Count }}"
+- id: lastModified
+  translation: "(Dimodifikasi pada {{ .Count }})"
+- id: translationsLabel
+  translation: "Terjemahan: "
+- id: translationsSeparator
+  translation: ", "
+- id: readMore
+  translation: "Selanjutnya"
+- id: olderPosts
+  translation: "Postingan lama"
+- id: newerPosts
+  translation: "Postingan terbaru"
+- id: previousPost
+  translation: "Postingan sebelumnya"
+- id: nextPost
+  translation: "Postingan selanjutnya"
+- id: readTime
+  translation: "menit"
+- id: words
+  translation: "kata"
+- id: writtenBy
+  translation: "Ditulis oleh"
