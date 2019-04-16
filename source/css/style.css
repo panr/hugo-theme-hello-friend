@@ -10,4 +10,6 @@
 @import 'pagination';
 @import 'footer';
 
+@import 'archive';
+
 @import 'prism';
