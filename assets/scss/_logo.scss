@@ -25,6 +25,13 @@
     border-radius: 1px;
     animation: cursor 1s infinite;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__cursor {
+        animation: none;
+    }
+  }
+
 }
 
 @keyframes cursor {
