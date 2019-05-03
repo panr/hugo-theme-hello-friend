@@ -12,7 +12,7 @@
           {{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}
         </span>
         {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
-        {{ if $.Site.Params.ShowReadingTime }}
+        {{ if and ($.Site.Params.ShowReadingTime) (ne (.Params.ShowReadingTime) false) }}
           <span class="post-read-time">— {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
         {{ end }}
       </div>
@@ -38,9 +38,7 @@
         {{ with .Description }}
           {{ . | markdownify }}
         {{ else }}
-          {{ if .Truncated }}
-            {{ .Summary | markdownify }}
-          {{ end }}
+          {{ .Content | markdownify | truncate $.Site.Params.summaryLength}}
         {{ end }}
       </div>
       <div><a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore | default "Read more" }} →</a></div>
