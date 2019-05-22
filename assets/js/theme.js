@@ -7,6 +7,7 @@ var metaThemeColor = document.querySelector("meta[name=theme-color]");
 
 if (getTheme !== null) {
   document.body.classList.toggle("dark-theme", isDark);
+  isDark ? metaThemeColor.setAttribute("content", "#252627") : metaThemeColor.setAttribute("content", "#fafafa");
 }
 
 themeToggle.addEventListener("click", () => {
