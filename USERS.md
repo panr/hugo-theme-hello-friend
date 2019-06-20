@@ -11,3 +11,4 @@ TEMPLATE:
 - https://blog.agung.io - **Agung Pratama** (Software Engineer and DevOps)
 - https://protocod.gitlab.io/blog/ **protocod** (Web Developer)
 - https://arubacao.com **Christopher Lass** (Software Engineer and DevOps)
+- https://mfaishal.com **Faishal Irawan** (Student)
