@@ -12,3 +12,4 @@ TEMPLATE:
 - https://protocod.gitlab.io/blog/ **protocod** (Web Developer)
 - https://arubacao.com **Christopher Lass** (Software Engineer and DevOps)
 - https://mfaishal.com **Faishal Irawan** (Student)
+- https://musq.github.io — **Ashish Ranjan** (Software Engineer)
