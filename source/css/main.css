@@ -19,7 +19,6 @@ body {
   color: var(--light-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
 
@@ -132,7 +131,6 @@ figure {
 
 code {
   font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
-  font-feature-settings: normal;
   background: var(--light-background-secondary);
   padding: 1px 6px;
   margin: 0 2px;
