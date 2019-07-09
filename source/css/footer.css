@@ -3,6 +3,10 @@
   flex-grow: 0;
   color: var(--light-color-secondary);
 
+  .dark-theme & {
+    color: var(--dark-color-secondary);
+  }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -25,7 +29,6 @@
     flex-direction: row;
     align-items: center;
     font-size: 1rem;
-    color: var(--light-color-secondary);
 
     &--user {
       margin: auto;
