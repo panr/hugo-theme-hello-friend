@@ -32,5 +32,5 @@ other = "{{ .Count }} minutes"
 other = "Table des matières"
 
 [wordCount]
-one   = "Une Mot"
+one   = "Un Mot"
 other = "{{ .Count }} Mots"
