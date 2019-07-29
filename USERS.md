@@ -13,3 +13,4 @@ TEMPLATE:
 - https://arubacao.com **Christopher Lass** (Software Engineer and DevOps)
 - https://mfaishal.com **Faishal Irawan** (Student)
 - https://musq.github.io — **Ashish Ranjan** (Software Engineer)
+- https://fazi1058.github.io **Faezeh Roeinfard** (Student)
