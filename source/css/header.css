@@ -1,5 +1,5 @@
 .header {
-  background: #fafafa;
+  background: var(--light-header);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
   padding: 20px;
 
   .dark-theme & {
-    background: #252627;
+    background: var(--dark-header);
   }
 
   &__right {
