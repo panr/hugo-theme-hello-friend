@@ -36,6 +36,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
   - eg: `{{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}`
 - **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**
   - eg: `{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}`
+- **`imgproc`** Hugo shortcode for image processing. More info at [https://gohugo.io/content-management/image-processing/](https://gohugo.io/content-management/image-processing/)
 
 #### Code highlighting
 
