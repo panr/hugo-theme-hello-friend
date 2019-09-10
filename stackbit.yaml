@@ -1,0 +1,188 @@
+stackbitVersion: ~0.2.0
+ssgName: custom
+publishDir: exampleSite/public
+buildCommand: cd exampleSite && hugo --gc --baseURL "/" --themesDir ../.. && cd ..
+uploadDir: "img"
+staticDir: exampleSite/static
+pagesDir: exampleSite/content
+dataDir: exampleSite
+models:
+  config:
+    type: data
+    label: Config
+    file: config.toml
+    fields: 
+      - type: string
+        name: baseurl
+        label: Base URL
+        description: Hostname (and path)  to the root
+      - type: string
+        name: languageCode
+        label: Language Code
+      - type: string
+        name: theme
+        label: Theme
+      - type: number
+        name: paginate
+        label: Paginate Number
+      - type: object
+        name: params
+        label: Site Params
+        fields:
+          - type: string
+            name: contentTypeName
+            label: Content Type Name
+            description: dir name of your blog content (default is `content/posts`)
+          - type: enum
+            name: defaultTheme
+            label: Default Theme
+            options:
+              - "light"
+              - "dark"
+          - type: number
+            name: showMenuItems
+            label: Show Menu Items
+            description: if you set this to 0, only submenu trigger will be visible
+          - type: boolean
+            name: showReadingTime
+            label: Show Reading Time
+      - type: object
+        name: languages
+        label: Languages
+        fields:
+          - type: object
+            name: en
+            label: English
+            fields:
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: subtitle
+                label: Subtitle
+              - type: string
+                name: keywords
+                label: Keywords
+              - type: string
+                name: copyright
+                label: Copyright
+              - type: string
+                name: menuMore
+                label: Menu More
+              - type: string
+                name: writtenBy
+                label: Written By
+              - type: string
+                name: readMore
+                label: Read More
+              - type: string
+                name: readOtherPosts
+                label: Read Other Posts
+              - type: string
+                name: newerPosts
+                label: Newer Posts
+              - type: string
+                name: olderPosts
+                label: Older Posts
+              - type: string
+                name: minuteReadingTime
+                label: Minute Reading Time
+              - type: date
+                name: dateFormatSingle
+                label: Date Format Single
+              - type: date
+                name: dateFormatList
+                label: Date Format List
+              - type: object
+                name: params
+                label: Params
+                fields: 
+                  - type: object
+                    name: logo
+                    label: Logo
+                    fields: 
+                      - type: string
+                        name: logoText
+                        label: Logo Text
+                      - type: string
+                        name: logoHomeLink
+                        label: Logo Home Link
+              - type: object
+                name: menu
+                label: Menu
+                fields:
+                  - type: list
+                    name: main
+                    label: Main Menu
+                    items:
+                      type: object
+                      fields: 
+                        - type: string
+                          name: identifier
+                          label: Identifier
+                        - type: string
+                          name: name
+                          label: Name
+                        - type: string
+                          name: url
+                          label: Menu Link
+  basicpage:
+    type: page
+    label: Basic Pages
+    match: "*.md"
+    exclude:
+      - "archive.md"
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: date
+        name: date
+        label: Create Date
+      - type: string
+        name: author
+        label: Author
+  archive:
+    type: page
+    label: Archive Page
+    file: archive.md
+    singleInstance: true
+    fields: 
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: string
+        name: layout
+        label: Layout
+        const: list
+      - type: string
+        name: url
+        label: Page URL
+      - type: string
+        name: type
+        label: Type
+  post:
+    type: page
+    label: Posts
+    folder: post
+    fields: 
+      - type: string
+        name: title
+        label: Post Title
+        required: true
+      - type: date
+        name: date
+        label: Published Date
+      - type: string
+        name: author
+        label: Author
+      - type: image
+        name: cover
+        label: Cover Image
+      - type: string
+        name: description
+        label: Description
+
+
