@@ -1,18 +1,18 @@
 {{ define "main" }}
 
-<div class="archive">
-    <h1>{{ .Title }}</h1>
-    <ul>
-        {{ $type := .Type }}
-        {{ range $key, $value := .Data.Terms.Alphabetical }}
-        {{ $name := .Name }}
-        {{ $count := .Count }}
-        {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
-        <h3 class="archive__post-title">
-            <a href="{{ .Permalink }}">{{ .Name }} ({{ $count }})</a>
-        </h3>
-        {{ end }}
-        {{ end }}
-    </ul>
+<div class="terms">
+  <h1>{{ .Title }}</h1>
+  <ul class="terms__list">
+    {{ $type := .Type }}
+    {{ range $key, $value := .Data.Terms.Alphabetical }}
+      {{ $name := .Name }}
+      {{ $count := .Count }}
+      {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+        <li class="terms__term">
+          <a href="{{ .Permalink }}">#{{ .Name }} <span class="terms__term-count">{{ $count }}</span></a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
 </div>
 {{ end }}
