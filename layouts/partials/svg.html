@@ -20,6 +20,8 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
 {{- else if (eq .name "telegram") -}}
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+{{- else if (eq .name "keybase") -}}
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-key"><path d="M 13.898438 14.601562 L 10.5 18 L 8.25 18 L 8.25 20.25 L 6 20.25 L 6 22.5 L 2.25 22.5 L 2.25 18.75 L 10.148438 10.851562 C 9.890625 10.15625 9.75 9.40625 9.75 8.625 C 9.75 5.105469 12.605469 2.25 16.125 2.25 C 19.644531 2.25 22.5 5.105469 22.5 8.625 C 22.5 12.144531 19.644531 15 16.125 15 C 15.34375 15 14.59375 14.859375 13.898438 14.601562 Z M 20.25 6.75"/></svg>
 {{- else -}}
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
 {{- end -}}
