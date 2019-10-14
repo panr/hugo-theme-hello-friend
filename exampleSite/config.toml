@@ -98,6 +98,10 @@ disableHugoGeneratorInject = false
     name = "linkedin"
     url  = "https://www.linkedin.com/"
 
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/"
+
 [languages]
   [languages.en]
     subtitle  = "Hello Friend NG Theme"
