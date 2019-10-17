@@ -5,7 +5,7 @@
         {{ else }}
             <span class="logo__mark">></span>
             <span class="logo__text">{{ with .Site.Params.Logo.logoText }}{{ . }}{{ else }}hello{{ end }}</span>
-            <span class="logo__cursor"></span>
+            <span class="logo__cursor" style="{{ with .Site.Params.Logo.logoColor }}background-color:{{ . }}{{ end }}"></span>
         {{ end }}
     </div>
 </a>
