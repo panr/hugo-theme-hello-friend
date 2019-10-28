@@ -85,6 +85,8 @@ disableHugoGeneratorInject = false
   [params.logo]
     logoText     = "$ cd /home/"
     logoHomeLink = "/"
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoColor    = "#67a2c9"
 
   # Social icons
   [[params.social]]
@@ -102,6 +104,10 @@ disableHugoGeneratorInject = false
   [[params.social]]
     name = "linkedin"
     url  = "https://www.linkedin.com/"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.en]
