@@ -3,6 +3,7 @@
 <meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.Subtitle }}{{ else }}{{ .Summary | plainify }}{{ end }}"/>
 <meta name="keywords" content="{{ with .Params.Keywords }}{{ delimit . ", " }}{{ else }}{{ $.Site.Params.Keywords }}{{ end }}"/>
 <meta name="robots" content="noodp"/>
+<meta name="referer" content="origin">
 <link rel="canonical" href="{{ .Permalink }}" />
 
 <!-- head custom -->
