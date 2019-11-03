@@ -92,11 +92,11 @@ paginate = 5
   # show bio in the footer
   showBio = true
   # twitter username used in bio. If blank no twitter link is shown
-  twitter = "mi_checinski"
+  twitter = "GoHugoIO"
   # facebook username used in bio. If blank no facebook link is shown
-  facebook = "michecinski"
+  facebook = "GoHugoIO"
   # email used in email bio link
-  email = "kontakt@michalchecinski.pl"
+  email = "contact@GoHugo.io"
 
 [languages]
   [languages.en]

@@ -1,17 +1,29 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "hugo-theme-hello-friend"
+theme = "hello-friend"
 paginate = 5
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
+  contentTypeName = "posts"
   # "light" or "dark"
   defaultTheme = "dark"
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
-  # Enable to show reading time in minutes for posts
+  # Show reading time in minutes for posts
   showReadingTime = false
+  # show related posts section on the bottom of each post
+  showRelatedPosts = true
+  # sgow all tags on the list of tags
+  showTagsCloud = true
+  # show bio in the footer
+  showBio = true
+  # twitter username used in bio. If blank no twitter link is shown
+  twitter = "GoHugoIO"
+  # facebook username used in bio. If blank no facebook link is shown
+  facebook = "GoHugoIO"
+  # email used in email bio link
+  email = "contact@gohugo.io"
 
 [languages]
   [languages.en]
@@ -28,6 +40,7 @@ paginate = 5
     minuteReadingTime = "min read"
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
+    RelatedPostsTitle = "Algorithm thinks that those posts are related:"
 
     [languages.en.params.logo]
       logoText = "hello friend"
@@ -36,6 +49,13 @@ paginate = 5
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
+
+    [languages.en.params.bio]
+      # link to about page displayed in bio section
+      aboutUrl = "/about"
+      aboutText = "about"
+      # Bio content
+      content = "Bio text."
 
     [languages.en.menu]
       [[languages.en.menu.main]]
