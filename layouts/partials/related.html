@@ -1,0 +1,20 @@
+{{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 4 }} {{ with $related }}
+
+{{ if $related }}
+
+    <div class="related">
+            {{ $.Site.Params.RelatedPostsTitle | default "Algorithm thinks that those posts are related:" }}
+    <ul>
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Params.tags }}
+            <span class="post-tags-related">
+                {{ range .Params.tags }}
+                #<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
+                {{ end }}
+            </span> {{ end }}</li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    </div>
+
+{{ end }}

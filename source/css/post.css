@@ -48,6 +48,29 @@
     a {
       text-decoration: none;
     }
+
+    &-related {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      opacity: .5;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &-cloud {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      opacity: .5;
+      display: block;
+      width: 70%;
+      margin-left: 15%;
+
+      a {
+        text-decoration: none;
+      }
+    }
   }
 
   &-content {

@@ -9,6 +9,14 @@
     {{ end }}
     {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
 
+    {{ if $.Site.Params.showTagsCloud }}
+      <span class="post-tags-cloud">
+        {{ range .Site.Taxonomies.tags }}
+        #<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>&nbsp
+        {{ end }}
+      </span>
+    {{ end }}
+
     {{ range $paginator.Pages }}
     <div class="post on-list">
       <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>

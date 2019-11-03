@@ -20,6 +20,34 @@
     }
   }
 
+  &_bio {
+    background: var(--light-footer-bio);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 100px;
+    color: var(--light-color);
+    margin: 20px auto;
+
+    @media (--tablet) {
+      max-width: 660px;
+    }
+
+    &_content {
+      padding: 1em 2em;
+      flex: 1 1 100%;
+      text-align: left;
+    }
+
+    &_links {
+      padding: 1em 2em;
+    }
+
+    .dark-theme & {
+      background: var(--dark-footer-bio);
+      color: var(--dark-color);
+    }
+  }
+
   a {
     color: inherit;
   }

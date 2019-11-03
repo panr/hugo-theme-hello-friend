@@ -1,0 +1,22 @@
+<div class="footer_bio">
+    {{ if $.Site.Params.bio.content }}
+    <div class="footer_bio_content">
+        {{ $.Site.Params.bio.content }}
+    </div>
+    {{ end }}
+    <div class="footer_bio_links">
+            <a href="{{ with $.Site.Params.bio.aboutUrl }}{{ . }}{{ else }}/about{{ end }}" >{{ with $.Site.Params.bio.aboutText }}{{ . }}{{ else }}about{{ end }}</a>
+            {{ if $.Site.Params.twitter }}
+                &nbsp;-&nbsp;
+                <a href="https://twitter.com/{{ $.Site.Params.twitter }}" >twitter</a>
+            {{ end }}
+            {{ if $.Site.Params.facebook }}
+                &nbsp;-&nbsp;
+                <a href="https://facebook.com/{{ $.Site.Params.facebook }}" >facebook</a>
+            {{ end }}
+            {{ if $.Site.Params.email }}
+                &nbsp;-&nbsp;
+                <a href="mailto:{{ with $.Site.Params.email }}{{ . }}{{ else }}test@test.com{{ end }}" >email</a>
+            {{ end }}
+        </div>
+</div>

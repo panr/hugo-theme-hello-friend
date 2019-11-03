@@ -1,4 +1,9 @@
 <footer class="footer">
+
+  {{ if $.Site.Params.showBio }}
+    {{ partial "bio.html" . }}
+  {{ end }}
+
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>

@@ -3,6 +3,7 @@
   --light-background: #fff;
   --light-background-secondary: #eaeaea;
   --light-header: #fafafa;
+  --light-footer-bio: #fafafa;
   --light-color: #222;
   --light-color-secondary: #999;
   --light-border-color: #dcdcdc;
@@ -11,6 +12,7 @@
   --dark-background: #292a2d;
   --dark-background-secondary: #3b3d42;
   --dark-header: #252627;
+  --dark-footer-bio: #252627;
   --dark-color: #a9a9b3;
   --dark-color-secondary: #73747b;
   --dark-border-color: #4a4b50;

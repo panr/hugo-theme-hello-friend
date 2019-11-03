@@ -85,6 +85,18 @@ paginate = 5
   showMenuItems = 2
   # Show reading time in minutes for posts
   showReadingTime = false
+  # show related posts section on the bottom of each post
+  showRelatedPosts = true
+  # sgow all tags on the list of tags
+  showTagsCloud = true
+  # show bio in the footer
+  showBio = true
+  # twitter username used in bio. If blank no twitter link is shown
+  twitter = "mi_checinski"
+  # facebook username used in bio. If blank no facebook link is shown
+  facebook = "michecinski"
+  # email used in email bio link
+  email = "kontakt@michalchecinski.pl"
 
 [languages]
   [languages.en]
@@ -101,6 +113,7 @@ paginate = 5
     minuteReadingTime = "min read"
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
+    RelatedPostsTitle = "Algorithm thinks that those posts are related:"
 
     [languages.en.params.logo]
       logoText = "hello friend"
@@ -109,6 +122,13 @@ paginate = 5
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
+
+    [languages.en.params.bio]
+      # link to about page displayed in bio section
+      aboutUrl = "/about"
+      aboutText = "about"
+      # Bio content
+      content = "Bio text."
 
     [languages.en.menu]
       [[languages.en.menu.main]]

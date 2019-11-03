@@ -8,6 +8,7 @@
         </span>
       {{ end }}
       {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
+      {{ .Params.categories }}
       {{ if $.Site.Params.ShowReadingTime }}
         <span class="post-read-time">— {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
       {{ end }}
@@ -38,6 +39,9 @@
           <span class="pagination__title-h">{{ $.Site.Params.ReadOtherPosts | default "Read other posts" }}</span>
           <hr />
         </div>
+        {{ if $.Site.Params.showRelatedPosts }}
+          {{ partial "related.html" . }}
+        {{ end }}
         <div class="pagination__buttons">
           {{ if .NextInSection }}
             <span class="button previous">
