@@ -1,7 +1,13 @@
-<ul>
-    {{ range .Data.Pages }}
-      <li>
-        <a href="{{.RelPermalink}}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+{{ define "main" }}
+  <div class="posts">
+
+      {{ if $.Site.Params.showTagsCloud }}
+      <span class="post-tags-cloud">
+        #<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>&nbsp
+      </span>
+      {{ end }}
+
+      {{ partial "posts-list.html" . }}
+
+  </div>
+{{ end }}
