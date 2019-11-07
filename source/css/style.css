@@ -8,6 +8,7 @@
 @import 'main';
 @import 'post';
 @import 'pagination';
+@import 'search';
 @import 'footer';
 
 @import 'terms';

@@ -30,7 +30,8 @@
   }
 }
 
-.theme-toggle {
+.theme-toggler {
+  fill: currentColor;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +39,19 @@
   cursor: pointer;
 }
 
-.theme-toggler {
+.search-icon {
   fill: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
 }
