@@ -1,0 +1,19 @@
+#search-query {
+    background: var(--light-background-secondary);
+    width: 20em;
+    height: 30px;
+    border: 2px solid;
+    color: var(--light-color);
+    border-color: var(--light-color);
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    .dark-theme & {
+        background: var(--dark-background-secondary);
+        color: var(--dark-color);
+        border-color: var(--dark-color);
+      }
+  }
+
+  form.hide-submit input[type="submit"] { display: none;}

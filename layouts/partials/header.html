@@ -11,8 +11,14 @@
           </svg>
         </span>
       {{ end }}
-      <span class="theme-toggle">
-        {{ partial "theme-icon.html" . }}
+      <span class="header-icons">
+          <a href="{{ "search" | absURL }}">
+            {{ partial "search-icon.html" . }}
+          </a>
+        &nbsp;
+        <span class="theme-toggle">
+          {{ partial "theme-icon.html" . }}
+        </span>
       </span>
     </span>
   </span>

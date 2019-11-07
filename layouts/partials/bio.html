@@ -1,7 +1,7 @@
 <div class="footer_bio">
     {{ if $.Site.Params.bio.content }}
     <div class="footer_bio_content">
-        {{ $.Site.Params.bio.content }}
+        {{ $.Site.Params.bio.content | markdownify }}
     </div>
     {{ end }}
     <div class="footer_bio_links">
