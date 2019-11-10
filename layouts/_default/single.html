@@ -7,6 +7,17 @@
             {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
         </span>
       {{ end }}
+      
+      {{ if $.Site.Params.LastModDisplay}}
+        {{ if .Date }}
+          {{ with .Lastmod }}
+            <span class="post-moddate">
+                {{ $.Site.Params.LastModDisplay }} {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+            </span>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
       {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
       {{ if $.Site.Params.ShowReadingTime }}
         <span class="post-read-time">— {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
