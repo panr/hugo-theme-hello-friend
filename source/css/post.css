@@ -66,6 +66,10 @@
       width: 100%;
     }
   }
+
+  &-moddate{
+    float: right;
+  }
 }
 
 .post--regulation {
