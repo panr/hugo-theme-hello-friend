@@ -17,6 +17,13 @@
           <span class="post-date">
             {{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}
           </span>
+          {{ if $.Site.Params.LastModDisplay}}
+            {{ with .Lastmod }}
+              <span class="post-moddate">
+                  {{ $.Site.Params.LastModDisplay }} {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+              </span>
+            {{ end }}
+          {{ end }}
         {{ end }}
         {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
         {{ if $.Site.Params.ShowReadingTime }}
