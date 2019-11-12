@@ -60,12 +60,13 @@
     }
 
     &-cloud {
-      margin-bottom: 20px;
       font-size: 1rem;
       opacity: .5;
       display: block;
-      width: 70%;
-      margin-left: 15%;
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      margin-bottom: 20px;
 
       a {
         text-decoration: none;
