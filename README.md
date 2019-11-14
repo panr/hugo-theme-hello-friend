@@ -2,12 +2,9 @@
 
 ![Hello Friend NG](https://dsh.re/d27822)
 
-
-
 ## General informations
 
 This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit).
-
 
 ## Features
 
@@ -30,7 +27,7 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 By default the theme is using PrismJS to color your code syntax. All you need to do is to wrap you code like this:
 
 <pre>
-```html
+``` html
   // your code here
 ```
 </pre>
@@ -43,13 +40,13 @@ You can download the theme manually by going to [https://github.com/rhazdon/hugo
 
 You can also clone it directly to your Hugo folder:
 
-```
+``` bash
 $ git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
-```
+``` bash
 $ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
 ```
 ### Favicon
@@ -70,7 +67,7 @@ Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these 
 
 The theme doesn't require any advanced configuration. Just copy:
 
-```
+``` toml
 baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -88,6 +85,7 @@ theme = "hello-friend-ng"
 
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
+
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
@@ -107,7 +105,7 @@ theme = "hello-friend-ng"
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-	# You can create a language based menu
+	  # You can create a language based menu
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
@@ -130,7 +128,6 @@ theme = "hello-friend-ng"
     url        = "/posts"
 ```
 
-
 ## How to run your site
 
 From your Hugo root directory run:
@@ -141,6 +138,18 @@ $ hugo server -t hello-friend-ng
 
 and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
 
+## Known issues
+
+There is a bug in Hugo that sometimes causes the main page not to render correctly. The reason is an empty taxonomy part.
+Related issue tickets: [!14](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues/14) [!59](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues/59).
+
+Either you comment it out completely or you write the following in
+
+``` toml
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+```
 
 ## How to edit the theme
 
@@ -156,11 +165,9 @@ and then run:
 $ npm install
 ```
 
-
 ## How to contribute
 
 If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/rhazdon/hugo-theme-hello-friend-ng/pulls).
-
 
 ## Third Party
 
@@ -168,7 +175,6 @@ If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo
   - [Feather Open Source Icons](https://github.com/feathericons/feather)
   - [Simple Icons](https://simpleicons.org/)
   - [Flag Icon](https://github.com/lipis/flag-icon-css)
-
 
 ## Licence
 
