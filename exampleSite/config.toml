@@ -34,6 +34,9 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
