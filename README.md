@@ -108,23 +108,7 @@ theme = "hello-friend-ng"
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-	  # You can create a language based menu
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
-
-# And you can even create generic menu
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
+  # And you can even create generic menu
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
