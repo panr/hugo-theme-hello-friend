@@ -15,7 +15,9 @@
         </div>
 
         <article>
-            <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+            <h1 class="post-title">
+                <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            </h1>
 
             {{- if .Params.toc }}
                 <hr />
@@ -56,7 +58,7 @@
             {{- end }}
         </div>
 
-        {{ if and (not .Site.DisableReadOtherPosts) (or .NextInSection .PrevInSection) }}
+        {{ if and (not $.Site.Params.DisableReadOtherPosts) (or .NextInSection .PrevInSection) }}
             <div class="pagination">
                 <div class="pagination__title">
                     <span class="pagination__title-h">{{ .Site.Params.ReadOtherPosts }}</span>

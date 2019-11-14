@@ -34,9 +34,6 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
-# Set disableReadOtherPosts to true in order to hide the links to other posts.
-disableReadOtherPosts = false
-
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
@@ -48,7 +45,7 @@ disableReadOtherPosts = false
 
 [taxonomies]
   tag      = "tags"
-  category = ""
+  category = "categories"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -66,6 +63,9 @@ disableReadOtherPosts = false
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
 
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   customCSS = []
@@ -76,9 +76,11 @@ disableReadOtherPosts = false
 
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
+
   # Default theme "light" or "dark"
   defaultTheme = "dark"
   themeColor = "#252627"
+
   # Colors for favicons
   [params.favicon.color]
     mask = "#252627"

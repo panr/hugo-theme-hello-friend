@@ -78,6 +78,9 @@ theme = "hello-friend-ng"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
   # Metadata mostly used in document's head
   description = "Homepage and blog by Djordje Atlialp"
   keywords = "homepage, blog, science, informatics, development, programming"
