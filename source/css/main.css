@@ -231,14 +231,12 @@ ol ol {
 }
 
 .container {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
 .content {
-  display: flex;
   flex-direction: column;
   flex: 1 auto;
   align-items: center;
