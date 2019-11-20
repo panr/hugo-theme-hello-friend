@@ -19,3 +19,4 @@ TEMPLATE:
 - https://blog.lepape.me/ - **François Le Pape** (Student & developer freelance)
 - https://blog.jyny.dev/ - **Jyny Chen** (Software Engineer)
 - https://felixleger.com/ - **Félix Léger** (Sofware Developer and DevOps)
+- https://cobalto.net/ - **Daniel Pessoa** (Sofware Developer and BI Analyst)
