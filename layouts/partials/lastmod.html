@@ -1,0 +1,7 @@
+{{ if gt .Lastmod .Date }}
+  {{ with .Lastmod }}
+    <span class="post-moddate">
+      ({{ $.Site.Params.LastModDisplay }} {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }})
+    </span>
+  {{ end }}
+{{ end }}

@@ -1,19 +1,18 @@
 {{ define "main" }}
+  {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+  {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+
   <div class="post">
     <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <div class="post-meta">
-      {{ with .Date | default nil }}
+      {{ if .Date | default nil }}
         <span class="post-date">
-            {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+          {{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
         </span>
-      {{ end }}
       
-      {{ if $.Site.Params.LastModDisplay}}
-        {{ if .Date }}
-          {{ with .Lastmod }}
-            <span class="post-moddate">
-                {{ $.Site.Params.LastModDisplay }} {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
-            </span>
+        {{ if eq .Type $contentTypeName }}
+          {{ if $.Site.Params.LastModDisplay}}
+            {{ partial "lastmod.html" . }}
           {{ end }}
         {{ end }}
       {{ end }}
