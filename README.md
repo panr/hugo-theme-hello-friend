@@ -140,7 +140,7 @@ Adding a cover image to your post is simple and there are two options when you e
 
 Add `lastModDisplay = "[your display text]"` to `config.toml` to enable last modified date on your posts. Note - an empty string value `""` does not display anything.
 
-Example: `lastModDisplay = "Modified: "` --> "Modified: Jan 01, 0001"
+Example: `lastModDisplay = "Modified:"` --> "Modified: Jan 01, 0001"
 
 :octocat: Hugo's `enableGitInfo` option is a nice complement to this feature.
 
