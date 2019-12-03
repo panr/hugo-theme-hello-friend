@@ -3,6 +3,13 @@
   flex-grow: 0;
   color: var(--light-color-secondary);
 
+  img {
+    width: 128px;
+    border-radius: 50%;
+    float: right;
+    margin: 0 0 0 1rem;
+  }
+
   .dark-theme & {
     color: var(--dark-color-secondary);
   }
