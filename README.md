@@ -166,6 +166,7 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 - [instagram](https://feathericons.com/?query=instagram)
 - [kaggle](https://simpleicons.org/?q=kaggle)
 - keybase
+- [mastodon](https://simpleicons.org/?q=mastodon)
 - [linkedin](https://feathericons.com/?query=linked)
 - slack
 - stackoverflow
