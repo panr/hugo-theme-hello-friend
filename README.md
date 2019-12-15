@@ -169,6 +169,8 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 - [keybase](https://simpleicons.org/?q=keybase)
 - [mastodon](https://simpleicons.org/?q=mastodon)
 - [linkedin](https://feathericons.com/?query=linked)
+- [podcasts-apple](https://simpleicons.org/?q=podcast)
+- [podcasts-google](https://simpleicons.org/?q=podcast)
 - [slack](https://simpleicons.org/?q=slack)
 - stackoverflow
 - telegram
