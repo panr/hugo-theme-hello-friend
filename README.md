@@ -156,6 +156,7 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 
 ## Available Social Icons:
 
+- [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
 - [docker](https://simpleicons.org/?q=docker)
 - [email](https://feathericons.com/?query=mail)
