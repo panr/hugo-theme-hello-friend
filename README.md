@@ -158,7 +158,7 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 
 - [codepen](https://simpleicons.org/?q=codepen)
 - [docker](https://simpleicons.org/?q=docker)
-- email
+- [email](https://feathericons.com/?query=mail)
 - [facebook](https://simpleicons.org/?q=facebook)
 - gitbook
 - [github](https://feathericons.com/?query=github)
