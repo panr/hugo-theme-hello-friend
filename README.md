@@ -157,6 +157,7 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 ## Available Social Icons:
 
 - codepen
+- docker
 - email
 - facebook
 - gitbook
