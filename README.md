@@ -165,7 +165,7 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 - [gitlab](https://feathericons.com/?query=gitlab)
 - [instagram](https://feathericons.com/?query=instagram)
 - [kaggle](https://simpleicons.org/?q=kaggle)
-- keybase
+- [keybase](https://simpleicons.org/?q=keybase)
 - [mastodon](https://simpleicons.org/?q=mastodon)
 - [linkedin](https://feathericons.com/?query=linked)
 - [slack](https://simpleicons.org/?q=slack)
