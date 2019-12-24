@@ -60,7 +60,9 @@
         </div>
       {{ end }}
     {{ end }}
-
-    {{ partial "comments.html" . }}
+    
+    {{ if eq .Type $.Site.Params.contentTypeName }}
+      {{ partial "comments.html" . }}
+    {{ end }}
     </div>
 {{ end }}
