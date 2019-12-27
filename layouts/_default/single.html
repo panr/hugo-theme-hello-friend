@@ -61,7 +61,7 @@
       {{ end }}
     {{ end }}
     
-    {{ if eq .Type $.Site.Params.contentTypeName }}
+    {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}
       {{ partial "comments.html" . }}
     {{ end }}
     </div>
