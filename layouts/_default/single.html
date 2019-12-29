@@ -60,7 +60,13 @@
         </div>
       {{ end }}
     {{ end }}
+    
 
-    {{ partial "comments.html" . }}
+    {{ if not (eq .Params.Comments "false") }}
+      {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}
+        {{ partial "comments.html" . }}
+      {{ end }}
+    {{ end }}
+    
     </div>
 {{ end }}
