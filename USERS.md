@@ -21,3 +21,4 @@ TEMPLATE:
 - https://felixleger.com/ - **Félix Léger** (Sofware Developer and DevOps)
 - https://cobalto.net/ - **Daniel Pessoa** (Sofware Developer and BI Analyst)
 - https://www.imgalone.com/ - **Iancu makes games alone** (Indie Game Dev)
+- https://jonathan.rico.live/ - **Jonathan Rico** (Electronics Engineer)
