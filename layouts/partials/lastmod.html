@@ -1,4 +1,4 @@
-{{$hourInSec := 3600}}
+{{ $hourInSec := 3600 }}
 
 {{ if gt .Lastmod (add (time .Date).Unix $hourInSec) }}
   {{ with .Lastmod }}

@@ -9,9 +9,9 @@
         <span class="post-date">
           {{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
         </span>
-      
+
         {{ if eq .Type $contentTypeName }}
-          {{ if $.Site.Params.LastModDisplay}}
+          {{ if $.Site.Params.LastModDisplay }}
             {{ partial "lastmod.html" . }}
           {{ end }}
         {{ end }}
@@ -70,13 +70,13 @@
         </div>
       {{ end }}
     {{ end }}
-    
+
 
     {{ if not (eq .Params.Comments "false") }}
       {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}
         {{ partial "comments.html" . }}
       {{ end }}
     {{ end }}
-    
+
     </div>
 {{ end }}
