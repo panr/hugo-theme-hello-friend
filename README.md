@@ -102,6 +102,8 @@ paginate = 5
     minuteReadingTime = "min read"
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
+    # leave empty to disable, enter display text to enable
+    # lastModDisplay = ""
 
     [languages.en.params.logo]
       logoText = "hello friend"
@@ -134,6 +136,14 @@ Adding a cover image to your post is simple and there are two options when you e
   * Resulting in `https://www.yourpage.com/path/to/absolute/img.jpg`
 * Use `cover = "img.jpg"` and `useRelativeCover = true` to link the image relative to the blog post folder
   * Resulting in `https://www.yourpage.com/posts/blog-entry-xy/img.jpg`
+
+# How to display the Last Modified Date in your posts
+
+Add `lastModDisplay = "[your display text]"` to `config.toml` to enable last modified date on your posts. Note - an empty string value `""` does not display anything.
+
+Example: `lastModDisplay = "Modified:"` --> "Modified: Jan 01, 0001"
+
+:octocat: Hugo's `enableGitInfo` option is a nice complement to this feature.
 
 ## Add-ons
 
