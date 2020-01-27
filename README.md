@@ -21,6 +21,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - [How to edit the theme](#how-to-edit-the-theme)
 - [How to contribute](#how-to-contribute)
 - [Hello Friend theme user?](#hello-friend-theme-user)
+- [Sponsoring](#sponsoring)
 - [Licence](#licence)
 
 ## Features
@@ -178,7 +179,13 @@ If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-th
 
 I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/panr/hugo-theme-hello-friend/blob/master/USERS.md)! 🤗
 
-## Licence
+## Sponsoring
+
+If you like my work and want to support the development of the project, now you can! Just:
+
+<a href="https://www.buymeacoffee.com/panr" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
+
+## License
 
 Copyright © 2019 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
