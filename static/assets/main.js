@@ -126,7 +126,7 @@ eval("// Toggle theme\nvar getTheme = window.localStorage && window.localStorage
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/radek/Documents/Git/Moje/hugoBasicExampleHelloFriend/themes/hello-friend/source/js/index.js */\"./source/js/index.js\");\n__webpack_require__(/*! /Users/radek/Documents/Git/Moje/hugoBasicExampleHelloFriend/themes/hello-friend/source/js/menu.js */\"./source/js/menu.js\");\nmodule.exports = __webpack_require__(/*! /Users/radek/Documents/Git/Moje/hugoBasicExampleHelloFriend/themes/hello-friend/source/js/theme.js */\"./source/js/theme.js\");\n\n\n//# sourceURL=webpack:///multi_./source/js/index.js_./source/js/menu.js_./source/js/theme.js?");
+eval("__webpack_require__(/*! /Users/radek/Documents/Git/Moje/hello-friend/themes/hello-friend/source/js/index.js */\"./source/js/index.js\");\n__webpack_require__(/*! /Users/radek/Documents/Git/Moje/hello-friend/themes/hello-friend/source/js/menu.js */\"./source/js/menu.js\");\nmodule.exports = __webpack_require__(/*! /Users/radek/Documents/Git/Moje/hello-friend/themes/hello-friend/source/js/theme.js */\"./source/js/theme.js\");\n\n\n//# sourceURL=webpack:///multi_./source/js/index.js_./source/js/menu.js_./source/js/theme.js?");
 
 /***/ })
 
