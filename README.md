@@ -17,6 +17,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - [How to configure](#how-to-configure)
 - [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
 - [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
+- [How to hide "Read more" button](#how-to-hide-\"read-more\"-button)
 - [Add-ons](#add-ons)
 - [How to run your site](#how-to-run-your-site)
 - [How to edit the theme](#how-to-edit-the-theme)
@@ -58,13 +59,13 @@ You can download the theme manually by going to [https://github.com/panr/hugo-th
 
 You can also clone it directly to your Hugo folder:
 
-```
+```bash
 $ git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
-```
+```bash
 $ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
@@ -72,7 +73,7 @@ $ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/h
 
 The theme doesn't require any advanced configuration. Just copy:
 
-```
+```toml
 baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend"
@@ -81,10 +82,13 @@ paginate = 5
 [params]
   # dir name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
+
   # "light" or "dark"
   defaultTheme = "dark"
+
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
+
   # Show reading time in minutes for posts
   showReadingTime = false
 
@@ -146,6 +150,10 @@ Example: `lastModDisplay = "Modified:"` --> "Modified: Jan 01, 0001"
 
 :octocat: Hugo's `enableGitInfo` option is a nice complement to this feature.
 
+## How to hide "Read more" button
+
+In a post's front matter you have to add `hideReadMore` param set to `true`. This will result in that the post won't have "Read more" button in the list view.
+
 ## Add-ons
 
 - **Archive** — Theme has built-in `archive` page for main content (see `contentTypeName` variable in config). If you need archive on your blog just copy https://github.com/panr/hugo-theme-hello-friend/blob/master/exampleSite/content/archive.md to your `content` dir. If you need multilangual archives, duplicate `content/archive.md` and add `.Lang` variable, eg: `content/archive.pl.md` (remember to change `url` in duplicated file).
@@ -158,7 +166,7 @@ Example: `lastModDisplay = "Modified:"` --> "Modified: Jan 01, 0001"
 
 From your Hugo root directory run:
 
-```
+```bash
 $ hugo server -t hello-friend
 ```
 
@@ -170,13 +178,13 @@ If you have to override some of the styles, you can do this easily by adding `st
 
 Otherwise, if you really want to edit the theme, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
 
-```
+```bash
 $ cd themes/hello-friend
 ```
 
 and then run:
 
-```
+```bash
 $ npm install
 $ npm i yarn
 $ yarn
