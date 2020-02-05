@@ -17,7 +17,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - [How to configure](#how-to-configure)
 - [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
 - [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
-- [How to hide "Read more" button](#how-to-hide-\"read-more\"-button)
+- [How to hide "Read more" button](#how-to-hide-read-more-button)
 - [Add-ons](#add-ons)
 - [How to run your site](#how-to-run-your-site)
 - [How to edit the theme](#how-to-edit-the-theme)
