@@ -25,10 +25,14 @@
     display: inline-block;
     width: 10px;
     height: 1rem;
-    background: #fe5186;
+    background: var(--light-cursor-color);
     margin-left: 5px;
     border-radius: 1px;
     animation: cursor 1s infinite;
+
+    .dark-theme & {
+      background: var(--dark-cursor-color);
+    }
   }
 }
 
