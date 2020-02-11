@@ -90,12 +90,12 @@ disableHugoGeneratorInject = false
   [params.logo]
     logoText     = "$ cd /home/"
     logoHomeLink = "/"
-    # Set true to remove the logo entirely.
-    # logoDisabled = true
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
-    # logoColor    = "#67a2c9"
+    # logoCursorColor    = "#67a2c9"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoAnimate  = "2s"
+    # logoCursorAnimate  = "2s"
 
   # Social icons
   [[params.social]]
