@@ -4,8 +4,7 @@
 
 ## General informations
 
-This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit).
-A lot of kudos for theier great work. Please consider to take a look, what a great work they did.
+This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit). A lot of kudos for theier great work.
 
 ## Features
 
@@ -15,6 +14,88 @@ A lot of kudos for theier great work. Please consider to take a look, what a gre
 - An easy way to modify the theme with Hugo tooling
 - Fully responsive
 - Support for social icons
+
+
+## How to start
+
+You can download the theme manually by going to [https://github.com/rhazdon/hugo-theme-hello-friend-ng.git](https://github.com/rhazdon/hugo-theme-hello-friend-ng.git) and pasting it to `themes/hello-friend-ng` in your root directory.
+
+You can also clone it directly to your Hugo folder:
+
+``` bash
+$ git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
+```
+
+If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
+
+``` bash
+$ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
+```
+
+## How to configure
+
+The theme doesn't require any advanced configuration. Just copy the following config file.
+Note: There are more options to configure. Take a look into the `config.toml` in `exampleSite`.
+
+``` toml
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+[languages]
+  [languages.en]
+    title = "Hello Friend NG"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "hello friend ng"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+```
+
+## How to run your site
+
+From your Hugo root directory run:
+
+```
+$ hugo server -t hello-friend-ng
+```
+
+and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
+
+## More things
 
 ### Built-in shortcodes
 
@@ -63,21 +144,6 @@ By default the theme is using PrismJS to color your code syntax. All you need to
 ```
 </pre>
 
-## How to start
-
-You can download the theme manually by going to [https://github.com/rhazdon/hugo-theme-hello-friend-ng.git](https://github.com/rhazdon/hugo-theme-hello-friend-ng.git) and pasting it to `themes/hello-friend-ng` in your root directory.
-
-You can also clone it directly to your Hugo folder:
-
-``` bash
-$ git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
-```
-
-If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
-
-``` bash
-$ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
-```
 ### Favicon
 
 Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these files, put them into your site's static folder:
@@ -92,67 +158,7 @@ Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these 
 - safari-pinned-tab.svg
 - site.webmanifest
 
-## How to configure
 
-The theme doesn't require any advanced configuration. Just copy:
-
-``` toml
-baseurl = "/"
-languageCode = "en-us"
-theme = "hello-friend-ng"
-
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
-
-  # Metadata mostly used in document's head
-  description = "Homepage and blog by Djordje Atlialp"
-  keywords = "homepage, blog, science, informatics, development, programming"
-  images = [""]
-
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
-
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
-
-[languages]
-  [languages.en]
-    title = "Hello Friend NG"
-    subtitle = "A simple theme for Hugo"
-    keywords = ""
-    copyright = ""
-    readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      logoText = "hello friend ng"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
-```
-
-## How to run your site
-
-From your Hugo root directory run:
-
-```
-$ hugo server -t hello-friend-ng
-```
-
-and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
 
 ## Available Social Icons:
 
@@ -207,10 +213,6 @@ and then run:
 $ npm install
 ```
 
-## How to contribute
-
-If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo-theme-hello-friend-ng/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/rhazdon/hugo-theme-hello-friend-ng/pulls).
-
 ## Third Party
 
   - [normalize.css](https://github.com/necolas/normalize.css)
@@ -220,6 +222,6 @@ If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo
 
 ## Licence
 
-Copyright © 2019 Djordje Atlialp
+Copyright © 2019-2020 Djordje Atlialp
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
