@@ -177,6 +177,7 @@ Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these 
 - [linkedin](https://feathericons.com/?query=linked)
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
+- [reddit](https://simpleicons.org/?q=reddit)
 - [slack](https://simpleicons.org/?q=slack)
 - stackoverflow
 - telegram
