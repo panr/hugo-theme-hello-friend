@@ -111,6 +111,14 @@ figure {
     margin-right: auto;
   }
 
+  &.left-floated {
+    margin-right: auto;
+    float: left;
+    img {
+      margin: 20px 20px 20px 0;
+    }
+  }
+
   &.center {
     margin-left: auto;
     margin-right: auto;
@@ -118,6 +126,20 @@ figure {
 
   &.right {
     margin-left: auto;
+  }
+
+  &.right-floated {
+    margin-left: auto;
+    float: right;
+    img {
+      margin: 20px 0 20px 20px;
+    }
+  }
+
+  &.rounded {
+    img {
+      border-radius: 50%;
+    }
   }
 
   figcaption {
