@@ -99,6 +99,8 @@ and go to `localhost:1313` in your browser. From now on all the changes you make
 
 ### Built-in shortcodes
 
+Of course you are able to use all default shortcodes from hugo (https://gohugo.io/content-management/shortcodes/).
+
 #### `image`
 
 Properties:
@@ -112,24 +114,6 @@ Example:
 
 ``` golang
 {{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}
-```
-
-#### `figure`
-
-Properties:
-
-  - `src` (required)
-  - `alt` (optional)
-  - `position` (optional, default: `left`, options: [`left`, `center`, `right`])
-  - `style` (optional)
-  - `caption` (optional)
-  - `captionPosition` (optional, default: `center`, options: [`left`, `center`, `right`]),
-  - `captionStyle` (optional)
-
-Example:
-
-``` golang
-{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}
 ```
 
 ### Code highlighting
