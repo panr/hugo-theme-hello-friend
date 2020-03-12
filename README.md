@@ -10,21 +10,23 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ---
 
-- [Features](#features)
-- [Built-in shortcodes](#built-in-shortcodes)
-- [Code highlighting](#code-highlighting)
-- [How to start](#how-to-start)
-- [How to configure](#how-to-configure)
-- [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
-- [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
-- [How to hide "Read more" button](#how-to-hide-read-more-button)
-- [Add-ons](#add-ons)
-- [How to run your site](#how-to-run-your-site)
-- [How to edit the theme](#how-to-edit-the-theme)
-- [How to contribute](#how-to-contribute)
-- [Hello Friend theme user?](#hello-friend-theme-user)
-- [Sponsoring](#sponsoring)
-- [Licence](#licence)
+- [Hello Friend](#hello-friend)
+    - [DEMO - https://hugo-hello-friend.now.sh/](#demo---httpshugo-hello-friendnowsh)
+  - [Features](#features)
+      - [Built-in shortcodes](#built-in-shortcodes)
+      - [Code highlighting](#code-highlighting)
+  - [How to start](#how-to-start)
+  - [How to configure](#how-to-configure)
+  - [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
+  - [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
+  - [How to hide "Read more" button](#how-to-hide-%22read-more%22-button)
+  - [Add-ons](#add-ons)
+  - [How to run your site](#how-to-run-your-site)
+  - [How to edit the theme](#how-to-edit-the-theme)
+  - [How to contribute](#how-to-contribute)
+  - [`Hello Friend` theme user?](#hello-friend-theme-user)
+  - [Sponsoring](#sponsoring)
+  - [License](#license)
 
 ## Features
 
@@ -91,6 +93,10 @@ paginate = 5
 
   # Show reading time in minutes for posts
   showReadingTime = false
+
+  # Show table of contents at the top of your posts (defaults to false)
+  # Alternatively, add this param to post front matter for specific posts
+  toc = true
 
 [languages]
   [languages.en]
