@@ -40,6 +40,10 @@
     {{ end }}
 
     <div class="post-content">
+      {{ if .Params.Toc }}
+        <h2>Table of Contents</h2>
+        <aside class="table-of-contents">{{ .TableOfContents }}</aside>
+      {{ end }}
       {{ .Content }}
     </div>
     {{ if eq .Type $.Site.Params.contentTypeName }}
