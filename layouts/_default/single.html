@@ -49,10 +49,11 @@
 			{{- end }}
   		</div>
 
-        <div id="comments" class="thin">
-            {{- if .Site.DisqusShortname }}
+
+        {{- if .Site.DisqusShortname }}
+            <div id="comments" class="thin">
                 {{ template "_internal/disqus.html" . }}
-            {{- end }}
-		</div>
+            </div>
+        {{- end }}
     </main>
 {{ end }}
