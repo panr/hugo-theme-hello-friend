@@ -146,6 +146,7 @@ Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these 
 
 ## Available Social Icons:
 
+- [behance](https://simpleicons.org/?q=behance)
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
 - [docker](https://simpleicons.org/?q=docker)
