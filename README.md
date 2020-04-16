@@ -169,6 +169,7 @@ Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these 
 - [kaggle](https://simpleicons.org/?q=kaggle)
 - [keybase](https://simpleicons.org/?q=keybase)
 - [mastodon](https://simpleicons.org/?q=mastodon)
+- [medium](https://simpleicons.org/?q=medium)
 - [linkedin](https://feathericons.com/?query=linked)
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
