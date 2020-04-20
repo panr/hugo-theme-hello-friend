@@ -37,6 +37,13 @@
             </div>
         </article>
 
+        {{- if .Site.Params.ShareButtons }}
+            <hr />
+            <div id="sharebuttons" class="thin">
+                {{ partial "sharingbuttons.html" . }}
+            </div>
+        {{- end }}
+
         <hr />
 
         <div class="post-info">
