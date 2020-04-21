@@ -10,6 +10,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ---
 
+- [Stackbit Deploy](#stackbit-deploy)
 - [Features](#features)
 - [Built-in shortcodes](#built-in-shortcodes)
 - [Code highlighting](#code-highlighting)
@@ -25,6 +26,14 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - [Hello Friend theme user?](#hello-friend-theme-user)
 - [Sponsoring](#sponsoring)
 - [Licence](#licence)
+
+
+## Stackbit Deploy
+
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/panr/hugo-theme-hello-friend)
+
 
 ## Features
 
