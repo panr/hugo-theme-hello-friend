@@ -60,7 +60,7 @@ By default the theme is using PrismJS to color your code syntax. All you need to
 
 Some small enhancements have been made to Hugo's [internal RSS](https://github.com/gohugoio/hugo/blob/25a6b33693992e8c6d9c35bc1e781ce3e2bca4be/tpl/tplimpl/embedded/templates/_default/rss.xml) generation code.
 
-**A page's cover image now appears at the top of it's feed display**. This image is set manually using [the cover params](#how-to-add-a-cover-image-to-your-posts). If unset, the RSS generator searches for the first image file in the page bundle whose name includes 'featured', 'cover', or 'thumbnail'.
+**A page's cover image now appears at the top of its feed display**. This image is set manually using [the cover params](#how-to-add-a-cover-image-to-your-posts). If unset, the RSS generator searches for the first image file in the page bundle whose name includes 'featured', 'cover', or 'thumbnail'.
 
 **You can optionally display the full page content in your RSS feed** (default is Description or Summary data from Front Matter). Set `rssFullText = true` in your `config.toml` file to enable this option.
 
