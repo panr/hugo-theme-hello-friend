@@ -10,21 +10,24 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ---
 
-- [Features](#features)
-- [Built-in shortcodes](#built-in-shortcodes)
-- [Code highlighting](#code-highlighting)
-- [How to start](#how-to-start)
-- [How to configure](#how-to-configure)
-- [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
-- [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
-- [How to hide "Read more" button](#how-to-hide-read-more-button)
-- [Add-ons](#add-ons)
-- [How to run your site](#how-to-run-your-site)
-- [How to edit the theme](#how-to-edit-the-theme)
-- [How to contribute](#how-to-contribute)
-- [Hello Friend theme user?](#hello-friend-theme-user)
-- [Sponsoring](#sponsoring)
-- [Licence](#licence)
+- [Hello Friend](#hello-friend)
+    - [DEMO - https://hugo-hello-friend.now.sh/](#demo---httpshugo-hello-friendnowsh)
+  - [Features](#features)
+      - [Built-in shortcodes](#built-in-shortcodes)
+      - [Code highlighting](#code-highlighting)
+      - [Improved RSS Feed](#improved-rss-feed)
+  - [How to start](#how-to-start)
+  - [How to configure](#how-to-configure)
+  - [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
+  - [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
+  - [How to hide "Read more" button](#how-to-hide-%22read-more%22-button)
+  - [Add-ons](#add-ons)
+  - [How to run your site](#how-to-run-your-site)
+  - [How to edit the theme](#how-to-edit-the-theme)
+  - [How to contribute](#how-to-contribute)
+  - [`Hello Friend` theme user?](#hello-friend-theme-user)
+  - [Sponsoring](#sponsoring)
+  - [License](#license)
 
 ## Features
 
@@ -52,6 +55,14 @@ By default the theme is using PrismJS to color your code syntax. All you need to
 </pre>
 
 **Supported languages**: bash/shell, css, clike, javascript, apacheconf, actionscript, applescript, c, csharp, cpp, coffeescript, ruby, csp, css-extras, diff, django, docker, elixir, elm, markup-templating, erlang, fsharp, flow, git, go, graphql, less, handlebars, haskell, http, java, json, kotlin, latex, markdown, makefile, objectivec, ocaml, perl, php, php-extras, r, sql, processing, scss, python, jsx, typescript, toml, reason, textile, rust, sass, stylus, scheme, pug, swift, yaml, haml, twig, tsx, vim, visual-basic, wasm.
+
+#### Improved RSS Feed
+
+Some small enhancements have been made to Hugo's [internal RSS](https://github.com/gohugoio/hugo/blob/25a6b33693992e8c6d9c35bc1e781ce3e2bca4be/tpl/tplimpl/embedded/templates/_default/rss.xml) generation code.
+
+**A page's cover image now appears at the top of it's feed display**. This image is set manually using [the cover params](#how-to-add-a-cover-image-to-your-posts). If unset, the RSS generator searches for the first image file in the page bundle whose name includes 'featured', 'cover', or 'thumbnail'.
+
+**You can optionally display the full page content in your RSS feed** (default is Description or Summary data from Front Matter). Set `rssFullText = true` in your `config.toml` file to enable this option.
 
 ## How to start
 
@@ -91,6 +102,10 @@ paginate = 5
 
   # Show reading time in minutes for posts
   showReadingTime = false
+
+  # Show full page content in RSS feed items
+  #(default is Description or Summary metadata in the front matter)
+  # rssFullText = true
 
 [languages]
   [languages.en]
