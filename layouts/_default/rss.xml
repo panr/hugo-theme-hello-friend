@@ -37,8 +37,14 @@
           {{ $featured := $images.GetMatch "{*featured*,*cover*,*thumbnail*}" }}
           {{ with $featured }}{{ printf "%s%s%s" "<image src=\"" $featured.Permalink "\"/>"}}{{ end }}
         {{ end }}
-      {{ .Summary | html }}
-      </description>
+        
+        {{ if .Site.Params.RssFullText }}{{ .Content | html }}
+        {{ else }}
+          {{ with .Description }}{{ . | html }}
+          {{ else }}{{ .Summary | html }}
+          {{ end }}
+        {{ end }}
+        </description>
     </item>
     {{ end }}
   </channel>
