@@ -22,7 +22,7 @@ publishDir   = "public"
 
 buildDrafts  = false
 buildFuture  = false
-buildExpored = false
+buildExpired = false
 canonifyURLs = true
 
 enableRobotsTXT = true
