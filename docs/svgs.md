@@ -3,6 +3,7 @@
 - [behance](https://simpleicons.org/?q=behance)
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
+- [discord](https://simpleicons.org/?q=discord)
 - [docker](https://simpleicons.org/?q=docker)
 - [dribbble](https://simpleicons.org/?q=dribbble)
 - [email](https://feathericons.com/?query=mail)
