@@ -1,0 +1,30 @@
+# Available Social Icons:
+
+- [behance](https://simpleicons.org/?q=behance)
+- [codechef](https://simpleicons.org/?q=codechef)
+- [codepen](https://simpleicons.org/?q=codepen)
+- [docker](https://simpleicons.org/?q=docker)
+- [dribbble](https://simpleicons.org/?q=dribbble)
+- [email](https://feathericons.com/?query=mail)
+- [facebook](https://simpleicons.org/?q=facebook)
+- gitbook
+- [github](https://feathericons.com/?query=github)
+- [gitlab](https://feathericons.com/?query=gitlab)
+- [goodreads](https://simpleicons.org/?q=goodreads)
+- [instagram](https://feathericons.com/?query=instagram)
+- [kaggle](https://simpleicons.org/?q=kaggle)
+- [keybase](https://simpleicons.org/?q=keybase)
+- [mastodon](https://simpleicons.org/?q=mastodon)
+- [medium](https://simpleicons.org/?q=medium)
+- [linkedin](https://feathericons.com/?query=linked)
+- [podcasts-apple](https://simpleicons.org/?q=podcast)
+- [podcasts-google](https://simpleicons.org/?q=podcast)
+- [reddit](https://simpleicons.org/?q=reddit)
+- [slack](https://simpleicons.org/?q=slack)
+- stackoverflow
+- telegram
+- twitch
+- twitter
+- [xampp](https://simpleicons.org/?q=xampp)
+- [xmpp](https://simpleicons.org/?q=xmpp)
+- youtube

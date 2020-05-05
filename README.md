@@ -1,6 +1,6 @@
 # Hello Friend NG
 
-![Hello Friend NG](https://dsh.re/d27822)
+![Hello Friend NG](https://dsh.re/2bd45)
 
 ## General informations
 
@@ -94,16 +94,6 @@ theme        = "hello-friend-ng"
     url        = "/posts"
 ```
 
-## How to run your site
-
-From your Hugo root directory run:
-
-```
-$ hugo server -t hello-friend-ng
-```
-
-and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
-
 ## More things
 
 ### Built-in shortcodes
@@ -139,49 +129,11 @@ By default the theme is using PrismJS to color your code syntax. All you need to
 
 ### Favicon
 
-Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate these files, put them into your site's static folder:
-
-- android-chrome-192x192.png
-- android-chrome-512x512.png
-- apple-touch-icon.png
-- favicon-16x16.png
-- favicon-32x32.png
-- favicon.ico
-- mstile-150x150.png
-- safari-pinned-tab.svg
-- site.webmanifest
-
-
+Check the [docs](docs/favicons.md).
 
 ## Available Social Icons:
 
-- [behance](https://simpleicons.org/?q=behance)
-- [codechef](https://simpleicons.org/?q=codechef)
-- [codepen](https://simpleicons.org/?q=codepen)
-- [docker](https://simpleicons.org/?q=docker)
-- [dribbble](https://simpleicons.org/?q=dribbble)
-- [email](https://feathericons.com/?query=mail)
-- [facebook](https://simpleicons.org/?q=facebook)
-- gitbook
-- [github](https://feathericons.com/?query=github)
-- [gitlab](https://feathericons.com/?query=gitlab)
-- [instagram](https://feathericons.com/?query=instagram)
-- [kaggle](https://simpleicons.org/?q=kaggle)
-- [keybase](https://simpleicons.org/?q=keybase)
-- [mastodon](https://simpleicons.org/?q=mastodon)
-- [medium](https://simpleicons.org/?q=medium)
-- [linkedin](https://feathericons.com/?query=linked)
-- [podcasts-apple](https://simpleicons.org/?q=podcast)
-- [podcasts-google](https://simpleicons.org/?q=podcast)
-- [reddit](https://simpleicons.org/?q=reddit)
-- [slack](https://simpleicons.org/?q=slack)
-- stackoverflow
-- telegram
-- twitch
-- twitter
-- [xampp](https://simpleicons.org/?q=xampp)
-- [xmpp](https://simpleicons.org/?q=xmpp)
-- youtube
+Take a look into this [list](docs/svgs.md)
 
 If you need another one, just open an issue or create a pull request with your wished icon. :)
 
