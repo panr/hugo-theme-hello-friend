@@ -152,17 +152,7 @@ Either you comment it out completely or you write the following in
 
 ## How to edit the theme
 
-If you really want to edit the theme, you need to install Node dependencies. To do this, go to the theme directory (from your Hugo root directory):
-
-```
-$ cd themes/hello-friend-ng
-```
-
-and then run:
-
-```
-$ npm install
-```
+Just edit it. You don't need any node stuff. ;)
 
 ## Sponsoring
 
