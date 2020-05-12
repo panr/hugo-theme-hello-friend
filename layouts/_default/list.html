@@ -1,17 +1,21 @@
 {{ define "main" }}
+    {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+    {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" $contentTypeName) }}
+    
     <main class="posts">
         <h1>{{ .Title }}</h1>
 
-        {{- if .Content }}
+        {{ if .Content }}
             <div class="content">{{ .Content }}</div>
-        {{- end }}
+        {{ end }}
 
-        {{- range .Data.Pages.GroupByDate "2006" }}
+        {{ range $paginator.Pages.GroupByDate "2006" }}
             <div class="posts-group">
                 <div class="post-year">{{ .Key }}</div>
 
                 <ul class="posts-list">
-                    {{- range .Pages }}
+                    {{ range .Pages }}
                         <li class="post-item">
                             <a href="{{.Permalink}}">
                                 <span class="post-title">{{.Title}}</span>
@@ -24,9 +28,10 @@
                                 </span>
                             </a>
                         </li>
-                    {{- end }}
+                    {{ end }}
                 </ul>
             </div>
-        {{- end }}
+        {{ end }}
+    {{ partial "pagination.html" . }}
     </main>
 {{ end }}
