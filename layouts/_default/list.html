@@ -1,6 +1,6 @@
 {{ define "main" }}
     {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
-    {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+    {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) .Section }}
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" $contentTypeName) }}
     
     <main class="posts">
