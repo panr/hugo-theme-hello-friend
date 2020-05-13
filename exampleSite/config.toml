@@ -98,6 +98,10 @@ disableHugoGeneratorInject = false
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
 
+  [params.portrait]
+    path = "/img/image.jpg"
+    alt = "Portrait"
+
   # Social icons
   [[params.social]]
     name = "twitter"
