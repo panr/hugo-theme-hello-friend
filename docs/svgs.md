@@ -32,3 +32,4 @@
 - [xampp](https://simpleicons.org/?q=xampp)
 - [xmpp](https://simpleicons.org/?q=xmpp)
 - youtube
+- [matrix](https://simpleicons.org/?q=matrix)
