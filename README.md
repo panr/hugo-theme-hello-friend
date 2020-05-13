@@ -118,15 +118,19 @@ paginate = 5
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
+    # use weight to order the menu 
+    # or leave it blank to order alphabetically 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
+        weight = 2
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
+        weight = 1
 ```
 
 to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/8f9b363e358aaa33f6d353c77feee959).
