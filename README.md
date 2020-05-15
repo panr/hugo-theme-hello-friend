@@ -54,6 +54,7 @@ $ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git th
 ## How to configure
 
 The theme doesn't require any advanced configuration. Just copy the following config file.
+To see all possible configurations, [check the docs](docs/config.md).
 Note: There are more options to configure. Take a look into the `config.toml` in `exampleSite`.
 
 ``` toml
