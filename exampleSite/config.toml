@@ -1,8 +1,6 @@
 baseURL = "https://example.com"
 title   = "Hello Friend NG"
-
-DefaultContentLanguage = "en"
-
+languageCode = "en-us"
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
@@ -47,6 +45,7 @@ disableHugoGeneratorInject = false
 [taxonomies]
   tag      = "tags"
   category = "categories"
+  series   = "series"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -74,9 +73,6 @@ disableHugoGeneratorInject = false
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   justifyContent = false  # Set "text-align: justify" to .content.
-
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
 
   # Default theme "light" or "dark"
   defaultTheme = "dark"

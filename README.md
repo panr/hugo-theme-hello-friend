@@ -81,9 +81,6 @@ paginate     = 10
   keywords = "homepage, blog"
   images = [""]
 
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
-
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
