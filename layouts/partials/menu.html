@@ -9,8 +9,10 @@
       {{ if gt (len $.Site.Menus.main) $.Site.Params.showMenuItems }}
         <ul class="menu__sub-inner">
           <li class="menu__sub-inner-more-trigger">
-            {{ $.Site.Params.MenuMore | default "Show more" }}
-            <span class="menu__sub-inner-more-trigger-icon">{{ partial "greater-icon.html" . }}</span>
+            <a href="#">
+              {{ $.Site.Params.MenuMore | default "Show more" }}
+              <span class="menu__sub-inner-more-trigger-icon">{{ partial "greater-icon.html" . }}</span>
+            </a>
           </li>
 
           <ul class="menu__sub-inner-more hidden">
