@@ -13,5 +13,15 @@
 </footer>
 
 <script defer src="{{ "assets/main.js" | absURL }}"></script>
-<script defer src="{{ "assets/prism.js" | absURL }}"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function (e) {
+    var doc = e.target;
+    if (doc.childNodes[1].getElementsByTagName("code").length > 0) {
+      var element = doc.createElement("script");
+      element.src = "{{ "assets/prism.js" | absURL }}";
+      element.async = " ";
+      doc.body.appendChild(element);
+    }
+  });
+</script>
 {{- partial "extended_footer.html" . }}
