@@ -10,21 +10,23 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 
 ---
 
-- [Features](#features)
-- [Built-in shortcodes](#built-in-shortcodes)
-- [Code highlighting](#code-highlighting)
-- [How to start](#how-to-start)
-- [How to configure](#how-to-configure)
-- [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
-- [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
-- [How to hide "Read more" button](#how-to-hide-read-more-button)
-- [Add-ons](#add-ons)
-- [How to run your site](#how-to-run-your-site)
-- [How to edit the theme](#how-to-edit-the-theme)
-- [How to contribute](#how-to-contribute)
-- [Hello Friend theme user?](#hello-friend-theme-user)
-- [Sponsoring](#sponsoring)
-- [Licence](#licence)
+- [Hello Friend](#hello-friend)
+    - [DEMO - https://hugo-hello-friend.now.sh/](#demo---httpshugo-hello-friendnowsh)
+  - [Features](#features)
+      - [Built-in shortcodes](#built-in-shortcodes)
+      - [Code highlighting](#code-highlighting)
+  - [How to start](#how-to-start)
+  - [How to configure](#how-to-configure)
+  - [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
+  - [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
+  - [How to hide "Read more" button](#how-to-hide-%22read-more%22-button)
+  - [Add-ons](#add-ons)
+  - [How to run your site](#how-to-run-your-site)
+  - [How to edit the theme](#how-to-edit-the-theme)
+  - [How to contribute](#how-to-contribute)
+  - [`Hello Friend` theme user?](#hello-friend-theme-user)
+  - [Sponsoring](#sponsoring)
+  - [License](#license)
 
 ## Features
 
@@ -39,7 +41,9 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
   - eg: `{{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}`
 - **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**
   - eg: `{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}`
-- **`imgproc`** Hugo shortcode for image processing. More info at [https://gohugo.io/content-management/image-processing/](https://gohugo.io/content-management/image-processing/)
+- **`imgproc`** Hugo shortcode for image processing, plus additional **`position`** param [ left | center | right ] (optional).
+  - eg: `{{< imgproc "img/hello.png" Resize "250x" center />}}`
+  - More detailed info on processing commands at [https://gohugo.io/content-management/image-processing/](https://gohugo.io/content-management/image-processing/)
 
 #### Code highlighting
 
