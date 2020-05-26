@@ -40,7 +40,7 @@
     {{ end }}
 
     <div class="post-content">
-      {{ if .Params.Toc }}
+      {{ if or .Params.Toc $.Site.Params.Toc }}
         <h2>Table of Contents</h2>
         <aside class="table-of-contents">{{ .TableOfContents }}</aside>
       {{ end }}
