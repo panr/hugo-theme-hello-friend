@@ -107,6 +107,10 @@ paginate = 5
   # Show reading time in minutes for posts
   showReadingTime = false
 
+  # Show table of contents at the top of your posts (defaults to false)
+  # Alternatively, add this param to post front matter for specific posts
+  # toc = true
+
   # Show full page content in RSS feed items
   #(default is Description or Summary metadata in the front matter)
   # rssFullText = true
