@@ -96,6 +96,10 @@ paginate = 5
   # Show reading time in minutes for posts
   showReadingTime = false
 
+  # Show table of contents at the top of your posts (defaults to false)
+  # Alternatively, add this param to post front matter for specific posts
+  toc = true
+
 [languages]
   [languages.en]
     title = "Hello Friend"
