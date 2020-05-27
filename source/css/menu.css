@@ -112,7 +112,6 @@
       li {
         .menu__inner & {
           margin-left: 0;
-          padding: 10px;
           white-space: nowrap;
 
           &:hover {
@@ -125,6 +124,12 @@
             }
           }
         }
+      }
+
+      li a {
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
       }
     }
   }
