@@ -26,3 +26,4 @@ TEMPLATE:
 - https://ilya-lesikov.com - **Ilya Lesikov** (DevOps, SRE)
 - https://www.adamormsby.com - **Adam Ormsby** (Generalist Programmer - Web, Mobile, Games)
 - https://kartiniteknologi.id/ - **Kartini Teknologi team** (Tech podcast)
+- https://eallion.com/ - **大大的小蜗牛** (E-commerce operator)
