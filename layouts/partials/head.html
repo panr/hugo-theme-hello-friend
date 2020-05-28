@@ -7,7 +7,6 @@
 
 <!-- head custom -->
 {{- partial "prepended_head.html" . }}
-{{ partial "mathjax__support.html" }}
 
 <!-- Theme CSS -->
 <link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
@@ -18,6 +17,9 @@
 <!-- Icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "img/apple-touch-icon-144-precomposed.png" | absURL }}">
 <link rel="shortcut icon" href="{{ "img/favicon.png" | absURL }}">
+
+<!-- MathJax Support -->
+{{ partial "mathjax_support.html" }}
 
 <!-- Twitter Card -->
 {{ template "_internal/twitter_cards.html" . }}
