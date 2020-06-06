@@ -20,6 +20,7 @@
 - [kaggle](https://simpleicons.org/?q=kaggle)
 - [keybase](https://simpleicons.org/?q=keybase)
 - [mastodon](https://simpleicons.org/?q=mastodon)
+- [matrix](https://simpleicons.org/?q=matrix)
 - [medium](https://simpleicons.org/?q=medium)
 - [linkedin](https://feathericons.com/?query=linked)
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
@@ -31,6 +32,6 @@
 - twitch
 - twitter
 - [xampp](https://simpleicons.org/?q=xampp)
+- [xing](https://simpleicons.org/?q=xing)
 - [xmpp](https://simpleicons.org/?q=xmpp)
 - youtube
-- [matrix](https://simpleicons.org/?q=matrix)
