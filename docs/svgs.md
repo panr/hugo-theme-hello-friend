@@ -5,6 +5,7 @@
 - [codepen](https://simpleicons.org/?q=codepen)
 - [dev](https://simpleicons.org/?q=devto)
 - [deviantart](https://simpleicons.org/?q=deviantart)
+- [discogs](https://simpleicons.org/?q=discogs)
 - [discord](https://simpleicons.org/?q=discord)
 - [docker](https://simpleicons.org/?q=docker)
 - [dribbble](https://simpleicons.org/?q=dribbble)
@@ -19,13 +20,16 @@
 - [instagram](https://feathericons.com/?query=instagram)
 - [kaggle](https://simpleicons.org/?q=kaggle)
 - [keybase](https://simpleicons.org/?q=keybase)
+- [lastfm](https://simpleicons.org/?q=lastfm)
 - [mastodon](https://simpleicons.org/?q=mastodon)
 - [medium](https://simpleicons.org/?q=medium)
+- [mixcloud](https://simpleicons.org/?q=mixcloud)
 - [linkedin](https://feathericons.com/?query=linked)
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
 - [reddit](https://simpleicons.org/?q=reddit)
 - [slack](https://simpleicons.org/?q=slack)
+- [soundcloud](https://simpleicons.org/?q=soundcloud)
 - stackoverflow
 - telegram
 - twitch
