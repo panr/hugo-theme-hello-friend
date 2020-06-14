@@ -22,6 +22,7 @@
 - [keybase](https://simpleicons.org/?q=keybase)
 - [lastfm](https://simpleicons.org/?q=lastfm)
 - [mastodon](https://simpleicons.org/?q=mastodon)
+- [matrix](https://simpleicons.org/?q=matrix)
 - [medium](https://simpleicons.org/?q=medium)
 - [mixcloud](https://simpleicons.org/?q=mixcloud)
 - [linkedin](https://feathericons.com/?query=linked)
@@ -35,6 +36,6 @@
 - twitch
 - twitter
 - [xampp](https://simpleicons.org/?q=xampp)
+- [xing](https://simpleicons.org/?q=xing)
 - [xmpp](https://simpleicons.org/?q=xmpp)
 - youtube
-- [matrix](https://simpleicons.org/?q=matrix)
