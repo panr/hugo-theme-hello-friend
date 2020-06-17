@@ -93,7 +93,8 @@ theme = "hello-friend"
 paginate = 5
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
+  # dir name of your blog content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
 
   # "light" or "dark"
