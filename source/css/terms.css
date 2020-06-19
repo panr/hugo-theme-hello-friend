@@ -19,16 +19,12 @@
     margin-bottom: 15px;
 
     &-count {
-      background: var(--light-background-secondary);
+      background: var(--background-secondary);
       font-size: 12px;
       margin-left: 5px;
       padding: 2px 10px;
       border-radius: 5px;
       text-decoration: none;
-
-      .dark-theme & {
-        background: var(--dark-background-secondary);
-      }
     }
   }
 }

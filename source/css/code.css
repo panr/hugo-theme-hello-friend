@@ -38,7 +38,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    background: hsla(0, 0%, 10%, 10%);
+    background: var(--background-secondary);
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -46,15 +46,11 @@
     min-height: 30px;
     margin: 0;
     cursor: pointer;
-
-    .dark-theme & {
-      background: hsla(0, 0%, 10%, 40%);
-    }
   }
 
   &__title {
     flex: 1;
-    color: var(--accent);
+    color: var(--color);
     padding: 3px 10px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -62,19 +58,15 @@
   }
 
   &__language {
-    background: hsl(0, 0%, 100%);
-    color: var(--accent);
+    background: var(--background);
+    color: var(--color);
     border-radius: 10px;
     text-transform: uppercase;
     padding: 3px 10px;
-
-    .dark-theme & {
-      background: hsla(0, 0%, 100%, 10%);
-    }
   }
 
   &__toggle {
-    color: var(--accent);
+    color: var(--color);
     font-size: 16px;
     padding: 3px 10px;
 

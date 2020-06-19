@@ -15,8 +15,8 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.54;
-  background-color: var(--light-background);
-  color: var(--light-color);
+  background-color: var(--background);
+  color: var(--color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -24,11 +24,6 @@ body {
 
   @media (--phone) {
     font-size: 1rem;
-  }
-
-  &.dark-theme {
-    background-color: var(--dark-background);
-    color: var(--dark-color);
   }
 }
 
@@ -131,16 +126,12 @@ figure {
 
 code {
   font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
-  background: var(--light-background-secondary);
+  background: var(--background-secondary);
   padding: 1px 6px;
   margin: 0 2px;
   border-radius: 5px;
   font-size: .9rem;
   font-weight: normal;
-
-  .dark-theme & {
-    background: var(--dark-background-secondary);
-  }
 }
 
 pre {
@@ -161,10 +152,6 @@ pre {
     margin: 0;
     padding: 0;
     font-size: .9rem;
-
-    .dark-theme & {
-      color: inherit;
-    }
   }
 }
 
@@ -210,11 +197,7 @@ table, th, td {
 }
 
 th {
-  background: var(--light-background-secondary);
-
-  .dark-theme & {
-    background: var(--dark-background-secondary);
-  }
+  background: var(--background-secondary);
 }
 
 ul, ol {
@@ -253,12 +236,8 @@ ol ol {
 hr {
   width: 100%;
   border: none;
-  background: var(--light-border-color);
+  background: var(--border-color);
   height: 1px;
-
-  .dark-theme & {
-    background: var(--dark-border-color);
-  }
 }
 
 .hidden {

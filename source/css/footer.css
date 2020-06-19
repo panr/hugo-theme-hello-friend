@@ -1,11 +1,7 @@
 .footer {
   padding: 40px 20px;
   flex-grow: 0;
-  color: var(--light-color-secondary);
-
-  .dark-theme & {
-    color: var(--dark-color-secondary);
-  }
+  color: var(--color-secondary);
 
   &__inner {
     display: flex;
@@ -53,4 +49,3 @@
     }
   }
 }
-
