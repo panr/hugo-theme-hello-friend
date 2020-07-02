@@ -29,3 +29,4 @@ TEMPLATE:
 - https://eallion.com/ - **大大的小蜗牛** (E-commerce operator)
 - https://guilhermesteves.dev/ - **Guilherme Esteves** (Software Engineer, Writer, Speaker)
 - https://etra0.github.io/ - **Sebastián Aedo** (Computer Science student, interested in Game Hacking)
+- https://blog.toluwalemi.com/ - **Toluwalemi Oluwadare** (Software Engineer and Content Writer)
