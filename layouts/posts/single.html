@@ -58,10 +58,10 @@
             {{- end }}
         </div>
 
-        {{- if .Site.Params.ShareButtons }}
+        {{- if .Site.Params.EnableSharingButtons }}
         <hr />
-        <div id="sharebuttons" class="thin">
-            {{ partial "sharingbuttons.html" . }}
+        <div class="sharing-buttons">
+            {{ partial "sharing-buttons.html" . }}
         </div>
         {{- end }}
 
