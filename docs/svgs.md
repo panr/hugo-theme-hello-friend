@@ -26,6 +26,7 @@
 - [medium](https://simpleicons.org/?q=medium)
 - [mixcloud](https://simpleicons.org/?q=mixcloud)
 - [linkedin](https://feathericons.com/?query=linked)
+- [pinterest](https://simpleicons.org/?q=pinterest)
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
 - [reddit](https://simpleicons.org/?q=reddit)
@@ -33,9 +34,12 @@
 - [soundcloud](https://simpleicons.org/?q=soundcloud)
 - stackoverflow
 - telegram
+- [tumblr](https://simpleicons.org/?q=tumblr)
 - twitch
 - twitter
+- [whatsapp](https://simpleicons.org/?q=whatsapp)
 - [xampp](https://simpleicons.org/?q=xampp)
 - [xing](https://simpleicons.org/?q=xing)
 - [xmpp](https://simpleicons.org/?q=xmpp)
+- [ycombinator](https://simpleicons.org/?q=ycombinator)
 - youtube
