@@ -58,6 +58,13 @@
             {{- end }}
         </div>
 
+        {{- if .Site.Params.ShareButtons }}
+        <hr />
+        <div id="sharebuttons" class="thin">
+            {{ partial "sharingbuttons.html" . }}
+        </div>
+        {{- end }}
+
         {{ if and (not $.Site.Params.DisableReadOtherPosts) (or .NextInSection .PrevInSection) }}
             <div class="pagination">
                 <div class="pagination__title">
