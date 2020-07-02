@@ -33,6 +33,7 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 - An easy way to modify the theme with Hugo tooling
 - Fully responsive
 - Support for social icons
+- Support for sharing buttons
 
 
 ## How to start
@@ -75,6 +76,9 @@ paginate     = 10
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you linke
+  enableSharingButtons = true
 
   # Metadata mostly used in document's head
   description = "My new homepage or blog"
