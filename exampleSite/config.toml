@@ -100,10 +100,11 @@ disableHugoGeneratorInject = false
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
 
-  [params.portrait]
-    path     = "/img/image.jpg"
-    alt      = "Portrait"
-    maxWidth = "50px"
+  # Uncomment this if you want a portrait on your start page
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
 
   # Social icons
   [[params.social]]
