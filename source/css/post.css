@@ -55,7 +55,10 @@
     margin: 40px -50px;
     width: 860px;
     max-width: 860px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+
+    img {
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+    }
 
     @media (--tablet) {
       margin: 20px 0;
