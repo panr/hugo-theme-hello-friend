@@ -33,6 +33,7 @@
 - [slack](https://simpleicons.org/?q=slack)
 - [soundcloud](https://simpleicons.org/?q=soundcloud)
 - stackoverflow
+- [steam](https://simpleicons.org/?q=Steam)
 - telegram
 - [tumblr](https://simpleicons.org/?q=tumblr)
 - twitch
