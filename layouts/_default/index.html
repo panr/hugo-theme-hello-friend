@@ -37,11 +37,17 @@
       {{ end }}
 
       {{ if .Params.Cover }}
-        {{ if .Params.UseRelativeCover }}
-          <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="post-cover" />
-        {{ else }}
-          <img src="{{ .Params.Cover | absURL }}" class="post-cover" />
-        {{ end }}
+        <figure class="post-cover">
+          {{ if .Params.UseRelativeCover }}
+            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" />
+          {{ else }}
+            <img src="{{ .Params.Cover | absURL }}" />
+          {{ end }}
+
+          {{ if .Params.CoverCaption }}
+            <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
+          {{ end }}
+        </figure>
       {{ end }}
 
       <div class="post-content">
