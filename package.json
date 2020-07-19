@@ -53,7 +53,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn build && git add . && git commit -m 'Make assets production ready.'"
+      "pre-push": "yarn build && git add . && git commit -m \"Make assets production ready.\""
     }
   }
 }
