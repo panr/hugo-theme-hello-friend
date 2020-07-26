@@ -16,7 +16,7 @@
   border-right: 1px solid;
   margin-right: 18px;
   padding-right: 24px;
-  font-weight: 600;
+  font-weight: 500;
 
   @media (--phone) {
     @mixin menu;

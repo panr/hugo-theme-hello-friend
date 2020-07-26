@@ -2,27 +2,28 @@
 
 ![Hello Friend](https://github.com/panr/hugo-theme-hello-friend/blob/master/images/screenshot.png?raw=true)
 
-### DEMO - https://hugo-hello-friend.now.sh/
+### DEMO - https://hugo-hello-friend.now.sh/ <a id="demo" />
 
 <a href="https://www.buymeacoffee.com/panr" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
 
 ---
 
 - [Hello Friend](#hello-friend)
-  - [DEMO - https://hugo-hello-friend.now.sh/](#demo---httpshugo-hello-friendnowsh)
+  - [DEMO - https://hugo-hello-friend.now.sh/](#demo)
   - [Features](#features)
       - [Built-in shortcodes](#built-in-shortcodes)
       - [Code highlighting](#code-highlighting)
       - [Improved RSS Feed](#improved-rss-feed)
   - [How to start](#how-to-start)
+  - [How to run your site](#how-to-run-your-site)
   - [How to configure](#how-to-configure)
   - [How to add a cover image to your posts](#how-to-add-a-cover-image-to-your-posts)
   - [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
   - [How to hide "Read more" button](#how-to-hide-read-more-button)
   - [Add-ons](#add-ons)
-  - [How to run your site](#how-to-run-your-site)
-  - [How to edit the theme](#how-to-edit-the-theme)
-  - [How to contribute](#how-to-contribute)
+  - [How to (safely) edit the theme](#how-to-edit)
+  - [Found a bug?](#bug)
+  - [New cool idea or feature](#feature)
   - [`Hello Friend` theme user?](#hello-friend-theme-user)
   - [Sponsoring](#sponsoring)
   - [License](#license)
@@ -106,6 +107,24 @@ If you don't want to make any radical changes, it's the best option, because you
 ```bash
 $ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
+
+## How to run your site
+
+The theme is using [Hugo Pipes](https://gohugo.io/hugo-pipes/) to handle Javascript and PostCSS files. This setup **requires** following npm packages:
+
+```
+@babel/cli @babel/core @babel/preset-env browserslist clipboard cssnano postcss-cli postcss-import postcss-mixins postcss-nested postcss-preset-env postcss-url
+```
+
+Before you start, you have to install them (globally or locally).
+
+Then:
+
+```
+$ hugo server -t hello-friend
+```
+
+and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
 
 ## How to configure
 
@@ -210,37 +229,30 @@ In a post's front matter you have to add `hideReadMore` param set to `true`. Thi
 - **Extended `<head>`** — if you need to add something inside `<head>` element, after all of all of the theme's `<script>` and `<link>` tags are declared, please take a look at `layouts/partial/extended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_head.html
 - **Extended `<footer>`** — if you need to add something before end of `<body>` element, please take a look at `layouts/partial/extended_footer.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_footer.html
 
-## How to run your site
+## How to (safely) edit the theme <a id="how-to-edit" />
 
-From your Hugo root directory run:
+To change something in the theme, you have to go to `themes/hello-friend` and modify the files. You can also copy them (like `assets` folder) from the theme to your root directory and modify the files there (thanks to Hugo's lookup https://gohugo.io/templates/lookup-order). This will protect your changes from overriding when you update the theme.
 
-```bash
-$ hugo server -t hello-friend
-```
+## Found a bug? <a id="bug" />
 
-and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
+If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-theme-hello-friend/issues) or create a new [Pull Request](https://github.com/panr/hugo-theme-hello-friend/pulls) to fix the issue.
 
-## How to edit the theme
+## New cool idea or feature? <a id="feature" />
 
-If you have to override some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
+The theme is in constant development since 2019 and has got many cool features that helped many of you and made the theme better. But there were also many features that I wasn't sure about because I want to keep the theme as simple as possible.
 
-Otherwise, if you really want to edit the theme, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
+So, let's say you have an idea of how to extend the theme. That's cool and you're welcome to do that, just follow these steps:
 
-```bash
-$ cd themes/hello-friend
-```
+- fork the theme
+- implement the feature
+- write an instruction how to use the feature
+- give a working example of the implementation for other users
+- add info about your work to `COMMUNITY-FEATURES.md`
+- make a PR with edited `COMMUNITY-FEATURES.md`
 
-and then run:
+This will help keeping the theme close to its roots, and also allow anyone who wishes to improve it and match their needs, to do whatever they want.
 
-```bash
-$ npm install
-$ npm i yarn
-$ yarn
-```
-
-## How to contribute
-
-If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-theme-hello-friend/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/panr/hugo-theme-hello-friend/pulls).
+Sounds OK? Cool, let's rock! 🤘
 
 ## `Hello Friend` theme user?
 
@@ -254,6 +266,6 @@ If you like my work and want to support the development of the project, now you 
 
 ## License
 
-Copyright © 2019 Radosław Kozieł ([@panr](https://twitter.com/panr))
+Copyright © 2019-2020 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-hello-friend/blob/master/LICENSE.md) for additional licensing information.
