@@ -1,12 +1,22 @@
 {{ define "main" }}
+  {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+  {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+
   <div class="post">
-    <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
     <div class="post-meta">
-      {{ with .Date | default nil }}
+      {{ if .Date | default nil }}
         <span class="post-date">
-            {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+          {{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
         </span>
+
+        {{ if eq .Type $contentTypeName }}
+          {{ if $.Site.Params.LastModDisplay }}
+            {{ partial "lastmod.html" . }}
+          {{ end }}
+        {{ end }}
       {{ end }}
+
       {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
       {{ if and ($.Site.Params.ShowReadingTime) (ne (.Params.ShowReadingTime) false) }}
         <span class="post-read-time">— {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
@@ -22,43 +32,61 @@
     {{ end }}
 
     {{ if .Params.Cover }}
-      {{ if .Params.UseRelativeCover }}
-        <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="post-cover" />
-      {{ else }}
-        <img src="{{ (urlize .Params.Cover | absURL) }}" class="post-cover" />
-      {{ end }}
+      <figure class="post-cover">
+        {{ if .Params.UseRelativeCover }}
+          <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" />
+        {{ else }}
+          <img src="{{ .Params.Cover | absURL }}" />
+        {{ end }}
+
+        {{ if .Params.CoverCaption }}
+          <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
+        {{ end }}
+      </figure>
     {{ end }}
 
     <div class="post-content">
+      {{ if or .Params.Toc $.Site.Params.Toc }}
+        <h2>Table of Contents</h2>
+        <aside class="table-of-contents">{{ .TableOfContents }}</aside>
+      {{ end }}
       {{ .Content }}
     </div>
-    {{ if or .NextInSection .PrevInSection }}
-      <div class="pagination">
-        <div class="pagination__title">
-          <span class="pagination__title-h">{{ $.Site.Params.ReadOtherPosts | default "Read other posts" }}</span>
-          <hr />
+    {{ if eq .Type $.Site.Params.contentTypeName }}
+      {{ if or .NextInSection .PrevInSection }}
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">{{ $.Site.Params.ReadOtherPosts | default "Read other posts" }}</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            {{ if .NextInSection }}
+              <span class="button previous">
+                <a href="{{ .NextInSection.Permalink }}">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">{{ .NextInSection.Title }}</span>
+                </a>
+              </span>
+            {{ end }}
+            {{ if .PrevInSection }}
+              <span class="button next">
+                <a href="{{ .PrevInSection.Permalink }}">
+                  <span class="button__text">{{ .PrevInSection.Title }}</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            {{ end }}
+          </div>
         </div>
-        <div class="pagination__buttons">
-          {{ if .NextInSection }}
-            <span class="button previous">
-              <a href="{{ .NextInSection.Permalink }}">
-                <span class="button__icon">←</span>
-                <span class="button__text">{{ .NextInSection.Title }}</span>
-              </a>
-            </span>
-          {{ end }}
-          {{ if .PrevInSection }}
-            <span class="button next">
-              <a href="{{ .PrevInSection.Permalink }}">
-                <span class="button__text">{{ .PrevInSection.Title }}</span>
-                <span class="button__icon">→</span>
-              </a>
-            </span>
-          {{ end }}
-        </div>
-      </div>
+      {{ end }}
     {{ end }}
 
-    {{ partial "comments.html" . }}
+
+    {{ if not (eq .Params.Comments "false") }}
+      {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}
+        {{ partial "comments.html" . }}
+      {{ end }}
+    {{ end }}
+
     </div>
 {{ end }}

@@ -10,11 +10,7 @@
   }
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid var(--light-border-color);
-
-    .dark-theme & {
-      border-color: var(--dark-border-color);
-    }
+    border-bottom: 1px solid var(--border-color);
   }
 
   &-meta {
@@ -55,11 +51,14 @@
   }
 
   &-cover {
-    border-radius: 8px;
     margin: 40px -50px;
     width: 860px;
     max-width: 860px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+
+    img {
+      border-radius: 8px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+    }
 
     @media (--tablet) {
       margin: 20px 0;

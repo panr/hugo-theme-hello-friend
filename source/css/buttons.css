@@ -13,7 +13,7 @@ a.button {
   justify-content: center;
   padding: 8px 18px;
   margin-bottom: 5px;
-  background: var(--light-background-secondary);
+  background: var(--background-secondary);
   text-decoration: none;
   text-align: center;
   font-weight: 500;
@@ -23,23 +23,13 @@ a.button {
   cursor: pointer;
   outline: none;
 
-  .dark-theme & {
-    background: var(--dark-background-secondary);
-    color: inherit;
-  }
-
   /* variants */
 
   &.outline {
     background: transparent;
-    border-color: var(--light-background-secondary);
+    border-color: var(--background-secondary);
     box-shadow: none;
     padding: 8px 18px;
-
-    .dark-theme & {
-      border-color: var(--dark-background-secondary);
-      color: inherit;
-    }
 
     :hover {
       transform: none;
@@ -82,10 +72,6 @@ a.read-more:active {
   padding: 0;
   margin: 20px 0;
   font-weight: bold;
-
-  .dark-theme & {
-    background: none;
-  }
 }
 
 .code-toolbar {
@@ -98,7 +84,7 @@ a.read-more:active {
     justify-content: center;
     padding: 3px 8px;
     margin-bottom: 5px;
-    background: var(--light-background-secondary);
+    background: var(--background-secondary);
     text-decoration: none;
     text-align: center;
     font-size: 13px;
@@ -108,10 +94,5 @@ a.read-more:active {
     appearance: none;
     cursor: pointer;
     outline: none;
-
-    .dark-theme & {
-      background: var(--dark-background-secondary);
-      color: inherit;
-    }
   }
 }

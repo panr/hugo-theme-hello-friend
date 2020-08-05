@@ -1,7 +1,7 @@
 .footer {
   padding: 40px 20px;
   flex-grow: 0;
-  color: var(--light-color-secondary);
+  color: var(--color-secondary);
 
   &__inner {
     display: flex;
@@ -25,7 +25,6 @@
     flex-direction: row;
     align-items: center;
     font-size: 1rem;
-    color: var(--light-color-secondary);
 
     &--user {
       margin: auto;
@@ -50,4 +49,3 @@
     }
   }
 }
-

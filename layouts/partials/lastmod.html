@@ -1,0 +1,9 @@
+{{ $hourInSec := 3600 }}
+
+{{ if gt .Lastmod (add (time .Date).Unix $hourInSec) }}
+  {{ with .Lastmod }}
+    <span class="post-moddate">
+      ({{ $.Site.Params.LastModDisplay }} {{ .Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }})
+    </span>
+  {{ end }}
+{{ end }}

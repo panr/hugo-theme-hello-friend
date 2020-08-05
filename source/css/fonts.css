@@ -1,44 +1,56 @@
 @font-face {
   font-family: 'Inter';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 400;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   src: url("../fonts/Inter-Regular.woff2") format("woff2"),
        url("../fonts/Inter-Regular.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  font-style:  italic;
+  font-style: italic;
   font-weight: 400;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   src: url("../fonts/Inter-Italic.woff2") format("woff2"),
        url("../fonts/Inter-Italic.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 600;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   src: url("../fonts/Inter-Medium.woff2") format("woff2"),
        url("../fonts/Inter-Medium.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  font-style:  italic;
+  font-style: italic;
   font-weight: 600;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   src: url("../fonts/Inter-MediumItalic.woff2") format("woff2"),
        url("../fonts/Inter-MediumItalic.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 800;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   src: url("../fonts/Inter-Bold.woff2") format("woff2"),
        url("../fonts/Inter-Bold.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  font-style:  italic;
+  font-style: italic;
   font-weight: 800;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   src: url("../fonts/Inter-BoldItalic.woff2") format("woff2"),
        url("../fonts/Inter-BoldItalic.woff") format("woff");
+  font-display: swap;
 }
