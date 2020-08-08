@@ -15,7 +15,3 @@ eg:
   - This was a big missing feature of the theme. It will help your audience reach you over the internet.
   - John, a javascript developer.
 -->
-
-- **Social media icons** (https://github.com/...)
-  - This is the biggest missing feature of the theme. But now it will help your audience reach you over the internet.
-  - John, a javascript developer.
