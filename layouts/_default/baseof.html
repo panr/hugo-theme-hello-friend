@@ -4,7 +4,9 @@
         {{ partial "head.html" . }}
     </head>
 
+    {{ block "body" . }}
     <body class="{{ if ne $.Site.Params.defaultTheme "light" -}} dark-theme {{- end -}}">
+    {{ end }}
         <div class="container">
             {{ partial "header.html" . }}
 
