@@ -15,6 +15,7 @@
 - [github](https://feathericons.com/?query=github)
 - [gitlab](https://feathericons.com/?query=gitlab)
 - [goodreads](https://simpleicons.org/?q=goodreads)
+- [googlescholar](https://simpleicons.org/?q=googlescholar)
 - [hackerone](https://simpleicons.org/?q=hackerone)
 - [hackerrank](https://simpleicons.org/?q=hackerrank)
 - [instagram](https://feathericons.com/?query=instagram)
