@@ -11,6 +11,7 @@
 - [dribbble](https://simpleicons.org/?q=dribbble)
 - [email](https://feathericons.com/?query=mail)
 - [facebook](https://simpleicons.org/?q=facebook)
+- git
 - gitbook
 - [github](https://feathericons.com/?query=github)
 - [gitlab](https://feathericons.com/?query=gitlab)
@@ -27,6 +28,7 @@
 - [mixcloud](https://simpleicons.org/?q=mixcloud)
 - [linkedin](https://feathericons.com/?query=linked)
 - [pinterest](https://simpleicons.org/?q=pinterest)
+- [peertube](https://simpleicons.org/?q=peertube)
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
 - [reddit](https://simpleicons.org/?q=reddit)
