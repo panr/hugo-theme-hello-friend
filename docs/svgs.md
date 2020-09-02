@@ -26,6 +26,7 @@
 - [matrix](https://simpleicons.org/?q=matrix)
 - [medium](https://simpleicons.org/?q=medium)
 - [mixcloud](https://simpleicons.org/?q=mixcloud)
+- [orcid](https://simpleicons.org/?q=orcid)
 - [linkedin](https://feathericons.com/?query=linked)
 - [pinterest](https://simpleicons.org/?q=pinterest)
 - [peertube](https://simpleicons.org/?q=peertube)
