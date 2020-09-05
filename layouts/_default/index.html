@@ -8,6 +8,12 @@
   {{ end }}
   {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
 
+  {{ if .Content }}
+    <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+      {{ .Content }}
+    </div>
+  {{ end }}
+
   <div class="posts">
     {{ range $paginator.Pages }}
     <div class="post on-list">
@@ -39,9 +45,9 @@
       {{ if .Params.Cover }}
         <figure class="post-cover">
           {{ if .Params.UseRelativeCover }}
-            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" />
+            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" alt="{{ .Title | plainify | default " " }}"/>
           {{ else }}
-            <img src="{{ .Params.Cover | absURL }}" />
+            <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title | plainify | default " " }}"/>
           {{ end }}
 
           {{ if .Params.CoverCaption }}

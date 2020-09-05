@@ -1,0 +1,136 @@
+@define-mixin menu {
+  position: absolute;
+  background: var(--header);
+  box-shadow: var(--shadow);
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.menu {
+  --color: rgba(0, 0, 0, .12);
+  --shadow: 0 8px 20px var(--color);
+
+  border-right: 1px solid;
+  margin-right: 18px;
+  padding-right: 24px;
+  font-weight: 500;
+
+  @media (--phone) {
+    @mixin menu;
+    border: none;
+    top: 50px;
+    right: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &--desktop {
+      @media (--phone) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @media (--phone) {
+        display: block;
+      }
+    }
+
+    li {
+      text-align: left;
+      flex: 0 0 auto;
+
+      &:not(:first-of-type) {
+        margin-left: 20px;
+      }
+    }
+
+    @media (--phone) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+
+      li {
+        margin-left: 0 !important;
+        padding: 10px;
+      }
+    }
+  }
+
+  &__sub-inner {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &:not(:only-child) {
+      margin-left: 20px;
+    }
+
+    &-more {
+      @mixin menu;
+      top: 35px;
+      left: 0;
+
+      &-trigger {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+
+        &-icon {
+          display: inline-flex;
+          align-items: center;
+          margin-left: 3px;
+          transform: rotate(90deg);
+          line-height: 1;
+
+          @mixin greater-icon 5px;
+        }
+      }
+
+      li {
+        .menu__inner & {
+          margin-left: 0;
+          white-space: nowrap;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 3px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      li a {
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+      }
+    }
+  }
+
+  &-trigger {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}

@@ -30,9 +30,9 @@
       {{ if .Params.Cover }}
         <figure class="post-cover">
           {{ if .Params.UseRelativeCover }}
-            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" />
+            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" alt="{{ .Title | plainify | default " " }}" />
           {{ else }}
-            <img src="{{ .Params.Cover | absURL }}" />
+            <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title | plainify | default " " }}" />
           {{ end }}
 
           {{ if .Params.CoverCaption }}

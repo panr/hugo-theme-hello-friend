@@ -8,7 +8,9 @@ TEMPLATE:
 -->
 
 - https://0x44.pw — **Ian Pringle** (System Admin and developer)
+- https://adamormsby.com - **Adam Ormsby** (Generalist Programmer - Web, Mobile, Games)
 - https://arubacao.com **Christopher Lass** (Software Engineer and DevOps)
+- https://blog.agate.pw/ - **Marco Agate** (System Engineer, DevOps)
 - https://blog.agung.io - **Agung Pratama** (Software Engineer and DevOps)
 - https://blog.jyny.dev/ - **Jyny Chen** (Software Engineer)
 - https://blog.lepape.me/ - **François Le Pape** (Student & developer freelance)
@@ -18,8 +20,10 @@ TEMPLATE:
 - https://etra0.github.io/ - **Sebastián Aedo** (Computer Science student, interested in Game Hacking)
 - https://fazi1058.github.io **Faezeh Roeinfard** (Student)
 - https://felixleger.com/ - **Félix Léger** (Sofware Developer and DevOps)
+- https://gabrielacaesar.com/ - **Gabriela Caesar** (Data journalist)
 - https://guilhermesteves.dev/ - **Guilherme Esteves** (Software Engineer, Writer, Speaker)
 - https://ilya-lesikov.com - **Ilya Lesikov** (DevOps, SRE)
+- https://imgalone.com/ - **Iancu makes games alone** (Indie Game Dev)
 - https://jonathan.rico.live/ - **Jonathan Rico** (Electronics Engineer)
 - https://kartiniteknologi.id/ - **Kartini Teknologi team** (Tech podcast)
 - https://mfaishal.com **Faishal Irawan** (Student)
@@ -28,7 +32,3 @@ TEMPLATE:
 - https://protocod.gitlab.io/blog/ **protocod** (Web Developer)
 - https://simeononsecurity.ch/ - **SimeonOnSecurity)** (Security and Automation Blog)
 - https://verso.re/ - **Joan Calabrés** (Security Engineer)
-- https://www.adamormsby.com - **Adam Ormsby** (Generalist Programmer - Web, Mobile, Games)
-- https://www.gabrielacaesar.com/ - **Gabriela Caesar** (Data journalist)
-- https://www.imgalone.com/ - **Iancu makes games alone** (Indie Game Dev)
-
