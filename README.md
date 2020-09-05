@@ -225,11 +225,11 @@ In a post's front matter you have to add `hideReadMore` param set to `true`. Thi
 
 ## How to (safely) edit the theme <a id="how-to-edit" />
 
-To change something in the theme, you have to go to `themes/hello-friend` and modify the files.
-
 If you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
 
-Otherwise, if you really want to edit the theme, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
+To change something directly in the theme, you have to go to `themes/hello-friend` and modify the files.
+
+First, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
 
 ```bash
  $ cd themes/hello-friend
@@ -243,11 +243,19 @@ Otherwise, if you really want to edit the theme, you need to install Node depend
  $ yarn
  ```
 
-and finally, to run webpack in watch mode:
+After you modified the files you can run webpack in watch mode:
 
-```
+```bash
 $ yarn dev
 ```
+
+or rebuild theme
+
+```bash
+$ yarn build
+```
+
+To see the changes (remember to restart `hugo server`).
 
 ## Found a bug? <a id="bug" />
 
