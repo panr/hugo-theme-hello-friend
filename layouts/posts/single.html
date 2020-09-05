@@ -75,7 +75,7 @@
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         {{ if .Site.Params.dateformNumTime }}{{ dateFormat .Site.Params.dateformNumTime .Date.Local }}{{ else }}{{ dateFormat "2006-01-02 15:04 -0700" .Date.Local }}{{ end }}
-        {{ if .LastMod }} (Last updated: {{ if .Site.Params.dateformNumTime }}{{ dateFormat .Site.Params.dateformNumTime .LastMod.Local }}{{ else }}{{ dateFormat "2006-01-02 15:04 -0700" .LastMod.Local }}){{ end }}
+        {{ if .LastMod }} ({{ i18n "lastModified" }}: {{ if .Site.Params.dateformNumTime }}{{ dateFormat .Site.Params.dateformNumTime .LastMod.Local }}{{ else }}{{ dateFormat "2006-01-02 15:04 -0700" .LastMod.Local }}){{ end }}
       </p>
 
       {{- if .GitInfo }}
