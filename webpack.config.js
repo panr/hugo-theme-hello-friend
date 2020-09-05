@@ -1,6 +1,6 @@
 const Webpack = require("webpack");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CleanPlugin = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
@@ -8,18 +8,18 @@ const path = require("path");
 
 const join = (...paths) => path.join(__dirname, ...paths);
 
-module.exports = {
+module.exports = (env, { mode }) => ({
   resolve: {
     extensions: [".js", ".css"],
     modules: ["assets", "node_modules"],
   },
   entry: {
-    "main.js": [join("assets", "js", "menu.js"), join("assets", "js", "theme.js")],
-    "prism.js": join("assets", "js", "prism.js"),
-    "style.css": join("assets", "css", "style.css"),
+    main: [join("assets", "js", "menu.js"), join("assets", "js", "theme.js")],
+    prism: join("assets", "js", "prism.js"),
+    style: join("assets", "css", "style.css"),
   },
   output: {
-    filename: "[name]",
+    filename: "[name].js",
     path: join("static/assets"),
     publicPath: "",
   },
@@ -51,28 +51,27 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: [
-            {
-              loader: "css-loader",
-              options: {
-                minimize: true,
-                modules: true,
-                importLoaders: 1,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
                 localIdentName: "[local]",
               },
+              import: true,
+              importLoaders: 1,
             },
-            {
-              loader: "postcss-loader",
-              options: {
-                config: {
-                  path: "postcss.config.js",
-                },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              config: {
+                path: "postcss.config.js",
               },
             },
-          ],
-        }),
+          },
+        ],
       },
     ],
   },
@@ -87,5 +86,15 @@ module.exports = {
       }),
     ],
   },
-  plugins: [new CleanPlugin(join("static/assets")), new ExtractTextPlugin("[name]")],
-};
+  plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [join("static/assets")],
+      cleanAfterEveryBuildPatterns: [join("static/assets/style.js")],
+      verbose: true,
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }),
+  ],
+});
