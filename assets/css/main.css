@@ -257,3 +257,13 @@ hr {
   border: 1px solid var(--border-color);
   max-width: 800px;
 }
+
+blockquote.twitter-tweet {
+  background: hsl(206deg 62% 45% / 10%);
+  border: none;
+  padding: 30px;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 8px;
+}

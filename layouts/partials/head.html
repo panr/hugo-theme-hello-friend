@@ -9,11 +9,7 @@
 {{- partial "prepended_head.html" . }}
 
 <!-- Theme CSS -->
-{{ $css := resources.Get "css/style.css" }}
-{{ $opts := dict "inlineImports" true }}
-{{ $style := $css | resources.PostCSS $opts | minify }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
-
+<link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
 <!-- Custom CSS to override theme properties (/static/style.css) -->
 <link rel="stylesheet" href="{{ "style.css" | absURL }}">
 
