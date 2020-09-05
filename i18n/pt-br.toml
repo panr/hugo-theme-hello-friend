@@ -34,3 +34,6 @@ other = "Índice"
 [wordCount]
 one   = "Uma Palavra"
 other = "{{ .Count }} Palavras"
+
+[lastModified]
+other = "Última actualização"
