@@ -32,3 +32,4 @@ TEMPLATE:
 - https://protocod.gitlab.io/blog/ **protocod** (Web Developer)
 - https://simeononsecurity.ch/ - **SimeonOnSecurity)** (Security and Automation Blog)
 - https://verso.re/ - **Joan Calabrés** (Security Engineer)
+- https://umar0x01.sh — **Syed Umar Arfeen** (Sr. Security Engineer | Just automate it!)
