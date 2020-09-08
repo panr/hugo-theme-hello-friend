@@ -30,5 +30,6 @@ TEMPLATE:
 - https://mritd.com/ - **漠然** (Software Engineer and DevOps)
 - https://musq.github.io — **Ashish Ranjan** (Software Engineer)
 - https://protocod.gitlab.io/blog/ **protocod** (Web Developer)
+- https://shinytoyrobots.com - **shinytoyrobots** (Eclectic journaling and essays)
 - https://simeononsecurity.ch/ - **SimeonOnSecurity)** (Security and Automation Blog)
 - https://verso.re/ - **Joan Calabrés** (Security Engineer)
