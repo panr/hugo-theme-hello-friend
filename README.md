@@ -201,6 +201,7 @@ Adding a cover image to your post is simple and there are two options when you e
   * Resulting in `https://www.yourpage.com/path/to/absolute/img.jpg`
 * Use `cover = "img.jpg"` and `useRelativeCover = true` to link the image relative to the blog post folder
   * Resulting in `https://www.yourpage.com/posts/blog-entry-xy/img.jpg`
+* Use `coverAlt = "description of image"` to add custom alt text to the cover image (defaults to post or page title as alt text)
 * Use `coverCaption = "Image Credit to [Barry Bluejeans](https://unsplash.com/)"` to add a caption for the cover image.
 
 ## How to display the Last Modified Date in your posts

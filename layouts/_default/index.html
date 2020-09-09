@@ -45,9 +45,9 @@
       {{ if .Params.Cover }}
         <figure class="post-cover">
           {{ if .Params.UseRelativeCover }}
-            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" alt="{{ .Title | plainify | default " " }}"/>
+            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" alt="{{ .Params.CoverAlt | plainify | default .Title }}"/>
           {{ else }}
-            <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title | plainify | default " " }}"/>
+            <img src="{{ .Params.Cover | absURL }}" alt="{{ .Params.CoverAlt | plainify | default .Title }}"/>
           {{ end }}
 
           {{ if .Params.CoverCaption }}
