@@ -3,9 +3,9 @@
   "printWidth": 100,
   "trailingComma": "all",
   "overrides": [{
-    "files": ".html",
+    "files": ["*.html"],
     "options": {
-      "parser": "html"
+      "parser": "go-template"
     }
   }]
 }

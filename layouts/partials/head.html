@@ -1,21 +1,39 @@
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.Subtitle }}{{ else }}{{ .Summary | plainify }}{{ end }}"/>
-<meta name="keywords" content="{{ with .Params.Keywords }}{{ delimit . ", " }}{{ else }}{{ $.Site.Params.Keywords }}{{ end }}"/>
-<meta name="robots" content="noodp"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="{{ if .IsHome }}{{ $.Site.Params.Subtitle }}{{ else }}{{ .Summary | plainify }}{{ end }}"
+/>
+<meta
+  name="keywords"
+  content="{{ with .Params.Keywords }}{{ delimit . ", " }}{{ else }}{{ $.Site.Params.Keywords }}{{ end }}"
+/>
+<meta name="robots" content="noodp" />
 <link rel="canonical" href="{{ .Permalink }}" />
 
 <!-- head custom -->
 {{- partial "prepended_head.html" . }}
 
 <!-- Theme CSS -->
-<link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
+<link rel="stylesheet" href="{{ "assets/style.css" | absURL }}" />
 <!-- Custom CSS to override theme properties (/static/style.css) -->
-<link rel="stylesheet" href="{{ "style.css" | absURL }}">
+<link rel="stylesheet" href="{{ "style.css" | absURL }}" />
 
 <!-- Icons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "img/apple-touch-icon-144-precomposed.png" | absURL }}">
-<link rel="shortcut icon" href="{{ "img/favicon.png" | absURL }}">
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="{{ "img/apple-touch-icon-144-precomposed.png" | absURL }}"
+/>
+<link rel="shortcut icon" href="{{ "img/favicon.png" | absURL }}" />
+
+<!-- Fonts -->
+<link href="{{ "assets/Inter-Italic.woff2" | absURL }}" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="{{ "assets/Inter-Regular.woff2" | absURL }}" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="{{ "assets/Inter-Medium.woff2" | absURL }}" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="{{ "assets/Inter-MediumItalic.woff2" | absURL }}" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="{{ "assets/Inter-Bold.woff2" | absURL }}" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="{{ "assets/Inter-BoldItalic.woff2" | absURL }}" rel="preload" type="font/woff2" as="font" crossorigin="">
 
 <!-- Twitter Card -->
 {{ template "_internal/twitter_cards.html" . }}
@@ -25,7 +43,7 @@
 
 <!-- RSS | JSON -->
 {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{ end -}}
 
 <!-- head custom -->
