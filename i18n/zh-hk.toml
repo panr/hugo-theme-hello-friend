@@ -21,7 +21,7 @@ other = "主頁"
 [notFound]
 other = "哎呀，揾唔到添……"
 
-
+# Please add hasCJKLanguage = true under [languages.zh-hk] for the below to behave correctly
 # posts/single.html
 #
 [readingTime]
