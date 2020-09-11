@@ -34,3 +34,6 @@ other = "ഉള്ളടക്ക പട്ടിക"
 [wordCount]
 one   = "ഒരു വാക്ക്"
 other = "{{ .Count }} വാക്കുകൾ"
+
+[lastModified]
+other = "അവസാനമായി പുതുക്കിയത്"

@@ -51,9 +51,10 @@ disableHugoGeneratorInject = false
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  dateformNumTime = "2006-01-02 15:04"
 
   # Metadata mostly used in document's head
+  # 
   description = "Nice theme for homepages and blogs"
   keywords = ""
   images = [""]
@@ -61,30 +62,44 @@ disableHugoGeneratorInject = false
   homeSubtitle = "Hello Friend NG"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
   # gitUrl = ""
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
   disableReadOtherPosts = false
 
   # Sharing buttons
+  #
   # There are a lot of buttons preconfigured. If you want to change them,
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
   enableSharingButtons = true
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
   customCSS = []
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
   justifyContent = false  # Set "text-align: justify" to .post-content.
 
   # Default theme "light" or "dark"
+  #
   defaultTheme = "dark"
   themeColor = "#252627"
 
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  # footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
+  # footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+
   # Colors for favicons
+  #
   [params.favicon.color]
     mask = "#252627"
     msapplication = "#252627"
@@ -101,6 +116,7 @@ disableHugoGeneratorInject = false
     # logoCursorAnimate  = "2s"
 
   # Uncomment this if you want a portrait on your start page
+  #
   # [params.portrait]
   #   path     = "/img/image.jpg"
   #   alt      = "Portrait"

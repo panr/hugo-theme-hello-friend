@@ -34,3 +34,6 @@ other = "Table of Contents"
 [wordCount]
 one   = "One Word"
 other = "{{ .Count }} Words"
+
+[lastModified]
+other = "Last updated"

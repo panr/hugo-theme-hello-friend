@@ -38,3 +38,6 @@ one   = "{{ .Count }} слово"
 few   = "{{ .Count }} слова"
 many  = "{{ .Count }} слов"
 other = "{{ .Count }} слов"
+
+[lastModified]
+other = "Последнее обновление"

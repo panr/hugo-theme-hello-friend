@@ -34,3 +34,6 @@ other = "Inhaltsverzeichnis"
 [wordCount]
 one   = "Ein Wort"
 other = "{{ .Count }} Wörter"
+
+[lastModified]
+other = "Letzte Aktualisierung"

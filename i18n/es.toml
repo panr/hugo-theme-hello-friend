@@ -34,3 +34,6 @@ other = "Tabla de Contenido"
 [wordCount]
 one   = "Una Palabra"
 other = "{{ .Count }} Palabras"
+
+[lastModified]
+other = "Ultima actualización"
