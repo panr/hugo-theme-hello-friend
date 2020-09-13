@@ -21,9 +21,10 @@
     src="{{ $image.RelPermalink }}"
     width="{{ $image.Width }}"
     height="{{ $image.Height }}"
+    class="{{ with $position }}{{ . }}{{ else -}} left {{- end }}"
   />
-  {{ with .Inner }}
-    <figcaption>
+	{{ with .Inner }}
+    <figcaption class="{{ with $position }}{{ . }}{{ else -}} left {{- end }}">
       {{ . }}
     </figcaption>
   {{ end }}
