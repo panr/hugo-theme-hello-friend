@@ -8,7 +8,7 @@ const path = require("path");
 
 const join = (...paths) => path.join(__dirname, ...paths);
 
-module.exports = (env, { watch }) => ({
+module.exports = (env, { mode, watch }) => ({
   resolve: {
     extensions: [".js", ".css"],
     modules: ["assets", "node_modules"],
@@ -45,8 +45,8 @@ module.exports = (env, { watch }) => ({
           {
             loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'images'
+              name: "[name].[ext]",
+              outputPath: "images",
             },
           },
         ],
@@ -57,8 +57,8 @@ module.exports = (env, { watch }) => ({
           {
             loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts'
+              name: "[name].[ext]",
+              outputPath: "fonts",
             },
           },
         ],
@@ -103,7 +103,12 @@ module.exports = (env, { watch }) => ({
   plugins: [
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [join("static/assets")],
-      cleanAfterEveryBuildPatterns: ["!images/**/*", "!fonts/**/*"],
+      cleanAfterEveryBuildPatterns: [
+        "!images/**/*",
+        "!fonts/**/*",
+        // Remove unused file for a production build.
+        mode === "production" && join("static/assets/style.js"),
+      ],
       verbose: true,
     }),
     new MiniCssExtractPlugin({
