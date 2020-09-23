@@ -33,3 +33,4 @@ TEMPLATE:
 - https://shinytoyrobots.com - **shinytoyrobots** (Eclectic journaling and essays)
 - https://simeononsecurity.ch/ - **SimeonOnSecurity** (Security and Automation Blog)
 - https://verso.re/ - **Joan Calabrés** (Security Engineer)
+- https://atticuslab.com/ - **Atticus** (Game Server Engineer)
