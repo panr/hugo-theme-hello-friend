@@ -36,6 +36,7 @@
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
 - [reddit](https://simpleicons.org/?q=reddit)
+- [researchgate](https://simpleicons.org/?q=researchgate)
 - [signal](https://simpleicons.org/?q=signal)
 - [slack](https://simpleicons.org/?q=slack)
 - [soundcloud](https://simpleicons.org/?q=soundcloud)
