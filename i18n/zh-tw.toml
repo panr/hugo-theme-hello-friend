@@ -1,4 +1,4 @@
-# Translations for Chinese (Hong Kong) [Cantonese]
+# Translations for Chinese (Taiwan)
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # Generic
@@ -13,15 +13,15 @@ other = "其他語言"
 # 404.html
 #
 [archives]
-other = "貼文"
+other = "檔案"
 
 [home]
 other = "主頁"
 
 [notFound]
-other = "哎呀，揾唔到添……"
+other = "噢，找不到頁面……"
 
-# Please add hasCJKLanguage = true under [languages.zh-hk] for the below to behave correctly
+# Please add hasCJKLanguage = true under [languages.zh-tw] for the below to behave correctly
 # posts/single.html
 #
 [readingTime]
@@ -32,7 +32,7 @@ other = "{{ .Count }}分鐘"
 other = "目錄"
 
 [wordCount]
-one   = "一粒字"
+one   = "一字"
 other = "{{ .Count }}字"
 
 [lastModified]
