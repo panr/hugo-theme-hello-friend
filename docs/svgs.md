@@ -1,6 +1,7 @@
 # Available Social Icons:
 
 - [behance](https://simpleicons.org/?q=behance)
+- [codesandbox](https://simpleicons.org/?q=codesandbox)
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
 - [dev](https://simpleicons.org/?q=devto)
