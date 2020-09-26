@@ -49,6 +49,11 @@
     fill: currentColor;
     margin-left: 10px;
     cursor: pointer;
+    display: none;
+
+    @media #{$media-size-phone} {
+      display: block;
+    }
   }
 
   a {
