@@ -22,6 +22,7 @@ TEMPLATE:
 - https://felixleger.com/ - **Félix Léger** (Sofware Developer and DevOps)
 - https://gabrielacaesar.com/ - **Gabriela Caesar** (Data journalist)
 - https://guilhermesteves.dev/ - **Guilherme Esteves** (Software Engineer, Writer, Speaker)
+- https://hesec.de - **Patrick Hener** (Security Researcher, Pentester and Coder)
 - https://ilya-lesikov.com - **Ilya Lesikov** (DevOps, SRE)
 - https://imgalone.com/ - **Iancu makes games alone** (Indie Game Dev)
 - https://jonathan.rico.live/ - **Jonathan Rico** (Electronics Engineer)
