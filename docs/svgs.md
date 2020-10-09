@@ -1,6 +1,8 @@
 # Available Social Icons:
 
+- [box](https://simpleicons.org/?q=box)
 - [behance](https://simpleicons.org/?q=behance)
+- [codesandbox](https://simpleicons.org/?q=codesandbox)
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
 - [dev](https://simpleicons.org/?q=devto)
@@ -34,6 +36,8 @@
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
 - [reddit](https://simpleicons.org/?q=reddit)
+- [researchgate](https://simpleicons.org/?q=researchgate)
+- [signal](https://simpleicons.org/?q=signal)
 - [slack](https://simpleicons.org/?q=slack)
 - [soundcloud](https://simpleicons.org/?q=soundcloud)
 - [stackoverflow](https://simpleicons.org/?q=stackoverflow)
