@@ -2,6 +2,7 @@
 
 - [box](https://simpleicons.org/?q=box)
 - [behance](https://simpleicons.org/?q=behance)
+- [bitbucket](https://simpleicons.org/?q=bitbucket)
 - [codesandbox](https://simpleicons.org/?q=codesandbox)
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
