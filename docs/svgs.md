@@ -18,6 +18,7 @@
 - gitbook
 - [github](https://feathericons.com/?query=github)
 - [gitlab](https://feathericons.com/?query=gitlab)
+- [gitter](https://simpleicons.org/icons/gitter.svg)
 - [goodreads](https://simpleicons.org/?q=goodreads)
 - [googlescholar](https://simpleicons.org/?q=googlescholar)
 - [hackerone](https://simpleicons.org/?q=hackerone)
