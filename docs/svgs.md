@@ -42,6 +42,7 @@
 - [signal](https://simpleicons.org/?q=signal)
 - [slack](https://simpleicons.org/?q=slack)
 - [soundcloud](https://simpleicons.org/?q=soundcloud)
+- [spotify](https://simpleicons.org/?q=spotify)
 - [stackoverflow](https://simpleicons.org/?q=stackoverflow)
 - [steam](https://simpleicons.org/?q=Steam)
 - [telegram](https://simpleicons.org/?q=telegram)
