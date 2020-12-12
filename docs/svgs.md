@@ -2,6 +2,7 @@
 
 - [box](https://simpleicons.org/?q=box)
 - [behance](https://simpleicons.org/?q=behance)
+- [bitbucket](https://simpleicons.org/?q=bitbucket)
 - [codesandbox](https://simpleicons.org/?q=codesandbox)
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
@@ -17,6 +18,7 @@
 - gitbook
 - [github](https://feathericons.com/?query=github)
 - [gitlab](https://feathericons.com/?query=gitlab)
+- [gitter](https://simpleicons.org/icons/gitter.svg)
 - [goodreads](https://simpleicons.org/?q=goodreads)
 - [googlescholar](https://simpleicons.org/?q=googlescholar)
 - [hackerone](https://simpleicons.org/?q=hackerone)
@@ -40,6 +42,7 @@
 - [signal](https://simpleicons.org/?q=signal)
 - [slack](https://simpleicons.org/?q=slack)
 - [soundcloud](https://simpleicons.org/?q=soundcloud)
+- [spotify](https://simpleicons.org/?q=spotify)
 - [stackoverflow](https://simpleicons.org/?q=stackoverflow)
 - [steam](https://simpleicons.org/?q=Steam)
 - [telegram](https://simpleicons.org/?q=telegram)
