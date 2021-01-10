@@ -1,33 +1,41 @@
 .post-content {
-    table {
-        display: inline-block;
-        border-collapse: collapse;
-        margin: 25px auto;
-        font-size: 0.9em;
-        min-width: 400px;
-        max-width: 100%;
-        overflow-x: auto;
+  table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    max-width: 100%;
+
+    th,
+    td {
+      padding: 12px 15px;
+      border: 1px solid $light-table-color;
+
+      .dark-theme & {
+        border: 1px solid $dark-table-color;
+      }
     }
 
-    table thead tr {
+    thead {
+      tr {
         background-color: $light-table-color;
         color: $light-color;
         text-align: left;
-        
+
         .dark-theme & {
-            background-color: $dark-table-color;
-            color: $dark-color
+          background-color: $dark-table-color;
+          color: $dark-color;
         }
+      }
     }
 
-    th, td {
-        padding: 12px 15px;
-    }
-
-    tbody tr {
+    tbody {
+      tr {
         border: 1px solid $light-table-color;
         .dark-theme & {
-            border: 1px solid $dark-table-color;
+          border: 1px solid $dark-table-color;
         }
+      }
     }
+  }
 }

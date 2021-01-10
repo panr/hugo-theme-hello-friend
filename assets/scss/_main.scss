@@ -57,6 +57,7 @@ h1 {
 
 h2 {
   font-size: 1.625rem;
+  margin-top: 2.5em;
 }
 
 h3 {
@@ -171,6 +172,14 @@ figure {
   }
 }
 
+em, i, strong {
+  color: black;
+
+  .dark-theme & {
+    color: white;
+  }
+}
+
 code {
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-display: auto;
@@ -212,7 +221,7 @@ pre {
 }
 
 blockquote {
-  border-left: 2px solid;
+  border-left: 3px solid #3eb0ef;
   margin: 40px;
   padding: 10px 20px;
 
