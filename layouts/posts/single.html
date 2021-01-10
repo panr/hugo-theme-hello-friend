@@ -22,6 +22,14 @@
         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
       </h1>
 
+      {{ with .Params.Description }}
+        <div class="post-excerpt">{{ . }}</div>
+      {{ end }}
+
+      {{ with .Params.Cover }}
+        <img src="/{{ . }}" class="post-cover" />
+      {{ end }}
+
       {{- if .Params.toc }}
         <hr />
         <aside id="toc">
@@ -30,10 +38,6 @@
         </aside>
         <hr />
       {{- end }}
-
-      {{ with .Params.Cover }}
-        <img src="/{{ . }}" class="post-cover" />
-      {{ end }}
 
       <div class="post-content">
         {{ .Content }}
