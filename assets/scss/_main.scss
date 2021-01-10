@@ -330,3 +330,10 @@ hr {
 	text-decoration: none;
 	z-index: 100000;
 }
+
+.background-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
