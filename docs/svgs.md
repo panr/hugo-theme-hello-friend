@@ -1,5 +1,6 @@
 # Available Social Icons:
 
+- [amazon](https://simpleicons.org/?q=amazon)
 - [box](https://simpleicons.org/?q=box)
 - [behance](https://simpleicons.org/?q=behance)
 - [bitbucket](https://simpleicons.org/?q=bitbucket)
