@@ -8,7 +8,7 @@ var metaThemeColor = document.querySelector("meta[name=theme-color]");
 if (theme !== null) {
   document.body.classList.toggle("dark-theme", isDark);
   isDark
-    ? metaThemeColor.setAttribute("content", "#252627")
+    ? metaThemeColor.setAttribute("content", "#1b1c1d")
     : metaThemeColor.setAttribute("content", "#fafafa");
 }
 
@@ -22,6 +22,6 @@ themeToggle.addEventListener("click", () => {
     );
 
   document.body.classList.contains("dark-theme")
-    ? metaThemeColor.setAttribute("content", "#252627")
+    ? metaThemeColor.setAttribute("content", "#1b1c1d")
     : metaThemeColor.setAttribute("content", "#fafafa");
 });

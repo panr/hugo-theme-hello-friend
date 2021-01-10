@@ -93,7 +93,7 @@ disableHugoGeneratorInject = false
   # Default theme "light" or "dark"
   #
   defaultTheme = "dark"
-  themeColor = "#252627"
+  themeColor = "#1b1c1d"
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
@@ -104,9 +104,9 @@ disableHugoGeneratorInject = false
   # Colors for favicons
   #
   [params.favicon.color]
-    mask = "#252627"
-    msapplication = "#252627"
-    theme = "#252627"
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
 
   [params.logo]
     logoMark     = ">"
