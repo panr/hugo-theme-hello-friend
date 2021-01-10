@@ -106,6 +106,7 @@ disableHugoGeneratorInject = false
     theme = "#252627"
 
   [params.logo]
+    logoMark     = ">"
     logoText     = "$ cd /home/"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
