@@ -26,8 +26,14 @@
         <div class="post-excerpt">{{ . }}</div>
       {{ end }}
 
-      {{ with .Params.Cover }}
-        <img src="/{{ . }}" class="post-cover" />
+      {{ if .Params.Cover }}
+        <figure class="post-cover">
+          <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
+          
+          {{ if .Params.CoverCaption }}
+            <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
+          {{ end }}
+        </figure>
       {{ end }}
 
       {{- if .Params.toc }}
