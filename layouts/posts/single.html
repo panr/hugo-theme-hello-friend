@@ -150,5 +150,10 @@
       {{ end }}
     {{ end }}
 
+    {{ if .Site.Params.CommentoUrl }}
+      <script defer src={{ .Site.Params.CommentoUrl }}></script>
+      <div id="commento"></div>
+    {{ end }}
+
   </main>
 {{ end }}

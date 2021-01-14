@@ -34,6 +34,7 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 - Fully responsive
 - Support for social icons
 - Support for sharing buttons
+- Support for [Commento](https://commento.io)
 
 
 ## How to start
