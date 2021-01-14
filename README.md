@@ -1,6 +1,6 @@
 # Hello Friend NG
 
-![Hello Friend NG](https://dsh.re/2bd45)
+![Hello Friend NG](https://dsh.re/d914c)
 
 ## General informations
 
@@ -27,7 +27,7 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 ---
 ## Features
 
-- Theming: **dark/light mode**, depending on your preferences (dark is default, but you can change it)
+- Theming: **dark/light mode**, depending on your system preferences
 - Great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - Nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - An easy way to modify the theme with Hugo tooling
@@ -85,9 +85,6 @@ paginate     = 10
   description = "My new homepage or blog"
   keywords = "homepage, blog"
   images = [""]
-
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
 
 [taxonomies]
     category = "blog"

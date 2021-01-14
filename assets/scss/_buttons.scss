@@ -23,12 +23,10 @@ a.button {
   cursor: pointer;
   outline: none;
 
-  .dark-theme & {
+  @media (prefers-color-scheme: dark) {
     background: $dark-background-secondary;
     color: inherit;
   }
-
-  /* variants */
 
   &.outline {
     background: transparent;
@@ -36,7 +34,7 @@ a.button {
     box-shadow: none;
     padding: 8px 18px;
 
-    .dark-theme & {
+    @media (prefers-color-scheme: dark) {
       border-color: $dark-background-secondary;
       color: inherit;
     }
@@ -91,7 +89,7 @@ a.button {
     cursor: pointer;
     outline: none;
 
-    .dark-theme & {
+    @media (prefers-color-scheme: dark) {
       background: $dark-background-secondary;
       color: inherit;
     }

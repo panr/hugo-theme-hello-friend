@@ -12,7 +12,7 @@
   &:not(:last-of-type) {
     border-bottom: 1px solid $light-border-color;
 
-    .dark-theme & {
+    @media (prefers-color-scheme: dark) {
       border-color: $dark-border-color;
     }
   }

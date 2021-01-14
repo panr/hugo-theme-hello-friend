@@ -100,11 +100,6 @@ disableHugoGeneratorInject = false
   #
   justifyContent = false  # Set "text-align: justify" to .post-content.
 
-  # Default theme "light" or "dark"
-  #
-  defaultTheme = "dark"
-  themeColor = "#1b1c1d"
-
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
   #

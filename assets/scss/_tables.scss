@@ -11,7 +11,7 @@
       padding: 12px 15px;
       border: 1px solid $light-table-color;
 
-      .dark-theme & {
+      @media (prefers-color-scheme: dark) {
         border: 1px solid $dark-table-color;
       }
     }
@@ -22,7 +22,7 @@
         color: $light-color;
         text-align: left;
 
-        .dark-theme & {
+        @media (prefers-color-scheme: dark) {
           background-color: $dark-table-color;
           color: $dark-color;
         }
@@ -32,7 +32,8 @@
     tbody {
       tr {
         border: 1px solid $light-table-color;
-        .dark-theme & {
+        
+        @media (prefers-color-scheme: dark) {
           border: 1px solid $dark-table-color;
         }
       }
