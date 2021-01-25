@@ -34,6 +34,7 @@
 - [matrix](https://simpleicons.org/?q=matrix)
 - [medium](https://simpleicons.org/?q=medium)
 - [mixcloud](https://simpleicons.org/?q=mixcloud)
+- [npm](https://simpleicons.org/?q=npm)
 - [orcid](https://simpleicons.org/?q=orcid)
 - [pinterest](https://simpleicons.org/?q=pinterest)
 - [peertube](https://simpleicons.org/?q=peertube)
