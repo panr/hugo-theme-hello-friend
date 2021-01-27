@@ -17,6 +17,7 @@
 - [facebook](https://simpleicons.org/?q=facebook)
 - git
 - gitbook
+- [gitea](https://simpleicons.org/?q=gitea)
 - [github](https://feathericons.com/?query=github)
 - [gitlab](https://feathericons.com/?query=gitlab)
 - [gitter](https://simpleicons.org/icons/gitter.svg)
