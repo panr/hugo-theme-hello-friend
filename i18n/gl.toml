@@ -1,25 +1,25 @@
-# Translations for Spanish
+# Translations for Galician
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # Generic
 #
 [translations]
-other = "Traducciones"
+other = "Traducións"
 
 [postAvailable]
-other = "También disponible en"
+other = "Tamén dispoñible en"
 
 
 # 404.html
 #
 [archives]
-other = "Archivo"
+other = "Arquivos"
 
 [home]
-other = "Home"
+other = "Inicio"
 
 [notFound]
-other = "Oops, página no encontrada…"
+other = "Vaia, non se atopou a páxina..."
 
 
 # posts/single.html
@@ -29,11 +29,8 @@ one   = "Un minuto"
 other = "{{ .Count }} minutos"
 
 [tableOfContents]
-other = "Tabla de Contenido"
+other = "Táboa de contidos"
 
 [wordCount]
-one   = "Una Palabra"
+one   = "Unha Palabra"
 other = "{{ .Count }} Palabras"
-
-[lastModified]
-other = "Ultima actualización"

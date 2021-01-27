@@ -51,46 +51,60 @@ disableHugoGeneratorInject = false
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  dateformNumTime = "2006-01-02 15:04"
 
   # Metadata mostly used in document's head
+  # 
   description = "Nice theme for homepages and blogs"
   keywords = ""
   images = [""]
 
   homeSubtitle = "Hello Friend NG"
 
+  # Set a background for the homepage
+  # backgroundImage = "assets/images/background.jpg"
+
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
   # gitUrl = ""
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
   disableReadOtherPosts = false
 
   # Sharing buttons
+  #
   # There are a lot of buttons preconfigured. If you want to change them,
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
   enableSharingButtons = true
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
   customCSS = []
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
   justifyContent = false  # Set "text-align: justify" to .post-content.
 
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
-  themeColor = "#252627"
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  # footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
+  # footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
 
   # Colors for favicons
+  #
   [params.favicon.color]
-    mask = "#252627"
-    msapplication = "#252627"
-    theme = "#252627"
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
 
   [params.logo]
+    logoMark     = ">"
     logoText     = "$ cd /home/"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
@@ -100,7 +114,19 @@ disableHugoGeneratorInject = false
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
 
+  # Commento is more than just a comments widget you can embed — 
+  # it’s a return to the roots of the internet. 
+  # An internet without the tracking and invasions of privacy. 
+  # An internet that is simple and lightweight. 
+  # An internet that is focused on interesting discussions, not ads. 
+  # A better internet.
+  # Uncomment this to enable Commento.
+  #
+  # [params.commento]
+  #   url = ""
+
   # Uncomment this if you want a portrait on your start page
+  #
   # [params.portrait]
   #   path     = "/img/image.jpg"
   #   alt      = "Portrait"

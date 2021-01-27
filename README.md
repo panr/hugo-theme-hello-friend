@@ -1,10 +1,10 @@
 # Hello Friend NG
 
-![Hello Friend NG](https://dsh.re/2bd45)
+![Hello Friend NG](https://dsh.re/d914c)
 
 ## General informations
 
-This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit). A lot of kudos for theier great work.
+This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit). A lot of kudos for their great work.
 
 ---
 ## Table of Contents
@@ -27,13 +27,14 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 ---
 ## Features
 
-- Theming: **dark/light mode**, depending on your preferences (dark is default, but you can change it)
+- Theming: **dark/light mode**, depending on your system preferences
 - Great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - Nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - An easy way to modify the theme with Hugo tooling
 - Fully responsive
 - Support for social icons
 - Support for sharing buttons
+- Support for [Commento](https://commento.io)
 
 
 ## How to start
@@ -69,7 +70,7 @@ paginate     = 10
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
   homeSubtitle = "A simple and beautiful blog"
@@ -84,9 +85,6 @@ paginate     = 10
   description = "My new homepage or blog"
   keywords = "homepage, blog"
   images = [""]
-
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
 
 [taxonomies]
     category = "blog"
@@ -139,8 +137,6 @@ Example:
 
 ### Code highlighting
 
-Supported languages: [Take a look here](https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+c+arff+asciidoc+asm6502+csharp+autohotkey+autoit+bash+basic+batch+bison+brainfuck+bro+cpp+aspnet+arduino+cil+coffeescript+clojure+ruby+csp+css-extras+d+dart+diff+markup-templating+docker+eiffel+elixir+elm+lua+erb+erlang+fsharp+flow+fortran+gcode+gedcom+gherkin+git+glsl+gml+go+graphql+groovy+less+handlebars+haskell+haxe+hcl+http+hpkp+hsts+ichigojam+icon+inform7+ini+io+j+java+scala+php+javastacktrace+jolie+n4js+markdown+json+julia+keyman+kotlin+latex+crystal+scheme+liquid+lisp+livescript+lolcode+makefile+django+matlab+mel+mizar+monkey+n1ql+typescript+nand2tetris-hdl+nasm+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+perl+php-extras+sql+powershell+processing+prolog+properties+protobuf+scss+puppet+pure+python+q+qore+r+jsx+renpy+reason+vala+rest+rip+roboconf+textile+rust+plsql+sass+stylus+smalltalk+smarty+soy+sas+twig+swift+yaml+tcl+haml+toml+tt2+pug+tsx+visual-basic+vbnet+velocity+verilog+vhdl+vim+wasm+wiki+xeora+xojo+xquery+tap)
-
 By default the theme is using PrismJS to color your code syntax. All you need to do is to wrap you code like this:
 
 <pre>
@@ -183,6 +179,6 @@ If you like my work and if you think this project is worth to support it, just <
 
 ## Licence
 
-Copyright © 2019-2020 Djordje Atlialp
+Copyright © 2019-2021 Djordje Atlialp
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.

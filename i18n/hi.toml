@@ -34,3 +34,6 @@ other = "अनुक्रमणिका"
 [wordCount]
 one   = "एक शब्द"
 other = "{{ .Count }} शब्द"
+
+[lastModified]
+other = "आखरी अपडेट"

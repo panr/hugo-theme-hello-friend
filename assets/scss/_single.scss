@@ -44,12 +44,17 @@
   &-cover {
     border-radius: 8px;
     margin: 40px -50px;
-    width: 860px;
-    max-width: 860px;
+    width: $max-width;
+    max-width: $max-width;
     @media #{$media-size-tablet} {
       margin: 20px 0;
       width: 100%;
     }
+  }
+
+  &-excerpt {
+    color: grey;
+    font-style: italic;
   }
 
   &-info {
@@ -113,7 +118,7 @@
       letter-spacing: 0.1em;
       z-index: 1;
 
-      .dark-theme & {
+      @media (prefers-color-scheme: dark) {
         background: $dark-background;
         color: $dark-color-secondary;
       }
@@ -155,7 +160,7 @@
   cursor: pointer;
   appearance: none;
 
-  .dark-theme & {
+  @media (prefers-color-scheme: dark) {
     background: $dark-background-secondary;
   }
 

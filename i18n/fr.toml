@@ -34,3 +34,6 @@ other = "Table des matières"
 [wordCount]
 one   = "Un Mot"
 other = "{{ .Count }} Mots"
+
+[lastModified]
+other = "Mise à jour"
