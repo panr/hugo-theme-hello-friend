@@ -16,7 +16,7 @@
 - [email](https://feathericons.com/?query=mail)
 - [facebook](https://simpleicons.org/?q=facebook)
 - git
-- gitbook
+- [gitbook](https://simpleicons.org/?q=gitbook)
 - [gitea](https://simpleicons.org/?q=gitea)
 - [github](https://feathericons.com/?query=github)
 - [gitlab](https://feathericons.com/?query=gitlab)
@@ -30,7 +30,7 @@
 - [keybase](https://simpleicons.org/?q=keybase)
 - [lastfm](https://simpleicons.org/?q=lastfm)
 - [leetcode](https://simpleicons.org/?q=leetcode)
-- [lichess](https://simpleicons.org/?q=lichess")
+- [lichess](https://simpleicons.org/?q=lichess)
 - [linkedin](https://feathericons.com/?query=linked)
 - [mastodon](https://simpleicons.org/?q=mastodon)
 - [matrix](https://simpleicons.org/?q=matrix)
