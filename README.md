@@ -78,7 +78,7 @@ paginate     = 10
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
 
-  # Enable sharing buttons, if you linke
+  # Enable sharing buttons, if you like
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
