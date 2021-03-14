@@ -16,6 +16,7 @@
 - [dribbble](https://simpleicons.org/?q=dribbble)
 - [email](https://feathericons.com/?query=mail)
 - [facebook](https://simpleicons.org/?q=facebook)
+- [fitbit](https://simpleicons.org/?q=fitbit)
 - git
 - [gitbook](https://simpleicons.org/?q=gitbook)
 - [gitea](https://simpleicons.org/?q=gitea)
