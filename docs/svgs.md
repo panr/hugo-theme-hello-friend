@@ -8,7 +8,7 @@
 - [codesandbox](https://simpleicons.org/?q=codesandbox)
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
-- [dev](https://simpleicons.org/?q=devto)
+- dev
 - [deviantart](https://simpleicons.org/?q=deviantart)
 - [discogs](https://simpleicons.org/?q=discogs)
 - [discord](https://simpleicons.org/?q=discord)
