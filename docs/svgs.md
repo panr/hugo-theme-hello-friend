@@ -23,6 +23,7 @@
 - [gitlab](https://feathericons.com/?query=gitlab)
 - [gitter](https://simpleicons.org/icons/gitter.svg)
 - [goodreads](https://simpleicons.org/?q=goodreads)
+- [googleplay](https://simpleicons.org/?q=googleplay)
 - [googlescholar](https://simpleicons.org/?q=googlescholar)
 - [hackerone](https://simpleicons.org/?q=hackerone)
 - [hackerrank](https://simpleicons.org/?q=hackerrank)
