@@ -1,6 +1,7 @@
 # Available Social Icons:
 
 - [amazon](https://simpleicons.org/?q=amazon)
+- [anilist](https://simpleicons.org/?q=anilist)
 - [box](https://simpleicons.org/?q=box)
 - [behance](https://simpleicons.org/?q=behance)
 - [bitbucket](https://simpleicons.org/?q=bitbucket)
@@ -33,6 +34,7 @@
 - [keybase](https://simpleicons.org/?q=keybase)
 - [lastfm](https://simpleicons.org/?q=lastfm)
 - [leetcode](https://simpleicons.org/?q=leetcode)
+- [letterboxd](https://simpleicons.org/?q=letterboxd)
 - [lichess](https://simpleicons.org/?q=lichess)
 - [linkedin](https://feathericons.com/?query=linked)
 - [mastodon](https://simpleicons.org/?q=mastodon)
