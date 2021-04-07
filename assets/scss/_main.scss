@@ -29,6 +29,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
 
+  // Default
+  background-color: $light-background;
+  color: $light-color;
+
   @media #{$media-size-phone} {
     font-size: 1rem;
   }
@@ -186,6 +190,9 @@ figure {
 }
 
 em, i, strong {
+  // Default
+  color: black;
+
   @media (prefers-color-scheme: dark) {
     color: white;
   }
@@ -211,6 +218,8 @@ code {
   margin: 0 2px;
   border-radius: 5px;
   font-size: 0.95rem;
+  // Default
+  background: $light-background-secondary;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-secondary;
@@ -246,6 +255,8 @@ pre {
     margin: 0;
     padding: 0;
     font-size: inherit;
+    // Default
+    color: #ccc;
 
     @media (prefers-color-scheme: dark) {
       color: inherit;
@@ -333,6 +344,8 @@ hr {
   width: 100%;
   border: none;
   height: 1px;
+  // Default
+  background: $light-border-color;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-border-color;

@@ -4,6 +4,8 @@
   justify-content: center;
   position: relative;
   padding: 20px;
+  // Default
+  background: $light-background-header;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-header;

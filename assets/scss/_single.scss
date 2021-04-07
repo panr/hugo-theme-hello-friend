@@ -115,6 +115,9 @@
       text-decoration: none;
       letter-spacing: 0.1em;
       z-index: 1;
+      // Default
+      background: $light-background;
+      color: $light-color-secondary;
 
       @media (prefers-color-scheme: dark) {
         background: $dark-background;
@@ -171,6 +174,8 @@
   padding: 0;
   cursor: pointer;
   appearance: none;
+  // Default
+  background: $light-background-secondary;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-secondary;

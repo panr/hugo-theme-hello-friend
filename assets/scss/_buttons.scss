@@ -21,6 +21,8 @@ a.button {
   appearance: none;
   cursor: pointer;
   outline: none;
+  // Default
+  background: $light-background-header;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-header;
@@ -44,6 +46,8 @@ a.button {
     background: transparent;
     box-shadow: none;
     padding: 8px 18px;
+    // Default
+    border-color: $light-background-secondary;
 
     @media (prefers-color-scheme: dark) {
       border-color: $dark-background-secondary;
@@ -111,6 +115,8 @@ a.button {
     appearance: none;
     cursor: pointer;
     outline: none;
+    // Default
+    background: $light-background-secondary;
 
     @media (prefers-color-scheme: dark) {
       background: $dark-background-secondary;

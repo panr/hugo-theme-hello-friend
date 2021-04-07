@@ -9,6 +9,8 @@
     th,
     td {
       padding: 12px 15px;
+      // Default
+      border: 1px solid $light-table-color;
       
       @media (prefers-color-scheme: dark) {
         border: 1px solid $dark-table-color;
@@ -30,6 +32,9 @@
     thead {
       tr {
         text-align: left;
+        // Default
+        background-color: $light-table-color;
+        color: $light-color;
 
         @media (prefers-color-scheme: dark) {
           background-color: $dark-table-color;
@@ -55,6 +60,9 @@
 
     tbody {
       tr {
+        // Default
+        border: 1px solid $light-table-color;
+        
         @media (prefers-color-scheme: dark) {
           border: 1px solid $dark-table-color;
         }

@@ -10,6 +10,9 @@
   }
 
   &:not(:last-of-type) {
+    // Default
+    border-bottom: 1px solid $light-border-color;
+
     @media (prefers-color-scheme: dark) {
       border-bottom: 1px solid $dark-border-color;
     }
