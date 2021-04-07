@@ -59,6 +59,8 @@ disableHugoGeneratorInject = false
   keywords = ""
   images = [""]
 
+  # Home subtitle of the index page.
+  #
   homeSubtitle = "Hello Friend NG"
 
   # Set a background for the homepage
@@ -71,6 +73,14 @@ disableHugoGeneratorInject = false
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
   disableReadOtherPosts = false
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = false
 
   # Sharing buttons
   #

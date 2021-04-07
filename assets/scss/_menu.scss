@@ -1,9 +1,20 @@
 .menu {
-  background: $light-background-header;
   z-index: 9999;
 
   @media (prefers-color-scheme: dark) {
     background: $dark-background-header;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: $light-background-header;
+  }
+
+  [data-theme=dark] & {
+    background: $dark-background-header;
+  }
+
+  [data-theme=light] & {
+    background: $light-background-header;
   }
 
   @media #{$media-size-phone} {

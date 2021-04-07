@@ -13,7 +13,6 @@ a.button {
   justify-content: center;
   padding: 8px 18px;
   margin-bottom: 5px;
-  background: $light-background-secondary;
   text-decoration: none;
   text-align: center;
   font-weight: 500;
@@ -24,19 +23,44 @@ a.button {
   outline: none;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-background-secondary;
+    background: $dark-background-header;
     color: inherit;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: $light-background-header;
+  }
+
+  [data-theme=dark] & {
+    background: $dark-background-header;
+    color: inherit;
+  }
+
+  [data-theme=light] & {
+    background: $light-background-header;
   }
 
   &.outline {
     background: transparent;
-    border-color: $light-background-secondary;
     box-shadow: none;
     padding: 8px 18px;
 
     @media (prefers-color-scheme: dark) {
       border-color: $dark-background-secondary;
       color: inherit;
+    }
+  
+    @media (prefers-color-scheme: light) {
+      border-color: $light-background-secondary;
+    }
+  
+    [data-theme=dark] & {
+      border-color: $dark-background-secondary;
+      color: inherit;
+    }
+  
+    [data-theme=light] & {
+      border-color: $light-background-secondary;
     }
 
     :hover {
@@ -78,7 +102,6 @@ a.button {
     justify-content: center;
     padding: 3px 8px;
     margin-bottom: 5px;
-    background: $light-background-secondary;
     text-decoration: none;
     text-align: center;
     font-size: 13px;
@@ -92,6 +115,19 @@ a.button {
     @media (prefers-color-scheme: dark) {
       background: $dark-background-secondary;
       color: inherit;
+    }
+  
+    @media (prefers-color-scheme: light) {
+      background: $light-background-secondary;
+    }
+  
+    [data-theme=dark] & {
+      background: $dark-background-secondary;
+      color: inherit;
+    }
+  
+    [data-theme=light] & {
+      background: $light-background-secondary;
     }
   }
 }
