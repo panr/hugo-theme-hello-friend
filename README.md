@@ -151,7 +151,15 @@ Check the [docs](docs/favicons.md).
 
 ## Social Icons:
 
-Take a look into this [list](docs/svgs.md)
+A large variety of social icons are available and can be configured like this:
+
+```toml
+[[params.social]]
+  name = "<site>"
+  url = "<profile_URL>"
+```
+
+Take a look into this [list](docs/svgs.md) of available icon options. 
 
 If you need another one, just open an issue or create a pull request with your wished icon. :)
 
