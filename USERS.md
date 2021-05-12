@@ -36,3 +36,4 @@ TEMPLATE:
 - https://verso.re/ - **Joan Calabrés** (Security Engineer)
 - https://gregbair.dev/ - **Greg Bair** (Developer and App Architect)
 - https://farhamdani.com/ - **Farhamdani** (Freelancer & Nganggur Productive)
+- https://fmg3d.com/ - **Finn M Glas** (Aspiring Physicist, Software Developer)
