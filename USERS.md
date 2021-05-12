@@ -34,8 +34,8 @@ TEMPLATE:
 - https://shinytoyrobots.com - **shinytoyrobots** (Eclectic journaling and essays)
 - https://simeononsecurity.ch/ - **SimeonOnSecurity** (Security and Automation Blog)
 - https://verso.re/ - **Joan Calabrés** (Security Engineer)
+- https://atticuslab.com/ - **Atticus** (Game Server Engineer)
 - https://gregbair.dev/ - **Greg Bair** (Developer and App Architect)
 - https://www.miroslavbucek.cz - **Miroslav Buček** (Product Manager, Smart Home company owner)
 - https://farhamdani.com/ - **Farhamdani** (Freelancer & Nganggur Productive)
 - https://fmg3d.com/ - **Finn M Glas** (Aspiring Physicist, Software Developer)
-
