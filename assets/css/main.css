@@ -190,7 +190,8 @@ blockquote {
   }
 }
 
-table {
+/* Fix for gist integration */
+table:not(.js-file-line-container) {
   table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
@@ -198,7 +199,8 @@ table {
   border-radius: 5px;
 }
 
-table, th, td {
+/* Fix for gist integration */
+table, th, td:not(.js-line-number) {
   border: 1px solid;
   padding: 10px;
 }
