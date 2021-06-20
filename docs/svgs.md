@@ -57,6 +57,7 @@
 - [stackoverflow](https://simpleicons.org/?q=stackoverflow)
 - [steam](https://simpleicons.org/?q=Steam)
 - [telegram](https://simpleicons.org/?q=telegram)
+- [tryhackme](https://simpleicons.org/?q=tryhackme)
 - [tumblr](https://simpleicons.org/?q=tumblr)
 - [twitch](https://simpleicons.org/?q=twitch)
 - [twitter](https://simpleicons.org/?q=twitter)
