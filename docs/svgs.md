@@ -49,6 +49,7 @@
 - [pixelfed](https://github.com/pixelfed/pixelfed/blob/dev/public/img/pixelfed-icon-black.svg)
 - [podcasts-apple](https://simpleicons.org/?q=podcast)
 - [podcasts-google](https://simpleicons.org/?q=podcast)
+- [polywork](https://simpleicons.org/?q=polywork)
 - [reddit](https://simpleicons.org/?q=reddit)
 - [researchgate](https://simpleicons.org/?q=researchgate)
 - [signal](https://simpleicons.org/?q=signal)
