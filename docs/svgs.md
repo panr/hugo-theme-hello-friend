@@ -36,6 +36,7 @@
 - [lastfm](https://simpleicons.org/?q=lastfm)
 - [leetcode](https://simpleicons.org/?q=leetcode)
 - [letterboxd](https://simpleicons.org/?q=letterboxd)
+- [librepay](https://simpleicons.org/?q=liberapay)
 - [lichess](https://simpleicons.org/?q=lichess)
 - [linkedin](https://feathericons.com/?query=linked)
 - [mastodon](https://simpleicons.org/?q=mastodon)
