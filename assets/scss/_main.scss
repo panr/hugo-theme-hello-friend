@@ -239,7 +239,14 @@ code {
 }
 
 pre {
-  background: #212020;
+  [data-theme=dark] & {
+    background-color: $dark-background-secondary;
+  }
+
+  [data-theme=light] & {
+    background-color: $light-background-secondary;
+  }
+
   padding: 10px 10px 10px 20px;
   border-radius: 8px;
   font-size: 0.95rem;
