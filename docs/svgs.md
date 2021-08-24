@@ -17,6 +17,7 @@
 - [dribbble](https://simpleicons.org/?q=dribbble)
 - [email](https://feathericons.com/?query=mail)
 - [facebook](https://simpleicons.org/?q=facebook)
+- [facebook-messenger](https://simpleicons.org/?q=messenger)
 - [fitbit](https://simpleicons.org/?q=fitbit)
 - git
 - [gitbook](https://simpleicons.org/?q=gitbook)
