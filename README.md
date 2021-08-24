@@ -36,6 +36,7 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 - An easy way to modify the theme with Hugo tooling
 - Fully responsive
 - Audio support for posts (thanks to [@talbotp](https://github.com/talbotp))
+- Builtin (enableable/disableable) multilanguage menu
 - Support for social icons
 - Support for sharing buttons
 - Support for [Commento](https://commento.io)
