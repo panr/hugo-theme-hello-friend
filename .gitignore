@@ -33,3 +33,6 @@ Temporary Items
 # End of https://www.gitignore.io/api/macos
 
 .vscode
+
+# customize Headers whiteout touch git submodule.
+layouts/partials/extra-head.html
