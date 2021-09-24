@@ -31,7 +31,7 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 ## Features
 
 - Theming: **dark/light mode**, depending on your system preferences or the users choice
-- Great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
+- Great reading experience thanks to [**Inter font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - Nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - An easy way to modify the theme with Hugo tooling
 - Fully responsive
