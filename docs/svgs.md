@@ -45,6 +45,7 @@
 - [medium](https://simpleicons.org/?q=medium)
 - [mixcloud](https://simpleicons.org/?q=mixcloud)
 - [npm](https://simpleicons.org/?q=npm)
+- [opencollective](https://simpleicons.org/?q=opencollective)
 - [orcid](https://simpleicons.org/?q=orcid)
 - [peertube](https://simpleicons.org/?q=peertube)
 - [pinterest](https://simpleicons.org/?q=pinterest)
