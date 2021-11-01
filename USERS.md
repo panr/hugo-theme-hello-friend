@@ -39,5 +39,6 @@ TEMPLATE:
 - https://www.miroslavbucek.cz - **Miroslav Buček** (Product Manager, Smart Home company owner)
 - https://farhamdani.com/ - **Farhamdani** (Freelancer & Nganggur Productive)
 - https://fmg3d.com/ - **Finn M Glas** (Aspiring Physicist, Software Developer)
+- https://nali.org/ - **Nick Ali** (Marketer)
 - https://abhinav031.github.io - **Abhinav Sriram** (Digital Artist, Hobbyist)
 - https://schnerring.net/ - **Michael Schnerring** (Software Engineer)
