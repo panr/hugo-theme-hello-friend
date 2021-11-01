@@ -37,12 +37,25 @@ module.exports = (env, { mode }) => ({
         },
       },
       {
-        test: /\.(png|jpg|woff|woff2|ttf|eot|svg)$/,
+        test: /\.(png|jpg|svg)$/,
         use: [
           {
-            loader: "url-loader",
+            loader: "file-loader",
             options: {
-              limit: 8192,
+              name: "[name].[ext]",
+              outputPath: "images",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|ttf|eot)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts",
             },
           },
         ],
@@ -64,6 +77,11 @@ module.exports = (env, { mode }) => ({
           "postcss-loader",
         ],
       },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/i,
+        // More information here https://webpack.js.org/guides/asset-modules/
+        type: "asset",
+      },
     ],
   },
   optimization: {
@@ -82,7 +100,7 @@ module.exports = (env, { mode }) => ({
   plugins: [
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [join("static/assets")],
-      cleanAfterEveryBuildPatterns: ["!images/**/*", "!fonts/**/*", join("static/assets/style.js")],
+      cleanAfterEveryBuildPatterns: [join("static/assets/style.js")],
       verbose: true,
     }),
     new MiniCssExtractPlugin({

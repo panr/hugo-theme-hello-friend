@@ -1,5 +1,6 @@
-@import 'fonts.css';
 @import 'variables.css';
+
+@import 'fonts.css';
 @import 'buttons.css';
 
 @import 'header.css';
