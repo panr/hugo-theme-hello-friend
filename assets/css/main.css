@@ -133,6 +133,7 @@ code, kbd {
   border-radius: 5px;
   font-size: .9rem;
   font-weight: normal;
+  font-feature-settings: normal;
 
   code, kbd {
     background: transparent;
