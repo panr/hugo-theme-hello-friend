@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack --mode=development --watch",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "prepare": "husky install"
   },
   "browserslist": [
     "last 2 versions",
