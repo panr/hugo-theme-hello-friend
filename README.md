@@ -99,13 +99,13 @@ You can download the theme manually by going to [https://github.com/panr/hugo-th
 You can also clone it directly to your Hugo folder:
 
 ```bash
-$ git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
 ```bash
-$ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
 ⚠️ **The theme needs at least Hugo version 0.74.x**.
@@ -115,7 +115,7 @@ $ git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/h
 From your Hugo root directory run:
 
 ```
-$ hugo server -t hello-friend
+hugo server -t hello-friend
 ```
 
 and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
@@ -233,27 +233,27 @@ To change something directly in the theme, you have to go to `themes/hello-frien
 First, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
 
 ```bash
- $ cd themes/hello-friend
+ cd themes/hello-friend
 ```
 
  then run:
 
  ```bash
- $ npm install
- $ npm i yarn
- $ yarn
+ npm install
+ npm i yarn
+ yarn
  ```
 
 After you modified the files you can run webpack in watch mode:
 
 ```bash
-$ yarn dev
+yarn dev
 ```
 
 or rebuild theme
 
 ```bash
-$ yarn build
+yarn build
 ```
 
 To see the changes (remember to restart `hugo server`).
