@@ -37,28 +37,18 @@ module.exports = (env, { mode }) => ({
         },
       },
       {
-        test: /\.(png|jpg|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images",
-            },
-          },
-        ],
+        test: /\.(png|jpe?g|svg)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name][ext]",
+        },
       },
       {
         test: /\.(woff|woff2|ttf|eot)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "fonts",
-            },
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
       },
       {
         test: /\.css$/,
