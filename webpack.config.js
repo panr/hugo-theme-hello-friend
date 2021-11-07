@@ -74,13 +74,10 @@ module.exports = (env, { mode }) => ({
               importLoaders: 1,
             },
           },
-          "postcss-loader",
+          {
+            loader: "postcss-loader",
+          },
         ],
-      },
-      {
-        test: /\.(eot|ttf|woff|woff2)$/i,
-        // More information here https://webpack.js.org/guides/asset-modules/
-        type: "asset",
       },
     ],
   },
