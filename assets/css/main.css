@@ -288,3 +288,7 @@ h4:hover a {
   opacity: 1;
   transition-delay: 0s;
 }
+
+.framed .h-anchor {
+  visibility: hidden;
+}
