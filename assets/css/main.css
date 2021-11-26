@@ -272,3 +272,19 @@ blockquote.twitter-tweet {
   line-height: inherit;
   border-radius: 8px;
 }
+
+.h-anchor {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+  margin-left: 1px;
+}
+
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
