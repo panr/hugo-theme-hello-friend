@@ -2,16 +2,16 @@
 #
 # To use:
 # First, build a Docker image:
-#  $ cd $theme_dir
+#  $ cd themes/hello-friend
 #  $ docker build . --tag <some_tag_name>
 #
 # Now, to rebuild the theme:
-#  $ cd $theme_dir
+#  $ cd themes/hello-friend
 #  $ docker run -it \
 #    --mount type=bind,source="$(pwd)",destination=/hello-friend \
 #    <some_tag_name>:latest
 #
-# The newly built theme files will be written back into your theme's directory
+# The newly built theme files will be written back into the theme directory
 # through the magic of Docker bind mounts
 
 FROM alpine:latest
