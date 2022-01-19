@@ -178,15 +178,18 @@ paginate = 5
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
+    # `weight` is used to sord menu items. https://gohugo.io/variables/menus/
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
+        weight = 1
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
+        weight = 0
 ```
 
 to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/8f9b363e358aaa33f6d353c77feee959).
