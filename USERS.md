@@ -42,4 +42,4 @@ TEMPLATE:
 - https://nali.org/ - **Nick Ali** (Marketer)
 - https://abhinav031.github.io - **Abhinav Sriram** (Digital Artist, Hobbyist)
 - https://schnerring.net/ - **Michael Schnerring** (Software Engineer)
-- https://codigonovato.netlify.app **Javier Rangel** (Dev and notes)**
+- https://codigonovato.netlify.app **Javier Rangel** (Dev and notes)
