@@ -274,10 +274,12 @@ blockquote.twitter-tweet {
 }
 
 .h-anchor {
+  margin-left: 1px;
+  color: var(--color-secondary);
+  text-decoration: none;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.1s, opacity 0.1s linear;
-  margin-left: 1px;
 }
 
 h1:hover a,
