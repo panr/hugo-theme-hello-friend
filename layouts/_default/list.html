@@ -42,18 +42,12 @@
           {{ with .Description }}
             {{ . | markdownify }}
             {{ else }}
-            {{ if .Truncated }}
-              {{ .Summary }}
+            {{ .Summary | markdownify }}
+            {{ if and .Truncated (not .Params.hideReadMore) }}
+            <div><a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore | default "Read more" }} →</a></div>
             {{ end }}
           {{ end }}
         </div>
-        {{ if not .Params.hideReadMore }}
-          <div>
-            <a class="read-more button" href="{{ .RelPermalink }}"
-              >{{ $.Site.Params.ReadMore | default "Read more" }} →</a
-            >
-          </div>
-        {{ end }}
       </div>
     {{ end }}
     {{ partial "pagination.html" . }}
