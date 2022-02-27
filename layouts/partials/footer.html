@@ -3,15 +3,10 @@
     {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
       {{ else }}
-      {{ partial "logo.html" . }}
       <div class="copyright">
         <span
           >© {{ now.Year }} Powered by
-          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
-        >
-        <span
-          >Theme created by
-          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+          <a href="https://teh.su" target="_blank" rel="noopener">next.ws</a></span
         >
       </div>
     {{ end }}
