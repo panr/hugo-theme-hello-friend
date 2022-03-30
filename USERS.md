@@ -43,4 +43,5 @@ TEMPLATE:
 - https://abhinav031.github.io - **Abhinav Sriram** (Digital Artist, Hobbyist)
 - https://schnerring.net/ - **Michael Schnerring** (Software Engineer)
 - https://codigonovato.netlify.app **Javier Rangel** (Dev and notes)
+- https://easyitblog.info/ - **Ivan Vaskevych** (Staff engineer)
 - https://0days.io **Frederik Bøgeskov Krogsgaard** (Cyber & Information Security)
