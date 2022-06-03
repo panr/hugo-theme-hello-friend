@@ -1,4 +1,4 @@
-:root {
+body.light-theme, :root {
   /* light theme color */
   --background: #fff;
   --background-secondary: #eaeaea;
@@ -20,6 +20,30 @@ body.dark-theme {
   --color: #a9a9b3;
   --color-secondary: #73747b;
   --border-color: #4a4b50;
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.dark-theme) {
+    /* light theme color */
+    --background: #fff;
+    --background-secondary: #eaeaea;
+    --header: #fafafa;
+    --color: #222;
+    --color-secondary: #999;
+    --border-color: #dcdcdc;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light-theme) {
+    /* dark theme colors */
+    --background: #292a2d;
+    --background-secondary: #3b3d42;
+    --header: #252627;
+    --color: #a9a9b3;
+    --color-secondary: #73747b;
+    --border-color: #4a4b50;
+  }
 }
 
 @custom-media --phone (width < 684px);

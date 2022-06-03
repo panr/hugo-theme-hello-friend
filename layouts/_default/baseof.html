@@ -10,7 +10,7 @@
     {{ end }}
     {{ partial "head.html" . }}
   </head>
-  <body class="{{ if ne $.Site.Params.defaultTheme "light" -}} dark-theme {{- end -}}">
+  <body {{ with $.Site.Params.defaultTheme -}} class="{{ printf "%s-theme" . }}" {{- end }}>
     <div class="container">
       {{ partial "header.html" . }}
 
