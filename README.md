@@ -30,7 +30,7 @@
 
 ## Features
 
-- **dark/light mode**, depending on your preferences (dark is default, but you can change it)
+- **dark/light mode**, depending on your preferences (the theme of your operating system is default, but you can change it)
 - great reading experience thanks to [**Inter font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
 - nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - fully responsive
@@ -135,7 +135,7 @@ paginate = 5
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
 
-  # "light" or "dark"
+  # OS theme is default when not provided, but you can force it to "light" or "dark"
   defaultTheme = "dark"
 
   # if you set this to 0, only submenu trigger will be visible
