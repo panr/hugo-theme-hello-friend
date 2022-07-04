@@ -4,8 +4,6 @@
 
 ### DEMO - https://hugo-hello-friend.now.sh/ <a id="demo" />
 
-<a href="https://www.buymeacoffee.com/panr" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
-
 ---
 
 - [Hello Friend](#hello-friend)
