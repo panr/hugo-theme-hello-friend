@@ -45,3 +45,4 @@ TEMPLATE:
 - https://codigonovato.netlify.app **Javier Rangel** (Dev and notes)
 - https://easyitblog.info/ - **Ivan Vaskevych** (Staff engineer)
 - https://0days.io **Frederik Bøgeskov Krogsgaard** (Cyber & Information Security)
+- https://www.paepper.com/blog/  **Marc Päpper** (Machine Learning)
