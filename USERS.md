@@ -24,7 +24,7 @@ TEMPLATE:
 - https://guilhermesteves.dev/ - **Guilherme Esteves** (Software Engineer, Writer, Speaker)
 - https://hesec.de - **Patrick Hener** (Security Researcher, Pentester and Coder)
 - https://ilya-lesikov.com - **Ilya Lesikov** (DevOps, SRE)
-- https://imgalone.com/ - **Iancu makes games alone** (Indie Game Dev)
+- https://imsalone.com/ - **Iancu makes stuff alone** (Indie Game Dev)
 - https://jonathan.rico.live/ - **Jonathan Rico** (Electronics Engineer)
 - https://kartiniteknologi.id/ - **Kartini Teknologi team** (Tech podcast)
 - https://mfaishal.com **Faishal Irawan** (Student)
