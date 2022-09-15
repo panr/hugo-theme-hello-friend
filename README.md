@@ -253,6 +253,23 @@ or rebuild theme
 ```bash
 yarn build
 ```
+### Rebuild the theme using Docker
+If you don't have, or don't want to install `npm`, `yarn` and their dependencies on your system you can easily rebuild this theme using a Docker container. `npm`, `yarn`, and all dependant packages will be installed and configured within a dedicated Docker image, and rebuilding the theme is a single command.
+
+First, build a Docker image:
+```bash
+cd themes/hello-friend
+docker build . --tag <some_tag_name>
+```
+When the Docker build step completes, you now have a Docker image with all software needed to rebuild the theme. You should only need to rebuild the Docker image if you make changes to `package.json` or `yarn.lock`.
+
+To rebuild the theme, start a new Docker container which upon startup will automatically execute `webpack --mode=production`. The theme directory is presented to the Docker container through the `--mount` option.
+```bash
+docker run -it \
+--mount type=bind,source="$(pwd)",destination=/hello-friend \
+<some_tag_name>:latest
+```
+The build step should take a few seconds, and the newly built theme files will be written back into the theme directory.
 
 To see the changes (remember to restart `hugo server`).
 
