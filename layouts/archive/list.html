@@ -14,14 +14,14 @@
               <div class="archive__group-posts">
                 {{ range where .Pages "Type" $contentTypeName }}
                   {{ if eq .Kind "page" }}
-                    <div class="archive__post">
+                    <article class="archive__post">
                       <h3 class="archive__post-title">
                         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
                       </h3>
                       <div class="archive__post-meta">
-                        <span class="archive__post-date">
+                        <time class="archive__post-date">
                           {{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}
-                        </span>
+                        </time>
                         {{ with .Params.Author }}
                           <span class="archive__post-author"
                             >—
@@ -36,7 +36,7 @@
                           >
                         {{ end }}
                       </div>
-                    </div>
+                    </article>
                   {{ end }}
                 {{ end }}
               </div>

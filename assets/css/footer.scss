@@ -11,7 +11,7 @@
     width: 760px;
     max-width: 100%;
 
-    @media (--tablet) {
+    @media ($tablet) {
       flex-direction: column;
     }
   }
@@ -36,14 +36,14 @@
       padding-right: 10px;
       margin-right: 10px;
 
-       @media (--tablet) {
+       @media ($tablet) {
         border: none;
         padding: 0;
         margin: 0;
       }
     }
 
-    @media (--tablet) {
+    @media ($tablet) {
       flex-direction: column;
       margin-top: 10px;
     }

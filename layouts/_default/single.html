@@ -2,13 +2,13 @@
   {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
   {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
 
-  <div class="post">
+  <article class="post">
     <h1 class="post-title">{{ .Title | markdownify }}</h1>
     <div class="post-meta">
       {{ if .Date | default nil }}
-        <span class="post-date">
+        <time class="post-date">
           {{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
-        </span>
+        </time>
 
         {{ if eq .Type $contentTypeName }}
           {{ if $.Site.Params.LastModDisplay }}
@@ -87,5 +87,5 @@
         {{ partial "comments.html" . }}
       {{ end }}
     {{ end }}
-  </div>
+  </article>
 {{ end }}
