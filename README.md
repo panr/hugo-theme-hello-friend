@@ -260,39 +260,11 @@ In a post's front matter you have to add `hideReadMore` param set to `true`. Thi
 - **Extended `<head>`** — if you need to add something inside `<head>` element, after all of all of the theme's `<script>` and `<link>` tags are declared, please take a look at `layouts/partial/extended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_head.html
 - **Extended `<footer>`** — if you need to add something before end of `<body>` element, please take a look at `layouts/partial/extended_footer.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_footer.html
 
-## How to (safely) edit the theme <a id="how-to-edit" />
+## How to edit the theme <a id="how-to-edit" />
 
-If you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
+If you are using as a remote Hugo Module (you don't have the theme files in the `theme/hello-friend`) and you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
 
-To change something directly in the theme, you have to go to `themes/hello-friend` and modify the files.
-
-First, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
-
-```bash
- cd themes/hello-friend
-```
-
- then run:
-
- ```bash
- npm install
- npm i yarn
- yarn
- ```
-
-After you modified the files you can run webpack in watch mode:
-
-```bash
-yarn dev
-```
-
-or rebuild theme
-
-```bash
-yarn build
-```
-
-To see the changes (remember to restart `hugo server`).
+If you have the theme files in the theme directory, then you can directly edit anything in the theme, you just have to go to `themes/hello-friend` and modify the files. No compilation step needed.
 
 ## Found a bug? <a id="bug" />
 
