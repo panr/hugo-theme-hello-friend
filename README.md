@@ -124,7 +124,7 @@ Error: module "hello-friend" not found; either add it as a Hugo Module or store 
 
 then please try to remove `theme = "hello-friend"` from your config file.
 
-⚠️ **The theme needs at least Hugo version 0.74.x**.
+⚠️ **The theme needs at least Hugo version 0.90.x**.
 
 ### Install theme locally
 
