@@ -97,13 +97,13 @@ You can download the theme manually by going to [https://github.com/panr/hugo-th
 You can also clone it directly to your Hugo folder:
 
 ```bash
-git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+git clone -b webpack https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
 ```bash
-git submodule add -f https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+git submodule -b webpack add -f https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
 ⚠️ **The theme needs at least Hugo version 0.74.x**.
