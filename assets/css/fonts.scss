@@ -48,3 +48,37 @@
   src: url("../fonts/Inter-BoldItalic.woff2") format("woff2");
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Cica';
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+  src: url("../fonts/Cica-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cica';
+  font-style: italic;
+  font-weight: 400;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+  src: url("../fonts/Cica-RegularItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cica';
+  font-style: normal;
+  font-weight: 800;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+  src: url("../fonts/Cica-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cica';
+  font-style: italic;
+  font-weight: 800;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+  src: url("../fonts/Cica-BoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
