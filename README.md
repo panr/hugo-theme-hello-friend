@@ -19,11 +19,10 @@
   - [How to display the Last Modified Date in your posts](#how-to-display-the-last-modified-date-in-your-posts)
   - [How to hide "Read more" button](#how-to-hide-read-more-button)
   - [Add-ons](#add-ons)
-  - [How to (safely) edit the theme](#how-to-edit)
+  - [How to edit the theme](#how-to-edit)
   - [Found a bug?](#bug)
   - [New cool idea or feature](#feature)
   - [`Hello Friend` theme user?](#hello-friend-theme-user)
-  - [Sponsoring](#sponsoring)
   - [License](#license)
 
 ## Features
@@ -53,7 +52,7 @@
     font-size: 1rem;
     overflow: auto;
 
-    @media (--phone) {
+    @media ($phone) {
       white-space: pre-wrap;
       word-wrap: break-word;
     }
@@ -94,19 +93,60 @@ Some enhancements have been made to Hugo's [internal RSS](https://github.com/goh
 
 You can download the theme manually by going to [https://github.com/panr/hugo-theme-hello-friend.git](https://github.com/panr/hugo-theme-hello-friend.git) and pasting it to `themes/hello-friend` in your root directory.
 
-You can also clone it directly to your Hugo folder:
+You can also choose **one of the 3 possibilities** to install the theme:
+
+1. as Hugo Module
+2. as a standalone local directory
+3. as a git submodule
+
+⚠️ **The theme needs at least Hugo **Extended** v0.90.x**.
+
+### Install theme as Hugo Module
+
+```bash
+# If this is the first time you're using Hugo Modules
+# in your project. You have to initiate your own module before
+# you fetch the theme module.
+#
+# hugo mod init [your website/module name]
+hugo mod get github.com/panr/hugo-theme-hello-friend
+```
+
+and in your config file add:
+
+```toml
+[module]
+  # this is needed when you fetch the theme as a submodule to your repo.
+  # replacements = "github.com/panr/hugo-theme-hello-friend -> themes/hello-friend"
+[[module.imports]]
+  path = 'github.com/panr/hugo-theme-hello-friend'
+```
+
+Keep in mind that the theme by default won't show up in the `themes` directory. This means that you are using the theme as it was on the repository at the moment you fetched it. Your local `go.sum` file keeps all the references. Read more about Hugo Modules in the [official documentation](https://gohugo.io/hugo-modules/).
+
+⚠️ If you encounter any issues with:
+
+```bash
+Error: module "hello-friend" not found; either add it as a Hugo Module or store it in "[...your custom path]/themes".: module does not exist
+```
+
+then please try to remove `theme = "hello-friend"` from your config file.
+
+### Install theme locally
 
 ```bash
 git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
-If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
+This will clone the repository directly to the `themes/hello-friend` directory.
+
+### Install theme as a submodule
 
 ```bash
 git submodule add -f https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
 ```
 
-⚠️ **The theme needs at least Hugo version 0.74.x**.
+This will install the repository as a sumbodule in the `themes/hello-friend` directory.
 
 ## How to run your site
 
@@ -125,6 +165,8 @@ The theme doesn't require any advanced configuration. Just copy:
 ```toml
 baseurl = "/"
 languageCode = "en-us"
+# Add it only if you keep the theme in the `themes` directory.
+# Remove it if you use the theme as a remote Hugo Module.
 theme = "hello-friend"
 paginate = 5
 
@@ -222,39 +264,11 @@ In a post's front matter you have to add `hideReadMore` param set to `true`. Thi
 - **Extended `<head>`** — if you need to add something inside `<head>` element, after all of all of the theme's `<script>` and `<link>` tags are declared, please take a look at `layouts/partial/extended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_head.html
 - **Extended `<footer>`** — if you need to add something before end of `<body>` element, please take a look at `layouts/partial/extended_footer.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_footer.html
 
-## How to (safely) edit the theme <a id="how-to-edit" />
+## How to edit the theme <a id="how-to-edit" />
 
-If you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
+If you are using as a remote Hugo Module (you don't have the theme files in the `theme/hello-friend`) and you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
 
-To change something directly in the theme, you have to go to `themes/hello-friend` and modify the files.
-
-First, you need to install Node dependencies. To do so, go to the theme directory (from your Hugo root directory):
-
-```bash
- cd themes/hello-friend
-```
-
- then run:
-
- ```bash
- npm install
- npm i yarn
- yarn
- ```
-
-After you modified the files you can run webpack in watch mode:
-
-```bash
-yarn dev
-```
-
-or rebuild theme
-
-```bash
-yarn build
-```
-
-To see the changes (remember to restart `hugo server`).
+If you have the theme files in the theme directory, then you can directly edit anything in the theme, you just have to go to `themes/hello-friend` and modify the files. No compilation step needed.
 
 ## Found a bug? <a id="bug" />
 
@@ -281,14 +295,8 @@ Sounds OK? Cool, let's rock! 🤘
 
 I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/panr/hugo-theme-hello-friend/blob/master/USERS.md)! 🤗
 
-## Sponsoring
-
-If you like my work and want to support the development of the project, now you can! Just:
-
-<a href="https://www.buymeacoffee.com/panr" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
-
 ## License
 
-Copyright © 2019-2020 Radosław Kozieł ([@panr](https://twitter.com/panr))
+Copyright © 2019-2022 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-hello-friend/blob/master/LICENSE.md) for additional licensing information.

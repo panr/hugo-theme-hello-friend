@@ -11,7 +11,7 @@
       align-items: flex-start;
       padding: 10px 0;
 
-      @media (--phone) {
+      @media ($phone) {
         flex-direction: column;
       }
 
@@ -23,7 +23,7 @@
     &-year {
       margin-top: 40px;
 
-      @media (--phone) {
+      @media ($phone) {
         margin-top: 20px;
       }
 
@@ -42,7 +42,7 @@
         width: 200px;
         opacity: .5;
 
-        @media (--phone) {
+        @media ($phone) {
           margin: 10px 0 0;
         }
       }

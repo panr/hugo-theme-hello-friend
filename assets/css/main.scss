@@ -23,7 +23,7 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
 
-  @media (--phone) {
+  @media ($phone) {
     font-size: 1rem;
   }
 }
@@ -48,7 +48,7 @@ h4 {
   font-size: 1.125rem;
 }
 
-@media (--phone) {
+@media ($phone) {
   h1 {
     font-size: 2rem;
   }
@@ -150,7 +150,7 @@ pre {
   font-size: .9rem;
   overflow: auto;
 
-  @media (--phone) {
+  @media ($phone) {
     white-space: pre-wrap;
     word-wrap: break-word;
   }
@@ -170,7 +170,7 @@ blockquote {
   margin: 40px;
   padding: 10px 20px;
 
-  @media (--phone) {
+  @media ($phone) {
     margin: 10px;
     padding: 10px;
   }
@@ -216,7 +216,7 @@ ul, ol {
   margin-left: 40px;
   padding: 0;
 
-  @media (--phone) {
+  @media ($phone) {
     margin-left: 20px;
   }
 }
@@ -240,7 +240,7 @@ ol ol {
   justify-content: center;
   margin: 50px 0;
 
-  @media (--phone) {
+  @media ($phone) {
     margin-top: 0;
   }
 }
@@ -264,7 +264,7 @@ hr {
 }
 
 blockquote.twitter-tweet {
-  background: hsl(206deg 62% 45% / 10%);
+  background: hsla(206deg, 62%, 45%, 0.1);
   border: none;
   padding: 30px;
   color: inherit;
