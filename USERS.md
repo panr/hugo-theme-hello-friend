@@ -30,3 +30,4 @@ TEMPLATE:
 - https://easyitblog.info/ - **Ivan Vaskevych** (Staff engineer)
 - https://0days.io **Frederik Bøgeskov Krogsgaard** (Cyber & Information Security)
 - https://codejuggle.dj/ **cornelk** (Software Engineer and DevOps)
+- https://nyah.dev **ch3ck** (Security Engineer)
