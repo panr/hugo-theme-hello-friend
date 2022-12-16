@@ -30,4 +30,4 @@ TEMPLATE:
 - https://easyitblog.info/ - **Ivan Vaskevych** (Staff engineer)
 - https://0days.io - **Frederik Bøgeskov Krogsgaard** (Cyber & Information Security)
 - https://codejuggle.dj/ - **cornelk** (Software Engineer and DevOps)
-- https://walmyrcarvalho.com.br/ **Walmyr Carvalho** (Senior Android Engineer and Google Developer Expert)
+- https://walmyrcarvalho.com.br/ - **Walmyr Carvalho** (Senior Android Engineer and Google Developer Expert)
