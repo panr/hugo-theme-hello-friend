@@ -229,7 +229,6 @@ ol ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 
 .content {
@@ -257,10 +256,19 @@ hr {
 }
 
 .framed {
-  padding: 20px;
+  padding: 50px;
+  margin: 0 -50px 40px;
   border-radius: 10px;
   border: 1px solid var(--border-color);
-  max-width: 800px;
+  width: 100%;
+  max-width: 860px;
+
+  @media ($tablet) {
+    width: auto;
+    max-width: 680px;
+    margin: 20px 20px 40px;
+    padding: 30px;
+  }
 }
 
 blockquote.twitter-tweet {
