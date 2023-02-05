@@ -39,6 +39,9 @@
 <!-- OG data -->
 {{ template "_internal/opengraph.html" . }}
 
+<!-- Site Schema -->
+{{ partial "site_schema.html" . }}
+
 <!-- RSS | JSON -->
 {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
