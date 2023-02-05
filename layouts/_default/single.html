@@ -43,6 +43,7 @@
     {{ end }}
 
     <div class="post-content">
+      {{ partial "share-buttons.html" . }}
       {{ if or .Params.Toc $.Site.Params.Toc }}
         {{ if ne .Params.Toc false }}
         <h2>Table of Contents</h2>
@@ -50,6 +51,7 @@
         {{ end }}
       {{ end }}
       {{ .Content }}
+      {{ partial "share-buttons.html" . }}
     </div>
     {{ if eq .Type $.Site.Params.contentTypeName }}
       {{ if or .NextInSection .PrevInSection }}
