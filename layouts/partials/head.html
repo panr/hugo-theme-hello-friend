@@ -33,6 +33,10 @@
 <link href="{{ (resources.Get "fonts/Inter-Bold.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
 <link href="{{ (resources.Get "fonts/Inter-BoldItalic.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
 
+<!-- preload third-party dns for js -->
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+
 <!-- Twitter Card -->
 {{ template "_internal/twitter_cards.html" . }}
 
