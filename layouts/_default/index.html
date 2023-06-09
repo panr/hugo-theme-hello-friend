@@ -16,13 +16,13 @@
 
   <div class="posts">
     {{ range $paginator.Pages }}
-    <div class="post on-list">
+    <article class="post on-list">
       <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
       <div class="post-meta">
         {{ if .Date }}
-          <span class="post-date">
+          <time class="post-date">
             {{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}
-          </span>
+          </time>
 
           {{ if $.Site.Params.LastModDisplay }}
             {{ partial "lastmod.html" . }}
@@ -62,7 +62,7 @@
       {{ if not .Params.hideReadMore }}
         <div><a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore | default "Read more" }} →</a></div>
       {{ end }}
-    </div>
+    </article>
     {{ end }}
     {{ partial "pagination.html" . }}
   </div>

@@ -14,7 +14,7 @@
     align-items: center;
     margin-right: 5px;
 
-    @mixin greater-icon 8px;
+    @include greater-icon(8px);
   }
 
   &__text {
