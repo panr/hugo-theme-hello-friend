@@ -1,10 +1,10 @@
+name = "hello-friend"
 description = "A simple theme for Hugo. That's it."
 features = ["blog", "shortcode", "syntax Highlighting"]
 homepage = "https://github.com/panr/hugo-theme-hello-friend/"
 license = "MIT"
 licenselink = "https://github.com/panr/hugo-theme-hello-friend/blob/master/LICENSE.md"
-min_version = 0.74
-name = "hello-friend"
+min_version = 0.90
 tags = [
   "blog",
   "clean",

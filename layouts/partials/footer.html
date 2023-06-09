@@ -5,20 +5,17 @@
       {{ else }}
       {{ partial "logo.html" . }}
       <div class="copyright">
-        <span
-          >© {{ now.Year }} Powered by
-          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
-        >
-        <span
-          >Theme created by
-          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
-        >
+        <span>© {{ now.Year }} Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
       </div>
     {{ end }}
   </div>
 </footer>
 
-<script src="{{ "assets/main.js" | absURL }}"></script>
-<script src="{{ "assets/prism.js" | absURL }}"></script>
+{{ $menu := resources.Get "js/menu.js" | js.Build }}
+{{ $prism := resources.Get "js/prism.js" | js.Build }}
+{{ $theme := resources.Get "js/theme.js" | js.Build }}
+{{ $bundle := slice $menu $prism $theme | resources.Concat "bundle.js" | resources.Minify }}
+<script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
 
 {{- partial "extended_footer.html" . }}

@@ -1,4 +1,4 @@
-@define-mixin menu {
+@mixin menu {
   position: absolute;
   background: var(--header);
   box-shadow: var(--shadow);
@@ -18,8 +18,8 @@
   padding-right: 24px;
   font-weight: 500;
 
-  @media (--phone) {
-    @mixin menu;
+  @media ($phone) {
+    @include menu;
     border: none;
     top: 50px;
     right: 10px;
@@ -39,7 +39,7 @@
     padding: 0;
 
     &--desktop {
-      @media (--phone) {
+      @media ($phone) {
         display: none;
       }
     }
@@ -47,7 +47,7 @@
     &--mobile {
       display: none;
 
-      @media (--phone) {
+      @media ($phone) {
         display: block;
       }
     }
@@ -61,7 +61,7 @@
       }
     }
 
-    @media (--phone) {
+    @media ($phone) {
       flex-direction: column;
       align-items: flex-start;
       padding: 0;
@@ -84,7 +84,7 @@
     }
 
     &-more {
-      @mixin menu;
+      @include menu;
       top: 35px;
       left: 0;
 
@@ -101,7 +101,7 @@
           transform: rotate(90deg);
           line-height: 1;
 
-          @mixin greater-icon 5px;
+          @include greater-icon(5px);
         }
       }
 
