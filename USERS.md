@@ -35,3 +35,4 @@ TEMPLATE:
 - https://walmyrcarvalho.com.br/ - **Walmyr Carvalho** (Senior Android Engineer and Google Developer Expert)
 - https://blogdoang.com — **Abdul Aziz** (Cloud Architect, DevOps)
 - https://4strodev.com - **4strodev** (Backend developer working as fullstack :P)
+- https://blog.vmichalak.com/ - **Valentin Michalak** (Software Engineer)
