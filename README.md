@@ -1,5 +1,13 @@
 # Hello Friend
 
+## The theme is no longer maintained, but can still be used
+
+Even if the repository is archived you can still use the theme, fork it, download it, expand it, etc. Remember that each Hugo theme is a module that can be modified to match your needs. The theme is fully "open" and it depends only on the internal engines implemented in Hugo.
+
+The theme brings many useful features thanks to [all people that contributed to it](https://github.com/panr/hugo-theme-hello-friend/graphs/contributors) (I want to thank you all!). At the time of archiving the theme has reached 14th place on the [official Hugo Themes list](https://themes.gohugo.io/). This is huge! Thanks to you!
+
+----
+
 ![Hello Friend](https://github.com/panr/hugo-theme-hello-friend/blob/master/images/screenshot.png?raw=true)
 
 ### DEMO - https://hugo-hello-friend.now.sh/ <a id="demo" />
